@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on DKO en AR - we finally meet</title>
+    <link>https://example.org/categories/</link>
+    <description>Recent content in Categories on DKO en AR - we finally meet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Feb 2021 16:18:44 +0100</lastBuildDate><atom:link href="https://example.org/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>3d scan</title>
+      <link>https://example.org/categories/3d-scan/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>https://example.org/categories/3d-scan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>beeld</title>
+      <link>https://example.org/categories/beeld/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>https://example.org/categories/beeld/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>exhibition 1</title>
+      <link>https://example.org/categories/exhibition-1/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>https://example.org/categories/exhibition-1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>schilderij</title>
+      <link>https://example.org/categories/schilderij/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>https://example.org/categories/schilderij/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>street art</title>
+      <link>https://example.org/categories/street-art/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>https://example.org/categories/street-art/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
