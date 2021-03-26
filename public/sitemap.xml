@@ -88,6 +88,11 @@
   </url>
   
   <url>
+    <loc>https://example.org/categories/sculpture/</loc>
+    <lastmod>2021-03-19T10:45:38+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://example.org/sculpture/</loc>
     <lastmod>2021-03-19T10:45:38+01:00</lastmod>
   </url>

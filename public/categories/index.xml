@@ -44,6 +44,15 @@
     </item>
     
     <item>
+      <title>sculpture</title>
+      <link>https://example.org/categories/sculpture/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>https://example.org/categories/sculpture/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>street art</title>
       <link>https://example.org/categories/street-art/</link>
       <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
