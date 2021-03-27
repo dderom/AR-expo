@@ -2,7 +2,7 @@
 title : "Banksy 1"
 date : 2021-03-19T10:45:38+01:00
 draft : false
-marker : 1
+marker : 100
 position : "0 0 0"
 scale : "1 1 1"
 model : "banksy_1/scene.gltf"
