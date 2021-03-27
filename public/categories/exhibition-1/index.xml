@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>exhibition 1 on DKO en AR - we finally meet</title>
+    <link>https://example.org/categories/exhibition-1/</link>
+    <description>Recent content in exhibition 1 on DKO en AR - we finally meet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 19 Mar 2021 10:45:38 +0100</lastBuildDate><atom:link href="https://example.org/categories/exhibition-1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Banksy 3</title>
+      <link>https://example.org/painting/banksy3/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>https://example.org/painting/banksy3/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
