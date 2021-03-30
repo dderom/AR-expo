@@ -41,6 +41,13 @@
           </a-entity>
         </a-marker>
        </a-scene>
+    
+       <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: AR_MATRIX_CODE_5x5_BCH_22_7_7;">
+        <a-marker type="barcode" value="100">
+          <a-entity camera position="0 0 0" scale="0.1 0.1 0.1" gltf-model="/expo-dko/public/artworks/banksy_4/scene.gltf">
+          </a-entity>
+        </a-marker>
+       </a-scene>
   </body>
 
 </html>
