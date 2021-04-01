@@ -11,11 +11,11 @@
         <!-- we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers -->
         <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: AR_MATRIX_CODE_3x3_HAMMING63;'>
             
-        <a-marker id="animated-marker" type='barcode' value='1'>
+        <a-marker type='barcode' value='1'>
             <a-box position='0 0.5 0' color="green"></a-box>
         </a-marker>
             
-        <a-marker id="animated-marker" type='barcode' value='2'>
+        <a-marker type='barcode' value='2'>
             <a-box position='0 0.5 0' color="white"></a-box>
         </a-marker>
 
@@ -23,7 +23,7 @@
             <a-box position='0 0.5 0' color="yellow"></a-box>
         </a-marker>
 
-        <a-marker id="animated-marker" type='barcode' value='6'>
+        <a-marker type='barcode' value='6'>
             <a-box position='0 0.5 0' color="red"></a-box>
         </a-marker>
 
