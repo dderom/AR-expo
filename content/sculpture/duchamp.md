@@ -7,4 +7,5 @@ position : "0 0 0"
 scale : "0.1 0.1 0.1"
 model : "Duchamp/scene.gltf" # provide url, leave empty if not required
 tags: ["beeld"]
+categories: ["beeld"]
 ---

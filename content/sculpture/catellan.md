@@ -7,5 +7,5 @@ position : "0 0 0"
 scale : "0.1 0.1 0.1"
 model : "catellan/scene.gltf" # provide url, leave empty if not required
 tags: ["beeld"]
-categories: ["3d scan", "sculpture"]
+categories: ["3d scan", "sculpture", "beeld"]
 ---
