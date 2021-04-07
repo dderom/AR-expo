@@ -1,7 +1,7 @@
 ---
 title : "Banksy 2"
 artwork_refs: "banksy_2"
-date : 2021-03-19T10:45:38+01:00
+date : 2021-03-19 10:45:38 +01:00
 draft : false
 marker : 1
 position : "0 0 0"

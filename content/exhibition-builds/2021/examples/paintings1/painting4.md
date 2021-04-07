@@ -1,6 +1,6 @@
 ---
 title: "Painting 4"
-date: 2021_04_06T12:48:01+02:00
+date: 2021-03-19 10:45:38 +01:00
 draft: false
 Organiser: #add the organiser if required
 artwork_refs: "banksy_4" #add all the artworks using their unique ID Name
