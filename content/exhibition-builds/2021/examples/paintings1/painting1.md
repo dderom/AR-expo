@@ -1,6 +1,6 @@
 ---
 title: "Painting 1"
-date: 2021_04_06T12:47:41+02:00
+date: 2021-03-19 10:45:38 +01:00
 draft: false
 Organiser: #add the organiser if required
 artwork_refs: "banksy_1" #add all the artworks using their unique ID Name
@@ -11,7 +11,7 @@ exhibitions: "Example exhibition - paintings 1" #provide the title as a custom c
 
 
 
-position_artwork: "0 0 0" #set how much it will hover above/beside marker/geolocation. Use "0 0 0" for 3 axes
+position_artwork: "0 0 1.5" #set how much it will hover above/beside marker/geolocation. Use "0 0 0" for 3 axes
 size_artwork: 1 # set size either relative to itself of to markers
 marker_id: 1 # provide a unique markerID
 
