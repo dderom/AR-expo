@@ -21,6 +21,3 @@ theme = "hugo-primer"
     [[related.indices]] #used in exhibition-item content, to define and filter by artwork types, controlled voc in archetype exhibition-item
       name = "artwork_refs"
       weight = 100
-    [[related.indices]]
-      name = "date-creation" #used in exhibition-item content, to define and filter by artwork types, controlled voc in archetype exhibition-item
-      weight = 101

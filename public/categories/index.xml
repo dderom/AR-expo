@@ -5,7 +5,6 @@
     <link>https://example.org/categories/</link>
     <description>Recent content in Categories on DKO en AR - we finally meet</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 01 Feb 2021 16:18:44 +0100</lastBuildDate><atom:link href="https://example.org/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://example.org/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
