@@ -1,0 +1,29 @@
+  <body>
+
+      <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: {{ .Params.marker_type_sets}};">
+        <!-- Get some data before your process -->
+        {{ $exhibition_type := .Params.exhibition_types}}
+
+        {{ range .Pages }}
+
+            <!--  Get all the data from the exhibition item ref -->
+            {{ $position := .Params.position_artwork }}
+            {{ $size := .Params.size_artwork }}
+            {{ $exhibition_marker_type_set := .Parent.Params.marker_type_sets }}
+            {{ $marker_id := .Params.marker_id}}
+
+            <!-- Now start fetching related content -->
+            {{ with $related := .Site.RegularPages.Related . }}
+                {{ range . }}
+                  <a-marker type="{{$exhibition_type}}" value="{{$marker_id}}">
+                    <a-entity position="{{ $position }}" scale="{{ $size }}" gltf-model="/expo-dko/public/artworks/{{ .Params.model }}">
+                    </a-entity>
+                  </a-marker>
+                {{end}}
+            {{ end }}
+        {{ end }}
+
+
+  </body>
+
+</html>

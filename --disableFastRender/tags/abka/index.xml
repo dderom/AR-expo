@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ABKA on DKO en AR - we finally meet</title>
+    <link>http://localhost:1313/tags/abka/</link>
+    <description>Recent content in ABKA on DKO en AR - we finally meet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 19 Mar 2021 10:45:38 +0100</lastBuildDate><atom:link href="http://localhost:1313/tags/abka/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Banksy 3</title>
+      <link>http://localhost:1313/artworks/banksy3/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>http://localhost:1313/artworks/banksy3/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

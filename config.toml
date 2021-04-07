@@ -2,6 +2,25 @@ baseURL = "https://example.org/"
 languageCode = "en-us"
 title = "DKO en AR - we finally meet"
 theme = "hugo-primer"
+
 [taxonomies]
   tag = "tags"
   category = "categories"
+  artists = "artists" #used in artworks content items, to define and filter by artwork types, controlled voc in archetype
+  type-artworks = "type-artworks" #used in artworks content items, to define and filter by artwork types, controlled voc in archetype
+  exhibition = "exhibitions"
+  exhibition_type = "exhibition-types"
+
+# Adding related content to HUGO enabling content and works of art to be used in various/multiple exhibitions.
+# Using the related in content type 'exhibitions' and referring works of art within the exhibition.
+
+[related]
+    includeNewer = false
+    threshold = 80 #maybe need to be modified if using search results
+    toLower = true
+    [[related.indices]] #used in exhibition-item content, to define and filter by artwork types, controlled voc in archetype exhibition-item
+      name = "artwork_refs"
+      weight = 100
+    [[related.indices]]
+      name = "date-creation" #used in exhibition-item content, to define and filter by artwork types, controlled voc in archetype exhibition-item
+      weight = 101

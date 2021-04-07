@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Artists on DKO en AR - we finally meet</title>
+    <link>http://localhost:1313/artists/</link>
+    <description>Recent content in Artists on DKO en AR - we finally meet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 19 Mar 2021 10:45:38 +0100</lastBuildDate><atom:link href="http://localhost:1313/artists/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Banksy</title>
+      <link>http://localhost:1313/artists/banksy/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>http://localhost:1313/artists/banksy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Catellan</title>
+      <link>http://localhost:1313/artists/catellan/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>http://localhost:1313/artists/catellan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Di Modica</title>
+      <link>http://localhost:1313/artists/di-modica/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>http://localhost:1313/artists/di-modica/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Duchamp</title>
+      <link>http://localhost:1313/artists/duchamp/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>http://localhost:1313/artists/duchamp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rodin</title>
+      <link>http://localhost:1313/artists/rodin/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>http://localhost:1313/artists/rodin/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

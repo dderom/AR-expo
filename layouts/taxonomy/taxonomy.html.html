@@ -1,55 +1,6 @@
-<!--
-{{ define "title" }}
-  {{ .Title }} &ndash; {{ .Site.Title }}
-{{ end }}
+{{ partial "head_ar.html" }} 
 
 
-{{ define "main" }}
-<!-- list template -->
-<!--
-<div>
-
-  <h1>{{ .Title }}</h1>
-  {{ .Content }}
-
-  {{ range .Pages }}
-    <!-- single page card -->
-
-<!--
-    {{ partial "card.page.html" . }}
-  {{ end }}
-
-
-
-<!--
-</div>
-
-{{ end }}
--->
-
-<!DOCTYPE html>
-
-<html>
-  <head>
-    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-      <!-- we import arjs version without NFT but with marker + location based support -->
-      <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
-
-  </head>
-
-
-  <body>
-
-      <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
-        {{ range .Pages }}
-        <a-marker type="barcode" value="{{.Params.marker}}">
-          <a-entity position="{{ .Params.position }}" scale="{{ .Params.scale }}" gltf-model="/expo-dko/public/artworks/{{ .Params.model }}">
-          </a-entity>
-        </a-marker>
-        {{ end }}
-    <a-entity camera> </a-entity>
-    </a-scene>
-
-  </body>
-
-</html>
+{{ if eq .Params.exhibition_types "barcode" }}
+  {{ partial "barcode-exhibition.html" . }}
+{{end}}
