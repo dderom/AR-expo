@@ -11,7 +11,7 @@ exhibitions: "Example exhibition - paintings 1" #provide the title as a custom c
 
 
 
-position_artwork: "0 0 1.5" #set how much it will hover above/beside marker/geolocation. Use "0 0 0" for 3 axes
+position_artwork: "0 0 0" #set how much it will hover above/beside marker/geolocation. Use "0 0 0" for 3 axes
 size_artwork: 1 # set size either relative to itself of to markers
 marker_id: 3 # provide a unique markerID
 
