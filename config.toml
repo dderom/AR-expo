@@ -17,8 +17,9 @@ theme = "hugo-primer"
 
 [related]
     includeNewer = false
-    threshold = 80 #maybe need to be modified if using search results
+    threshold = 1 #maybe need to be modified if using search results
     toLower = true
     [[related.indices]] #used in exhibition-item content, to define and filter by artwork types, controlled voc in archetype exhibition-item
       name = "artwork_refs"
       weight = 100
+      includeNewer = true # Here our relationship is timeless! This prevents Hugo from ignoring newer posts

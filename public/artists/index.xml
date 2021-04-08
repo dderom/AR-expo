@@ -16,41 +16,5 @@
       <description></description>
     </item>
     
-    <item>
-      <title>Catellan</title>
-      <link>https://example.org/artists/catellan/</link>
-      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
-      
-      <guid>https://example.org/artists/catellan/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Di Modica</title>
-      <link>https://example.org/artists/di-modica/</link>
-      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
-      
-      <guid>https://example.org/artists/di-modica/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Duchamp</title>
-      <link>https://example.org/artists/duchamp/</link>
-      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
-      
-      <guid>https://example.org/artists/duchamp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Rodin</title>
-      <link>https://example.org/artists/rodin/</link>
-      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
-      
-      <guid>https://example.org/artists/rodin/</guid>
-      <description></description>
-    </item>
-    
   </channel>
 </rss>

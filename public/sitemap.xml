@@ -2,10 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.org/artists/</loc>
-    <lastmod>2021-03-19T10:45:38+01:00</lastmod>
-  </url><url>
     <loc>https://example.org/artworks/</loc>
+    <lastmod>2021-04-08T12:27:55+02:00</lastmod>
+  </url><url>
+    <loc>https://example.org/</loc>
+    <lastmod>2021-04-08T12:27:55+02:00</lastmod>
+  </url><url>
+    <loc>https://example.org/artworks/jan_de_witte/</loc>
+    <lastmod>2021-04-08T12:27:55+02:00</lastmod>
+  </url><url>
+    <loc>https://example.org/artworks/the_inn/</loc>
+    <lastmod>2021-04-08T12:27:47+02:00</lastmod>
+  </url><url>
+    <loc>https://example.org/artworks/rustic_halt/</loc>
+    <lastmod>2021-04-08T12:27:40+02:00</lastmod>
+  </url><url>
+    <loc>https://example.org/artworks/portrait_woman/</loc>
+    <lastmod>2021-04-08T12:27:21+02:00</lastmod>
+  </url><url>
+    <loc>https://example.org/artworks/picard1/</loc>
+    <lastmod>2021-04-08T12:27:12+02:00</lastmod>
+  </url><url>
+    <loc>https://example.org/artworks/wlerick_enfant/</loc>
+    <lastmod>2021-04-08T12:26:17+02:00</lastmod>
+  </url><url>
+    <loc>https://example.org/artworks/rodin_valse/</loc>
+    <lastmod>2021-04-08T12:25:44+02:00</lastmod>
+  </url><url>
+    <loc>https://example.org/artworks/rodin_hand/</loc>
+    <lastmod>2021-04-08T12:25:09+02:00</lastmod>
+  </url><url>
+    <loc>https://example.org/artworks/rodin_eve/</loc>
+    <lastmod>2021-04-08T12:24:56+02:00</lastmod>
+  </url><url>
+    <loc>https://example.org/exhibition-builds/</loc>
+    <lastmod>2021-03-19T10:49:38+01:00</lastmod>
+  </url><url>
+    <loc>https://example.org/exhibitions/</loc>
+    <lastmod>2021-03-19T10:49:38+01:00</lastmod>
+  </url><url>
+    <loc>https://example.org/exhibition-builds/2021/examples/paintings2/painting10/</loc>
+    <lastmod>2021-03-19T10:49:38+01:00</lastmod>
+  </url><url>
+    <loc>https://example.org/exhibition-builds/2021/examples/paintings2/painting9/</loc>
+    <lastmod>2021-03-19T10:48:38+01:00</lastmod>
+  </url><url>
+    <loc>https://example.org/exhibition-builds/2021/examples/paintings2/painting8/</loc>
+    <lastmod>2021-03-19T10:47:38+01:00</lastmod>
+  </url><url>
+    <loc>https://example.org/exhibition-builds/2021/examples/paintings2/painting7/</loc>
+    <lastmod>2021-03-19T10:46:38+01:00</lastmod>
+  </url><url>
+    <loc>https://example.org/artists/</loc>
     <lastmod>2021-03-19T10:45:38+01:00</lastmod>
   </url><url>
     <loc>https://example.org/artists/banksy/</loc>
@@ -23,34 +71,10 @@
     <loc>https://example.org/artworks/banksy4/</loc>
     <lastmod>2021-03-19T10:45:38+01:00</lastmod>
   </url><url>
-    <loc>https://example.org/artists/catellan/</loc>
+    <loc>https://example.org/artworks/banksy5/</loc>
     <lastmod>2021-03-19T10:45:38+01:00</lastmod>
   </url><url>
-    <loc>https://example.org/artworks/catellan/</loc>
-    <lastmod>2021-03-19T10:45:38+01:00</lastmod>
-  </url><url>
-    <loc>https://example.org/artworks/charging_bull/</loc>
-    <lastmod>2021-03-19T10:45:38+01:00</lastmod>
-  </url><url>
-    <loc>https://example.org/artworks/rodin/</loc>
-    <lastmod>2021-03-19T10:45:38+01:00</lastmod>
-  </url><url>
-    <loc>https://example.org/artists/di-modica/</loc>
-    <lastmod>2021-03-19T10:45:38+01:00</lastmod>
-  </url><url>
-    <loc>https://example.org/</loc>
-    <lastmod>2021-03-19T10:45:38+01:00</lastmod>
-  </url><url>
-    <loc>https://example.org/artists/duchamp/</loc>
-    <lastmod>2021-03-19T10:45:38+01:00</lastmod>
-  </url><url>
-    <loc>https://example.org/artworks/duchamp/</loc>
-    <lastmod>2021-03-19T10:45:38+01:00</lastmod>
-  </url><url>
-    <loc>https://example.org/exhibition-builds/</loc>
-    <lastmod>2021-03-19T10:45:38+01:00</lastmod>
-  </url><url>
-    <loc>https://example.org/exhibitions/</loc>
+    <loc>https://example.org/artworks/banksy6/</loc>
     <lastmod>2021-03-19T10:45:38+01:00</lastmod>
   </url><url>
     <loc>https://example.org/exhibition-builds/2021/examples/paintings1/painting1/</loc>
@@ -65,11 +89,29 @@
     <loc>https://example.org/exhibition-builds/2021/examples/paintings1/painting4/</loc>
     <lastmod>2021-03-19T10:45:38+01:00</lastmod>
   </url><url>
-    <loc>https://example.org/artists/rodin/</loc>
+    <loc>https://example.org/exhibition-builds/2021/examples/paintings1/painting5/</loc>
     <lastmod>2021-03-19T10:45:38+01:00</lastmod>
   </url><url>
-    <loc>https://example.org/exhibitions/example-exhibition-paintings-1/</loc>
+    <loc>https://example.org/exhibition-builds/2021/examples/paintings1/painting6/</loc>
+    <lastmod>2021-03-19T10:45:38+01:00</lastmod>
+  </url><url>
+    <loc>https://example.org/exhibition-builds/2021/examples/sculptures/sculpture1/</loc>
+    <lastmod>2021-03-19T10:45:38+01:00</lastmod>
+  </url><url>
+    <loc>https://example.org/exhibitions/sculpture/</loc>
+    <lastmod>2021-03-19T10:45:38+01:00</lastmod>
+  </url><url>
+    <loc>https://example.org/exhibition-builds/2021/examples/paintings2/painting11/</loc>
+    <lastmod>2021-03-19T10:35:38+01:00</lastmod>
+  </url><url>
+    <loc>https://example.org/exhibition-builds/2021/examples/paintings2/painting12/</loc>
+    <lastmod>2021-03-19T10:34:38+01:00</lastmod>
+  </url><url>
+    <loc>https://example.org/exhibitions/banksy/</loc>
     <lastmod>2021-02-01T16:18:44+01:00</lastmod>
+  </url><url>
+    <loc>https://example.org/exhibitions/schilderijen/</loc>
+    <lastmod>2021-01-01T16:18:44+01:00</lastmod>
   </url><url>
     <loc>https://example.org/categories/</loc>
   </url><url>

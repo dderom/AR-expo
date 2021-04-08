@@ -43,5 +43,23 @@
       <description></description>
     </item>
     
+    <item>
+      <title>Banksy 5</title>
+      <link>https://example.org/artworks/banksy5/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>https://example.org/artworks/banksy5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Banksy 6</title>
+      <link>https://example.org/artworks/banksy6/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>https://example.org/artworks/banksy6/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
