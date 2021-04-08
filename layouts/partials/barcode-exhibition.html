@@ -16,7 +16,7 @@
             {{ with $related := .Site.RegularPages.Related . }}
                 {{ range . }}
                   <a-marker type="{{$exhibition_type}}" value="{{$marker_id}}">
-                    <a-entity position="{{ $position }}" scale="{{ $size }}" gltf-model="/expo-dko/public/artworks/{{ .Params.model }}">
+                    <a-entity position="{{ $position }}" scale="{{ $size }}" gltf-model="/artworks/{{ .Params.model }}"><!--/expo-dko/public-->
                     </a-entity>
                   </a-marker>
                 {{end}}
