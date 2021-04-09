@@ -15,7 +15,7 @@
   <div class="rounded-2 box-shadow-medium px-3 pb-2 pt-2 mb-2">
     <!-- single page card -->
     <div class="mb-2">
-      <a href="{{ .RelPermalink }}" class="link-gray-dark"><span class="h2">{{ .Title }}</span></a>
+      <a href="/expo-dko/public/{{ .RelPermalink }}" class="link-gray-dark"><span class="h2">{{ .Title }}</span></a> <!-- Added url prefix for Github -->
       <span class="text-right Counter Counter--gray">With a total of {{ len .Pages }} works of art.</span>
     </div>
     <div class="text-gray">

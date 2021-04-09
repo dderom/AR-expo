@@ -6,16 +6,7 @@
     <description>Recent content in Exhibition-builds on DKO en AR - we finally meet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 19 Mar 2021 10:49:38 +0100</lastBuildDate><atom:link href="https://example.org/exhibition-builds/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Painting 10</title>
-      <link>https://example.org/exhibition-builds/2021/examples/paintings2/painting10/</link>
-      <pubDate>Fri, 19 Mar 2021 10:49:38 +0100</pubDate>
-      
-      <guid>https://example.org/exhibition-builds/2021/examples/paintings2/painting10/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Fri, 19 Mar 2021 10:48:38 +0100</lastBuildDate><atom:link href="https://example.org/exhibition-builds/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Painting 9</title>
       <link>https://example.org/exhibition-builds/2021/examples/paintings2/painting9/</link>
@@ -49,6 +40,24 @@
       <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
       
       <guid>https://example.org/exhibition-builds/2021/examples/paintings1/painting1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Painting 10</title>
+      <link>https://example.org/exhibition-builds/2021/examples/paintings2/painting10/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>https://example.org/exhibition-builds/2021/examples/paintings2/painting10/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Painting 11</title>
+      <link>https://example.org/exhibition-builds/2021/examples/paintings2/painting11/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>https://example.org/exhibition-builds/2021/examples/paintings2/painting11/</guid>
       <description></description>
     </item>
     
@@ -103,24 +112,6 @@
       <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
       
       <guid>https://example.org/exhibition-builds/2021/examples/sculptures/sculpture1/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Painting 11</title>
-      <link>https://example.org/exhibition-builds/2021/examples/paintings2/painting11/</link>
-      <pubDate>Fri, 19 Mar 2021 10:35:38 +0100</pubDate>
-      
-      <guid>https://example.org/exhibition-builds/2021/examples/paintings2/painting11/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Painting 12</title>
-      <link>https://example.org/exhibition-builds/2021/examples/paintings2/painting12/</link>
-      <pubDate>Fri, 19 Mar 2021 10:34:38 +0100</pubDate>
-      
-      <guid>https://example.org/exhibition-builds/2021/examples/paintings2/painting12/</guid>
       <description></description>
     </item>
     

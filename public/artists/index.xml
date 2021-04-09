@@ -16,5 +16,32 @@
       <description></description>
     </item>
     
+    <item>
+      <title>Edmond Picard</title>
+      <link>https://example.org/artists/edmond-picard/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>https://example.org/artists/edmond-picard/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Geoffrey Marchal</title>
+      <link>https://example.org/artists/geoffrey-marchal/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>https://example.org/artists/geoffrey-marchal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jan De Witte</title>
+      <link>https://example.org/artists/jan-de-witte/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>https://example.org/artists/jan-de-witte/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
