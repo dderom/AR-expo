@@ -1,14 +1,14 @@
 <body style="margin: 0; overflow: hidden;">
   <a-scene vr-mode-ui="enabled: false" embedded arjs="sourceType: webcam; debugUIEnabled: false;">
 
-  {{ $exhibition_type := .Params.exhibition_types}} # get the values of the exhibition items first
+  {{ $exhibition_type := .Params.exhibition_types}}
 
-  {{ range .RegularPages }} # get the pages from the exhibition category
+  {{ range .RegularPages }}
     {{ $latitude := .Params.latitude }}
     {{ $longitude := .Params.longitude }}
     {{ $size := .Params.size_artwork }}
     {{ $position := .Params.position_artwork }}
-    {{ range .Site.RegularPages.Related . }} # Start fetching for each page the artwork
+    {{ range .Site.RegularPages.Related . }}
         <a-entity gps-entity-place="latitude: {{ $latitude }}; longitude: {{ $longitude }};" position="{{ $position }}" scale="{{ $size }}" gltf-model="/expo-dko/public/artworks/{{ .Params.model }}">
         </a-entity>
         {{ .Params.credits }}

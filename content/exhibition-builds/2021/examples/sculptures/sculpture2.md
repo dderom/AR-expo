@@ -1,7 +1,7 @@
 ---
 title: "Rodin Valse"
 date: 2021-03-19 10:45:38 +01:00
-draft: true
+draft: false
 Organiser: #add the organiser if required
 artwork_refs: "rodin_valse" #add all the artworks using their unique ID Name
 type: #choose from geolocation, marker, custom_marker, picture
@@ -10,8 +10,8 @@ exhibitions: "rodin" #provide the title as a custom category so it creates a pag
 
 
 
-latitude : "50.730381"
-longitude : "3.805742"
+latitude : "50.730379"
+longitude : "3.805760"
 position_artwork: "0 0 0" #set how much it will hover above/beside marker/geolocation. Use "0 0 0" for 3 axes
 size_artwork: 1 # set size either relative to itself of to markers
 marker_id: 1 # provide a unique markerID
