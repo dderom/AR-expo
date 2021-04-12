@@ -3,7 +3,7 @@ title: "Rodin Eve"
 date: 2021-03-19 10:45:38 +01:00
 draft: false
 Organiser: #add the organiser if required
-artwork_refs: "rodin_eve" #add all the artworks using their unique ID Name
+artwork_refs: "the_inn" #add all the artworks using their unique ID Name
 type: #choose from geolocation, marker, custom_marker, picture
 exhibition_year: #give a year the exhibition was published/open, can be different of creation date of this item
 exhibitions: "rodin" #provide the title as a custom category so it creates a page for the exhibition
