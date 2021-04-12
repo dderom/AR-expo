@@ -11,7 +11,7 @@
     {{ range .Site.RegularPages.Related . }}
         <a-entity gps-entity-place="latitude: {{ $latitude }}; longitude: {{ $longitude }};" position="{{ $position }}" scale="{{ $size }}" gltf-model="/expo-dko/public/artworks/{{ .Params.model }}">
         </a-entity>
-        {{ .Params.credits }}
+        <div style="visibility: hidden;">{{ .Params.credits }}</div>
     {{ end}}
   {{ end }}
 
