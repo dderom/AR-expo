@@ -1,50 +1,23 @@
-
-
-
-  <!DOCTYPE html>
-
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>GeoAR.js demo</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
 
+</head>
 
-      <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-      <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
-      <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
-  </head>
+<body style='margin: 0; overflow: hidden;'>
+    <a-scene
+        vr-mode-ui="enabled: false"
+        embedded
+        arjs='sourceType: webcam; debugUIEnabled: false;'>
 
-  <body style="margin: 0; overflow: hidden;">
-  <a-scene vr-mode-ui="enabled: false" embedded arjs="sourceType: webcam; debugUIEnabled: false;">
-
-  
-
-  
-    
-    
-    
-    
-    
-        <a-entity gps-entity-place="latitude: 50.730287; longitude: 3.805930;" position="0 0 0" scale="0.1" gltf-model="/expo-dko/public/artworks/rodin_large_clenched_hand/scene.gltf">
-        </a-entity>
-        <div style="visibility: hidden;">Rodin: Large Clenched Hand (https://skfb.ly/6WPGF) by Fitzwilliam Museum is licensed under Creative Commons Attribution-NonCommercial (http://creativecommons.org/licenses/by-nc/4.0/).</div>
-    
-  
-    
-    
-    
-    
-    
-        <a-entity gps-entity-place="latitude: 50.730379; longitude: 3.805760;" position="0 0 0" scale="0.1" gltf-model="/expo-dko/public/artworks/la_valse/scene.gltf">
-        </a-entity>
-        <div style="visibility: hidden;">La valse (https://skfb.ly/SZsp) by Alienor.org, Conseil des musées is licensed under CC Attribution-NonCommercial-NoDerivs (http://creativecommons.org/licenses/by-nc-nd/4.0/).</div>
-    
-  
-
-    <a-camera gps-camera rotation-reader> </a-camera>
-  </a-scene>
+        <a-box scale="15 15 15" look-at="[gps-camera]" position="0 0 0" gps-entity-place="latitude: 50.730689; longitude: 3.805562;"></a-box>
+        <a-camera gps-camera rotation-reader>
+        </a-camera>
+    </a-scene>
 </body>
-
-</html>
-
-
