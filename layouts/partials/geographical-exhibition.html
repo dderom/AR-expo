@@ -9,15 +9,12 @@
     {{ $size := .Params.size_artwork }}
     {{ $position := .Params.position_artwork }}
     {{ range .Site.RegularPages.Related . }} # Start fetching for each page the artwork
-        <a-entity gps-entity-place="latitude: {{ $latitude }}; longitude: {{ $longitude }};"
-          position="{{ $position }}"
-          scale="{{ $size }}"
-          gltf-model="/expo-dko/public/artworks/{{ .Params.model }}">
+        <a-entity gps-entity-place="latitude: {{ $latitude }}; longitude: {{ $longitude }};" position="{{ $position }}" scale="{{ $size }}" gltf-model="/expo-dko/public/artworks/{{ .Params.model }}">
         </a-entity>
         {{ .Params.credits }}
     {{ end}}
   {{ end }}
-    
+
     <a-camera gps-camera rotation-reader> </a-camera>
   </a-scene>
 </body>
