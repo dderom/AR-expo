@@ -4,3 +4,7 @@
 {{ if eq .Params.exhibition_types "barcode" }}
   {{ partial "barcode-exhibition.html" . }}
 {{end}}
+
+{{ if eq .Params.exhibition_types "geolocation" }}
+  {{ partial "geographical-exhibition.html" . }}
+{{end}}

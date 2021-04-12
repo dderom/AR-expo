@@ -1,0 +1,28 @@
+<body style="margin: 0; overflow: hidden;">
+  <a-scene
+    vr-mode-ui="enabled: false"
+    embedded
+    arjs="sourceType: webcam; debugUIEnabled: false;"
+  >
+
+  {{ $exhibition_type := .Params.exhibition_types}} # get the values of the exhibition items first
+
+  {{ range .RegularPages }} # get the pages from the exhibition category
+    {{ $latitude := .Params.latitude }}
+    {{ $longitude := .Params.longitude }}
+    {{ $size := .Params.size_artwork }}
+    {{ $position := .Params.position_artwork }}
+    {{ range .Site.RegularPages.Related . }} # Start fetching for each page the artwork
+        <a-entity gps-entity-place="latitude: {{ $latitude }}; longitude: {{ $longitude }};"
+          position="{{ $position }}"
+          scale="{{ $size }}"
+          gltf-model="/expo-dko/public/artworks/{{ .Params.model }}">
+        </a-entity>
+        {{ .Params.credits }}
+    {{ end}}
+  {{ end }}
+    <a-camera gps-camera look-controls-enabled='false' arjs-look-controls='smoothingFactor: 0.1' rotation-reader> </a-camera> #reducing shaking effect based on https://ar-js-org.github.io/AR.js-Docs/location-based/
+  </a-scene>
+</body>
+
+</html>

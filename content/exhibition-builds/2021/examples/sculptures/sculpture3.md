@@ -1,17 +1,17 @@
 ---
-title: "Rodin Eve"
+title: "Rodin Hand"
 date: 2021-03-19 10:45:38 +01:00
 draft: false
 Organiser: #add the organiser if required
-artwork_refs: "rodin_eve" #add all the artworks using their unique ID Name
+artwork_refs: "rodin_hand" #add all the artworks using their unique ID Name
 type: #choose from geolocation, marker, custom_marker, picture
 exhibition_year: #give a year the exhibition was published/open, can be different of creation date of this item
 exhibitions: "rodin" #provide the title as a custom category so it creates a page for the exhibition
 
 
 
-latitude : "50.7304208"
-longitude : "3.8056878"
+latitude : "50.730332"
+longitude : "3.805841"
 position_artwork: "0 0 0" #set how much it will hover above/beside marker/geolocation. Use "0 0 0" for 3 axes
 size_artwork: 1 # set size either relative to itself of to markers
 marker_id: 1 # provide a unique markerID

@@ -6,43 +6,7 @@
     <description>Recent content on DKO en AR - we finally meet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 08 Apr 2021 12:26:17 +0200</lastBuildDate><atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Wlerick enfant</title>
-      <link>https://example.org/artworks/wlerick_enfant/</link>
-      <pubDate>Thu, 08 Apr 2021 12:26:17 +0200</pubDate>
-      
-      <guid>https://example.org/artworks/wlerick_enfant/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Rodin valse</title>
-      <link>https://example.org/artworks/rodin_valse/</link>
-      <pubDate>Thu, 08 Apr 2021 12:25:44 +0200</pubDate>
-      
-      <guid>https://example.org/artworks/rodin_valse/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Rodin_hand</title>
-      <link>https://example.org/artworks/rodin_hand/</link>
-      <pubDate>Thu, 08 Apr 2021 12:25:09 +0200</pubDate>
-      
-      <guid>https://example.org/artworks/rodin_hand/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Rodin eve</title>
-      <link>https://example.org/artworks/rodin_eve/</link>
-      <pubDate>Thu, 08 Apr 2021 12:24:56 +0200</pubDate>
-      
-      <guid>https://example.org/artworks/rodin_eve/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Fri, 19 Mar 2021 10:48:38 +0100</lastBuildDate><atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Painting 9</title>
       <link>https://example.org/exhibition-builds/2021/examples/paintings2/painting9/</link>
@@ -215,7 +179,16 @@
     </item>
     
     <item>
-      <title>Painting extra</title>
+      <title>portrait woman</title>
+      <link>https://example.org/artworks/portrait_woman/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>https://example.org/artworks/portrait_woman/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rodin Eve</title>
       <link>https://example.org/exhibition-builds/2021/examples/sculptures/sculpture1/</link>
       <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
       
@@ -224,11 +197,47 @@
     </item>
     
     <item>
-      <title>portrait woman</title>
-      <link>https://example.org/artworks/portrait_woman/</link>
+      <title>Rodin eve</title>
+      <link>https://example.org/artworks/rodin_eve/</link>
       <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
       
-      <guid>https://example.org/artworks/portrait_woman/</guid>
+      <guid>https://example.org/artworks/rodin_eve/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rodin Hand</title>
+      <link>https://example.org/artworks/rodin_hand/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>https://example.org/artworks/rodin_hand/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rodin Hand</title>
+      <link>https://example.org/exhibition-builds/2021/examples/sculptures/sculpture3/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>https://example.org/exhibition-builds/2021/examples/sculptures/sculpture3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rodin Valse</title>
+      <link>https://example.org/artworks/rodin_valse/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>https://example.org/artworks/rodin_valse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rodin Valse</title>
+      <link>https://example.org/exhibition-builds/2021/examples/sculptures/sculpture2/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>https://example.org/exhibition-builds/2021/examples/sculptures/sculpture2/</guid>
       <description></description>
     </item>
     
@@ -247,6 +256,24 @@
       <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
       
       <guid>https://example.org/artworks/the_inn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wlerick enfant</title>
+      <link>https://example.org/artworks/wlerick_enfant/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>https://example.org/artworks/wlerick_enfant/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wlerick enfant</title>
+      <link>https://example.org/exhibition-builds/2021/examples/sculptures/sculpture4/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>https://example.org/exhibition-builds/2021/examples/sculptures/sculpture4/</guid>
       <description></description>
     </item>
     
