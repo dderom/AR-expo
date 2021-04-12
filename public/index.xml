@@ -188,15 +188,6 @@
     </item>
     
     <item>
-      <title>Rodin Eve</title>
-      <link>https://example.org/exhibition-builds/2021/examples/sculptures/sculpture1/</link>
-      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
-      
-      <guid>https://example.org/exhibition-builds/2021/examples/sculptures/sculpture1/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Rodin eve</title>
       <link>https://example.org/artworks/rodin_eve/</link>
       <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
@@ -215,11 +206,29 @@
     </item>
     
     <item>
+      <title>Rodin Hand</title>
+      <link>https://example.org/exhibition-builds/2021/examples/sculptures/sculpture3/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>https://example.org/exhibition-builds/2021/examples/sculptures/sculpture3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Rodin Valse</title>
       <link>https://example.org/artworks/rodin_valse/</link>
       <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
       
       <guid>https://example.org/artworks/rodin_valse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rodin Valse</title>
+      <link>https://example.org/exhibition-builds/2021/examples/sculptures/sculpture2/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>https://example.org/exhibition-builds/2021/examples/sculptures/sculpture2/</guid>
       <description></description>
     </item>
     
