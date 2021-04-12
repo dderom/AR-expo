@@ -1,10 +1,9 @@
-{{ partial "head_ar.html" }}
-
-
 {{ if eq .Params.exhibition_types "barcode" }}
+  {{ partial "head_ar_barcode.html" }}
   {{ partial "barcode-exhibition.html" . }}
 {{end}}
 
 {{ if eq .Params.exhibition_types "geolocation" }}
+  {{ partial "head_ar_geolocation.html" }}
   {{ partial "geographical-exhibition.html" . }}
 {{end}}
