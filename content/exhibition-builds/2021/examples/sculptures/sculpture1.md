@@ -7,13 +7,11 @@ artwork_refs: "rodin_eve" #add all the artworks using their unique ID Name
 type: #choose from geolocation, marker, custom_marker, picture
 exhibition_year: #give a year the exhibition was published/open, can be different of creation date of this item
 exhibitions: "rodin" #provide the title as a custom category so it creates a page for the exhibition
-position_artwork: "0 0 0" #set how much it will hover above/beside marker/geolocation. Use "0 0 0" for 3 axes
-size_artwork: 1 # set size either relative to itself of to markers
 
 
 latitude : "50.730862"
 longitude : "3.806083"
-position_artwork: "0 -5 0" #set how much it will hover above/beside marker/geolocation. Use "0 0 0" for 3 axes
+position_artwork: "0 0 0" #set how much it will hover above/beside marker/geolocation. Use "0 0 0" for 3 axes
 size_artwork: "0.01 0.01 0.01" # set size either relative to itself of to markers
 marker_id: 0 # provide a unique markerID
 
