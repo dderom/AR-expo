@@ -13,8 +13,8 @@ size_artwork: 1 # set size either relative to itself of to markers
 
 latitude : "50.730862"
 longitude : "3.806083"
-position_artwork: "0 0 0" #set how much it will hover above/beside marker/geolocation. Use "0 0 0" for 3 axes
-size_artwork: "0.1 0.1 0.1" # set size either relative to itself of to markers
+position_artwork: "0 -5 0" #set how much it will hover above/beside marker/geolocation. Use "0 0 0" for 3 axes
+size_artwork: "0.01 0.01 0.01" # set size either relative to itself of to markers
 marker_id: 0 # provide a unique markerID
 
 weight: #choose, if required, a weight for the exhibition_item, only integers
