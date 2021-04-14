@@ -1,45 +1,90 @@
 <!DOCTYPE html>
 
 <html>
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-    <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
-    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
-</head>
+
+      <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+      <meta charset="utf-8">
 
 
-<body style='margin: 0; overflow: hidden;'>
-    <a-scene
-        vr-mode-ui="enabled: false"
-		embedded
-		arjs='sourceType: webcam; debugUIEnabled: true;'>
+    </head>
 
-        <a-box scale="15 15 15" position="0 200 0" gps-entity-place="latitude: 50.730565; longitude: 3.806187;"></a-box>
+    <body>
 
-        <a-sphere
-            gps-entity-place='latitude: 50.730443; longitude: 3.805774;'
-            radius="1.25" color="#EF2D5E"></a-sphere>
-
-       <a-box scale="15 15 15" position="0 200 0" gps-entity-place="latitude: 50.719340; longitude: 3.831773;"></a-box>
-
-      <a-sphere
-                  gps-entity-place='latitude: 50.719184; longitude: 3.831687;'
-                  radius="1.25" color="#EF2D5E"></a-sphere>
-
-    <a-box scale="15 15 15" position="0 200 0" gps-entity-place="latitude: 50.728158; longitude: 3.821446;"></a-box>
-
-  <a-sphere
-                             gps-entity-place='latitude: 50.727875; longitude: 3.822116;'
-                             radius="1.25" color="#EF2D5E"></a-sphere>
+    <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
 
 
-        <a-camera gps-camera rotation-reader>
-		</a-camera>
-	</a-scene>
-</body>
+
+
+
+
+
+
+
+
+
+                  <a-marker type="barcode" value="0">
+                    <a-box scale="15 15 15" position="0 0 0" gps-entity-place="latitude: 50.730565; longitude: 3.806187;"></a-box>
+                    <div style="visibility: hidden;">Rodin - Eve (https://skfb.ly/mlji3gcba) by PANOLUMA is licensed under CC Attribution-NonCommercial-NoDerivs (http://creativecommons.org/licenses/by-nc-nd/4.0/).</div>
+                  </a-marker>
+
+
+
+
+
+
+
+
+
+
+
+                  <a-marker type="barcode" value="3">
+                    <a-box scale="15 15 15" position="0 0 0" gps-entity-place="latitude: 50.730565; longitude: 3.806187;"></a-box>
+                    <div style="visibility: hidden;">Rodin: Large Clenched Hand (https://skfb.ly/6WPGF) by Fitzwilliam Museum is licensed under Creative Commons Attribution-NonCommercial (http://creativecommons.org/licenses/by-nc/4.0/).</div>
+                  </a-marker>
+
+
+
+
+
+
+
+
+
+
+
+                  <a-marker type="barcode" value="1">
+                    <a-box scale="15 15 15" position="0 0 0" gps-entity-place="latitude: 50.730565; longitude: 3.806187;"></a-box>
+                    <div style="visibility: hidden;">La valse (https://skfb.ly/SZsp) by Alienor.org, Conseil des musées is licensed under CC Attribution-NonCommercial-NoDerivs (http://creativecommons.org/licenses/by-nc-nd/4.0/).</div>
+                  </a-marker>
+
+
+
+
+
+
+
+
+
+
+
+                  <a-marker type="barcode" value="4">
+                    <a-box scale="15 15 15" position="0 0 0" gps-entity-place="latitude: 50.730565; longitude: 3.806187;"></a-box>
+                    <div style="visibility: hidden;">L&#39;enfant aux sabots par Robert Wlérick (https://skfb.ly/6SQNK) by Alienor.org, Conseil des musées is licensed under CC Attribution-NonCommercial-NoDerivs (http://creativecommons.org/licenses/by-nc-nd/4.0/).</div>
+                  </a-marker>
+
+
+
+
+
+
+
+    <a-entity camera></a-entity>
+  </a-scene>
+  </body>
 
 </html>
