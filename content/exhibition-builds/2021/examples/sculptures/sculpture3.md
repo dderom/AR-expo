@@ -9,14 +9,13 @@ exhibition_year: #give a year the exhibition was published/open, can be differen
 exhibitions: "rodin" #provide the title as a custom category so it creates a page for the exhibition
 position_artwork: "0 0 0" #set how much it will hover above/beside marker/geolocation. Use "0 0 0" for 3 axes
 size_artwork: 1 # set size either relative to itself of to markers
-marker_id: 2 # provide a unique markerID
 
 
 latitude : "50.730441"
 longitude : "3.805694"
 position_artwork: "0 0 0" #set how much it will hover above/beside marker/geolocation. Use "0 0 0" for 3 axes
 size_artwork: "0.1 0.1 0.1" # set size either relative to itself of to markers
-marker_id: 1 # provide a unique markerID
+marker_id: 3 # provide a unique markerID
 
 weight: #choose, if required, a weight for the exhibition_item, only integers
 date_creation: #choose date when work of art was created (can be just the year if needed)
