@@ -3,7 +3,6 @@
     <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: {{ .Params.marker_type_sets}};">
         <!-- Get some data before your process -->
         {{ $exhibition_type := .Params.exhibition_types}}
-        {{ .Title }}
         {{ range .RegularPages }}
             <!--  Get all the data from the exhibition item ref -->
             {{ $position := .Params.position_artwork }}
