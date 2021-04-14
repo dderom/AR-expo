@@ -16,7 +16,6 @@
                   <a-marker type="{{$exhibition_type}}" value="{{$marker_id}}" smooth="true" smoothCount="20">
                     <a-entity position="{{ $position }}" scale="{{ $size }}" gltf-model="/expo-dko/public/artworks/{{ .Params.model }}">
                     </a-entity>
-                    <div style="visibility: hidden;">{{ .Params.credits }}</div>
                   </a-marker>
 
             {{ end }}
