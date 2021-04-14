@@ -12,7 +12,7 @@
 
             <!-- Now start fetching related content -->
             {{ range .Site.RegularPages.Related . }}
-                  <a-marker type="{{$exhibition_type}}" value="{{$marker_id}}" smooth="true" smoothCount="10">
+                  <a-marker type="{{$exhibition_type}}" value="{{$marker_id}}" smooth="true" smoothCount="20">
                     <a-entity position="{{ $position }}" scale="{{ $size }}" gltf-model="/expo-dko/public/artworks/{{ .Params.model }}">
                     </a-entity>
                     <div style="visibility: hidden;">{{ .Params.credits }}</div>
