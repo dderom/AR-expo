@@ -12,7 +12,7 @@ exhibitions: "rodin" #provide the title as a custom category so it creates a pag
 latitude : "50.730494"
 longitude : "3.805935"
 position_artwork: "0 0 0" #set how much it will hover above/beside marker/geolocation. Use "0 0 0" for 3 axes
-size_artwork: "0.02 0.02 0.02" # set size either relative to itself of to markers
+size_artwork: "0.005 0.005 0.005" # set size either relative to itself of to markers
 marker_id: 4 # provide a unique markerID
 
 weight: #choose, if required, a weight for the exhibition_item, only integers
