@@ -1,7 +1,7 @@
   <body>
 
 
-    <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: {{ .Params.marker_type_sets}};">
+    <a-scene device-orientation-permission-ui="enabled: false" loading-screen="enabled: false;" embedded arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: {{ .Params.marker_type_sets}};">
         <!-- Get some data before your process -->
         {{ $exhibition_type := .Params.exhibition_types}}
         {{ range .RegularPages }}
