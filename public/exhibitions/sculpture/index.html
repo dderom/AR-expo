@@ -15,24 +15,22 @@
 
     <body>
 
-    <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;" background="color: red; opacity: 0.25;">
-
+    <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
+<a-sky color="green" opacity="0.45"></a-sky>
 
 
 <a-marker preset="hiro">
-<a-box position='0 0 0' rotation="90 0 0" radius-bottom="0.5" material='opacity: 0.75; color: red;'></a-box>
+  <a-box position='0 0.5 0' rotation="90 0 0" radius-bottom="0.5" material='opacity: 0.75; color: red;'></a-box>
 </a-marker>
 
 <a-marker preset="kanji">
-<a-plane position='0 0 0' material='opacity: 0.75; color: blue;' rotation="-90 0 0"></a-plane>
-
+  <a-plane position='0 0.5 0' material='opacity: 0.75; color: blue;' rotation="-90 0 0"></a-plane>
 </a-marker>
 
 
-                  <a-marker type="barcode" value="4">
-                    <a-circle color="#CCC" radius="20"></a-circle>
-
-                  </a-marker>
+<a-marker type="barcode" value="4">
+  <a-circle color="#CCC" radius="20"></a-circle>
+</a-marker>
 
 
 
