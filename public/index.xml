@@ -242,42 +242,6 @@
     </item>
     
     <item>
-      <title>Rodin Valse</title>
-      <link>https://example.org/exhibition-builds/2021/examples/sculptures/sculpture2/</link>
-      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
-      
-      <guid>https://example.org/exhibition-builds/2021/examples/sculptures/sculpture2/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Rodin Valse</title>
-      <link>https://example.org/exhibition-builds/2021/examples/sculptures/sculpture5/</link>
-      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
-      
-      <guid>https://example.org/exhibition-builds/2021/examples/sculptures/sculpture5/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Rodin Valse</title>
-      <link>https://example.org/exhibition-builds/2021/examples/sculptures/sculpture6/</link>
-      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
-      
-      <guid>https://example.org/exhibition-builds/2021/examples/sculptures/sculpture6/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Rodin Valse</title>
-      <link>https://example.org/exhibition-builds/2021/examples/sculptures/sculpture7/</link>
-      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
-      
-      <guid>https://example.org/exhibition-builds/2021/examples/sculptures/sculpture7/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Rustic halt</title>
       <link>https://example.org/artworks/rustic_halt/</link>
       <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
@@ -301,6 +265,33 @@
       <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
       
       <guid>https://example.org/artworks/wlerick_enfant/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wlerick enfant</title>
+      <link>https://example.org/artworks/wlerick_enfant2/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>https://example.org/artworks/wlerick_enfant2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wlerick enfant</title>
+      <link>https://example.org/exhibition-builds/2021/examples/sculptures/sculpture4/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>https://example.org/exhibition-builds/2021/examples/sculptures/sculpture4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wlerick enfant</title>
+      <link>https://example.org/exhibition-builds/2021/examples/sculptures/sculpture8/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>https://example.org/exhibition-builds/2021/examples/sculptures/sculpture8/</guid>
       <description></description>
     </item>
     
