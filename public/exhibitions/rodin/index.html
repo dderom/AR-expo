@@ -14,6 +14,7 @@
     <script>
       sceneEl.addEventListener("markerFound", (e) => {
         isMarkerVisible = true;
+        sceneEl.addEventListener("twofingermove", handleScale);
         handleScale(event) {
           if (isMarkerVisible) {
             this.scaleFactor *=
@@ -30,7 +31,7 @@
           }
         }
       });
- 
+
       sceneEl.addEventListener("markerLost", (e) => {
         isMarkerVisible = false;
       });
