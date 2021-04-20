@@ -10,85 +10,125 @@
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js">  </script>
 
 
+
+    <script>
+      sceneEl.addEventListener("markerFound", (e) => {
+        isMarkerVisible = true;
+        handleScale(event) {
+          if (isMarkerVisible) {
+            this.scaleFactor *=
+              1 + event.detail.spreadChange / event.detail.startSpread;
+
+            this.scaleFactor = Math.min(
+              Math.max(this.scaleFactor, this.data.minScale),
+              this.data.maxScale
+            );
+
+            el.object3D.scale.x = scaleFactor * initialScale.x;
+            el.object3D.scale.y = scaleFactor * initialScale.y;
+            el.object3D.scale.z = scaleFactor * initialScale.z;
+          }
+        }
+      });
+ 
+      sceneEl.addEventListener("markerLost", (e) => {
+        isMarkerVisible = false;
+      });
+    </script>
     </head>
 
     <body>
 
 
-    <a-scene device-orientation-permission-ui="enabled: false" loading-screen="enabled: false;" embedded arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
-        
-        
-        
-            
-            
-            
-            
-            
+    <a-scene
+        device-orientation-permission-ui="enabled: false"
+        loading-screen="enabled: false;"
+        embedded arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;"
+        gesture-detector
+        id="scene"
+    >
 
-            
-            
-                  <a-marker type="barcode" value="5" smooth="true" smoothCount="20">
-                    <a-entity position="0 0 0" scale="0.005 0.005 0.005" gltf-model="/expo-dko/public/artworks/lenfant_aux_sabots_par_robert_wlerick/scene4.gltf">
+
+
+
+
+
+
+
+
+
+
+                  <a-marker
+                    type="barcode"
+                    value="5"
+                    smooth="true"
+                    smoothCount="20"
+                    raycaster="objects: .clickable"
+                    emitevents="true"
+                    cursor="fuse: false; rayOrigin: mouse;">
+
+                    <a-entity
+                      position="0 0 0"
+                      scale="0.005 0.005 0.005"
+                      gltf-model="/expo-dko/public/artworks/lenfant_aux_sabots_par_robert_wlerick/scene4.gltf"
+                      class="clickable"
+                      gesture-handler="minScale: 0.25; maxScale: 5">
                     </a-entity>
                   </a-marker>
 
-            
-        
-            
-            
-            
-            
-            
 
-            
-            
+
+
+
+
+
+
+
+
+
                   <a-marker type="barcode" value="0" smooth="true" smoothCount="20">
                     <a-entity position="0 0.5 0" scale="0.005 0.005 0.005" gltf-model="/expo-dko/public/artworks/lenfant_aux_sabots_par_robert_wlerick/scene.gltf">
                     </a-entity>
                   </a-marker>
 
-            
-        
-            
-            
-            
-            
-            
 
-            
-            
+
+
+
+
+
+
+
+
+
                   <a-marker type="barcode" value="1" smooth="true" smoothCount="20">
                     <a-entity position="0 0.5 0" scale="0.005 0.005 0.005" gltf-model="/expo-dko/public/artworks/lenfant_aux_sabots_par_robert_wlerick/scene2.gltf">
                     </a-entity>
                   </a-marker>
 
-            
-        
-            
-            
-            
-            
-            
 
-            
-            
+
+
+
+
+
+
+
+
+
                   <a-marker type="barcode" value="3" smooth="true" smoothCount="20">
                     <a-entity position="0 0.5 0" scale="0.005 0.005 0.005" gltf-model="/expo-dko/public/artworks/lenfant_aux_sabots_par_robert_wlerick/scene3.gltf">
                     </a-entity>
                   </a-marker>
 
-            
-        
 
 
 
-    
+
+
+
     <a-entity camera></a-entity>
   </a-scene>
   </body>
 
 </html>
-
-
-
-
