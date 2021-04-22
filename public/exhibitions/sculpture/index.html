@@ -1,127 +1,159 @@
-
-  <!DOCTYPE html>
+<!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
-    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js">  </script>
-    <script>
-      window.onload = function () {
-        document
-          .querySelector(".say-hi-button")
-          .addEventListener("click", function () {
-            // here you can change also a-scene or a-entity properties, like
-            // changing your 3D model source, size, position and so on
-            // or you can just open links, trigger actions...
-            alert("Hi there!");
-          });
-      };
-    </script>
-    <style>
-      .buttons {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 5em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 10;
-      }
+<head>
 
-      .say-hi-button {
-        padding: 0.25em;
-        border-radius: 4px;
-        border: none;
-        background: green;
-        color: black;
-        width: 4em;
-        height: 2em;
-      }
-    </style>
+<script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script>
+<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
 
-    </head>
+<!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <body>
 
-      <div class="buttons">
-        <button class="say-hi-button">SAY HI!</button>
+<script>
+AFRAME.registerComponent('markerhandler', {
+    init: function () {
+      const marker = this.el;
+      marker.addEventListener("markerFound", ()=> {
+        var markerId = marker.id;
+        var markerDIV = 'menu-' + markerId;
+        var visibelvar = document.getElementById(markerDIV).style.visibility = "visible";
+        console.log('Marker Found: ', markerId);
+        console.log('Menu Visible: ', markerDIV);
+        console.log("visibility: ", visibelvar);
+      });
+      marker.addEventListener("markerLost",() =>{
+        var markerId = marker.id;
+        var markerDIV = 'menu-' + markerId;
+        var visibelvar = document.getElementById(markerDIV).style.visibility = "hidden";
+        console.log('Marker Lost: ', markerId);
+        console.log('Menu Hidden: ', markerDIV);
+        console.log("visibility: ", visibelvar);
+      });
+    },
+  });
+</script>
+
+<style>
+  .menu {
+    position: absolute;
+     bottom: 0;
+     left: 0;
+     width: 10%;
+     height: 5em;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     z-index: 1;
+     visibility: hidden;
+  }
+
+  .btn {
+    margin-bottom: 2px;
+  }
+
+</style>
+
+
+</head>
+
+
+<body style="margin : 0px; overflow: hidden;">
+
+  <div id="menu-5" class="menu container context">
+      <div class="row">
+          <div class="col">
+              <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal" style="background: url(http://simpleicon.com/wp-content/uploads/video.png)">
+                  Video
+              </button>
+              <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal2" style="background: url(myimage.png)">
+                  Marker 1/2
+              </button>
+          </div>
       </div>
+  </div>
 
-    <a-scene device-orientation-permission-ui="enabled: false" loading-screen="enabled: false;" embedded arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
-
-
-
-
-
-
-
-
-
-
-
-                  <a-marker type="barcode" value="5" smooth="true" smoothCount="20">
-                    <a-entity position="0 0 0" scale="0.005 0.005 0.005" gltf-model="/expo-dko/public/artworks/lenfant_aux_sabots_par_robert_wlerick/scene4.gltf">
-                    </a-entity>
-                  </a-marker>
+  <div id="menu-2" class="menu container context">
+      <div class="row">
+          <div class="col">
+              <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">
+                  Marker 2
+              </button>
+          </div>
+      </div>
+  </div>
 
 
+  <!-- Modal 1-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title 1</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <!-- Modal 2-->
+  <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title 2</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <!-- Div based on marker -->
+  <div class="menu" id="menu-5">Hoezee 5</div>
+  <div class="menu" id="menu-2">Hoezee 2</div>
 
+  <!-- Content Artworks -->
+  <a-scene
+    vr-mode-ui="enabled: false;"
+    renderer="logarithmicDepthBuffer: true;"
+    embedded
+    arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
 
-
-
-
-
-
-                  <a-marker type="barcode" value="0" smooth="true" smoothCount="20">
-                    <a-entity position="0 0.5 0" scale="0.005 0.005 0.005" gltf-model="/expo-dko/public/artworks/lenfant_aux_sabots_par_robert_wlerick/scene.gltf">
-                    </a-entity>
-                  </a-marker>
-
-
-
-
-
-
-
-
-
-
-
-                  <a-marker type="barcode" value="1" smooth="true" smoothCount="20">
-                    <a-entity position="0 0.5 0" scale="0.005 0.005 0.005" gltf-model="/expo-dko/public/artworks/lenfant_aux_sabots_par_robert_wlerick/scene2.gltf">
-                    </a-entity>
-                  </a-marker>
-
-
-
-
-
-
-
-
-
-
-
-                  <a-marker type="barcode" value="3" smooth="true" smoothCount="20">
-                    <a-entity position="0 0.5 0" scale="0.005 0.005 0.005" gltf-model="/expo-dko/public/artworks/lenfant_aux_sabots_par_robert_wlerick/scene3.gltf">
-                    </a-entity>
-                  </a-marker>
-
-
-
-
-
-
+    <a-marker markerhandler type='barcode' value='5' id='5'>
+        <a-box position='0 0.5 0' color="yellow"></a-box>
+    </a-marker>
+    <a-marker markerhandler type='barcode' value='2' id='2'>
+        <a-box position='0 0.5 0' color="red"></a-box>
+    </a-marker>
 
     <a-entity camera></a-entity>
   </a-scene>
-  </body>
+
+  <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+
+</body>
 
 </html>

@@ -8,54 +8,35 @@
     <title></title>
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js">  </script>
-
-
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
 
     <script>
-      sceneEl.addEventListener("markerFound", (e) => {
-        isMarkerVisible = true;
+      AFRAME.registerComponent('markerhandler', {
+        init: function () {
+          this.el.sceneEl.addEventListener('markerFound', () => {
+            // redirect to custom URL
+            window.location = 'https://github.com/AR-js-org/AR.js';
+          });
       });
-
-      sceneEl.addEventListener("markerLost", (e) => {
-        isMarkerVisible = false;
-      });
+      },
     </script>
-    
-    <script>
-      sceneEl.addEventListener("twofingermove", handleScale);
-      handleScale(event) {
-        if (isMarkerVisible) {
-          this.scaleFactor *=
-            1 + event.detail.spreadChange / event.detail.startSpread;
-
-          this.scaleFactor = Math.min(
-            Math.max(this.scaleFactor, this.data.minScale),
-            this.data.maxScale
-          );
-
-          el.object3D.scale.x = scaleFactor * initialScale.x;
-          el.object3D.scale.y = scaleFactor * initialScale.y;
-          el.object3D.scale.z = scaleFactor * initialScale.z;
-        }
-      }
-      </script>
     </head>
 
     <body>
 
-
+    <div id="menu" class="buttons">
+      <button class="say-hi-button">SAY HI!</button>
+      <div id="menu">Hoera</div>
+    </div>
     <a-scene
-        device-orientation-permission-ui="enabled: false"
-        loading-screen="enabled: false;"
-        embedded arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;"
-        gesture-detector
-        id="scene"
-    >
+        device-orientation-permission-ui="enabled: false" loading-screen="enabled: true;" embedded arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
 
 
 
 
-
+        <a-marker markerhandler type='barcode' value='5'>
+            <a-box position='0 0.5 0' color="yellow"></a-box>
+        </a-marker>
 
 
 
@@ -67,17 +48,15 @@
                     value="5"
                     smooth="true"
                     smoothCount="20"
-                    raycaster="objects: .clickable"
-                    emitevents="true"
-                    cursor="fuse: false; rayOrigin: mouse;">
+                    markerhandler
+                    >
 
-                    <a-entity
-                      position="0 0 0"
-                      scale="0.005 0.005 0.005"
-                      gltf-model="/expo-dko/public/artworks/lenfant_aux_sabots_par_robert_wlerick/scene4.gltf"
-                      class="clickable"
-                      gesture-handler="minScale: 0.25; maxScale: 5">
-                    </a-entity>
+                    <a-box
+                      position="0 0.5 0"
+                      color="red"
+                      >
+                      </a-box>
+
                   </a-marker>
 
 
