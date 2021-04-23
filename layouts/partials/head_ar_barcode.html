@@ -8,6 +8,10 @@
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js">  </script>
 
+    <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
     <script>
     AFRAME.registerComponent('markerhandler', {
         init: function () {
@@ -19,19 +23,20 @@
             var visibelvar = document.getElementById(markerArtistDIV).style.visibility = "visible";
             var visibelvar2 = document.getElementById(markerDescriptionDIV).style.visibility = "visible";
             console.log('Marker Found: ', markerId);
-            console.log('Menu Visible: ', markerArtistDIV);
-            console.log('Menu Visible: ', markerDescriptionDIV);
             console.log("visibility: ", visibelvar);
+            console.log("Description ID: ", markerDescriptionDIV)
+            console.log("Artist ID: ", markerArtistDIV)
           });
           marker.addEventListener("markerLost",() =>{
+            var markerId = marker.id;
             var markerArtistDIV = 'menu-artist-' + markerId;
             var markerDescriptionDIV = 'menu-description-' + markerId;
             var visibelvar = document.getElementById(markerArtistDIV).style.visibility = "hidden";
             var visibelvar2 = document.getElementById(markerDescriptionDIV).style.visibility = "hidden";
             console.log('Marker Found: ', markerId);
-            console.log('Menu Visible: ', markerArtistDIV);
-            console.log('Menu Visible: ', markerDescriptionDIV);
             console.log("visibility: ", visibelvar);
+            console.log("Description ID: ", markerDescriptionDIV)
+            console.log("Artist ID: ", markerArtistDIV)
           });
         },
       });
@@ -39,8 +44,6 @@
 
     <style>
       .menu {
-        position: absolute;
-         bottom: 0;
          left: 0;
          width: 10%;
          height: 5em;
@@ -49,6 +52,16 @@
          align-items: center;
          z-index: 1;
          visibility: hidden;
+      }
+
+      .menu-artist {
+        position: absolute;
+         top: 0;
+      }
+
+      .menu-description {
+        position: absolute;
+         bottom: 0;
       }
 
       .btn {

@@ -7,7 +7,7 @@
     {{ range .Site.RegularPages.Related . }}
           {{ $artist_work := .Params.artists }}
           <!-- First build the button for the description -->
-          <div id="menu-description-{{ $marker_id }}" class="menu container context">
+          <div id="menu-description-{{ $marker_id }}" class="menu-description menu container context">
               <div class="row">
                   <div class="col">
                       <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#context-description-{{$marker_id}}">
@@ -18,7 +18,7 @@
           </div>
 
           <!-- Now build the description panel -->
-          <div class="modal fade" id="#context-description-{{$marker_id}}" tabindex="-1" role="dialog" aria-labelledby="#context-description-{{$marker_id}}" aria-hidden="true">
+          <div class="modal fade" id="context-description-{{$marker_id}}" tabindex="-1" role="dialog" aria-labelledby="context-description-{{$marker_id}}" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
@@ -34,7 +34,7 @@
             </div>
           </div>
           <!-- First build the button for the artist -->
-          <div id="menu-artist-{{$marker_id}}" class="menu container context">
+          <div id="menu-artist-{{$marker_id}}" class="menu-artist menu container context">
               <div class="row">
                   <div class="col">
                       <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#context-artist-{{$marker_id}}">
@@ -45,7 +45,7 @@
           </div>
 
           <!-- Now build the artist panel -->
-          <div class="modal fade" id="#context-artist-{{$marker_id}}" tabindex="-1" role="dialog" aria-labelledby="#context-artist-{{$marker_id}}" aria-hidden="true">
+          <div class="modal fade" id="context-artist-{{$marker_id}}" tabindex="-1" role="dialog" aria-labelledby="context-artist-{{$marker_id}}" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">

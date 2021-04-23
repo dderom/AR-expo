@@ -10,6 +10,10 @@
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js">  </script>
 
+    
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
     <script>
     AFRAME.registerComponent('markerhandler', {
         init: function () {
@@ -21,19 +25,20 @@
             var visibelvar = document.getElementById(markerArtistDIV).style.visibility = "visible";
             var visibelvar2 = document.getElementById(markerDescriptionDIV).style.visibility = "visible";
             console.log('Marker Found: ', markerId);
-            console.log('Menu Visible: ', markerArtistDIV);
-            console.log('Menu Visible: ', markerDescriptionDIV);
             console.log("visibility: ", visibelvar);
+            console.log("Description ID: ", markerDescriptionDIV)
+            console.log("Artist ID: ", markerArtistDIV)
           });
           marker.addEventListener("markerLost",() =>{
+            var markerId = marker.id;
             var markerArtistDIV = 'menu-artist-' + markerId;
             var markerDescriptionDIV = 'menu-description-' + markerId;
             var visibelvar = document.getElementById(markerArtistDIV).style.visibility = "hidden";
             var visibelvar2 = document.getElementById(markerDescriptionDIV).style.visibility = "hidden";
             console.log('Marker Found: ', markerId);
-            console.log('Menu Visible: ', markerArtistDIV);
-            console.log('Menu Visible: ', markerDescriptionDIV);
             console.log("visibility: ", visibelvar);
+            console.log("Description ID: ", markerDescriptionDIV)
+            console.log("Artist ID: ", markerArtistDIV)
           });
         },
       });
@@ -41,8 +46,6 @@
 
     <style>
       .menu {
-        position: absolute;
-         bottom: 0;
          left: 0;
          width: 10%;
          height: 5em;
@@ -51,6 +54,16 @@
          align-items: center;
          z-index: 1;
          visibility: hidden;
+      }
+
+      .menu-artist {
+        position: absolute;
+         top: 0;
+      }
+
+      .menu-description {
+        position: absolute;
+         bottom: 0;
       }
 
       .btn {
@@ -78,7 +91,7 @@
 
             
             
-                  <a-marker type="barcode" value="3" smooth="true" smoothCount="20">
+                  <a-marker markerhandler type="barcode" value="3" smooth="true" smoothCount="20" id="3">
                     <a-entity position="0 0 0" scale="1" gltf-model="/expo-dko/public/artworks/portrait_of_a_woman/scene.gltf">
                     </a-entity>
                   </a-marker>
@@ -93,7 +106,7 @@
 
             
             
-                  <a-marker type="barcode" value="2" smooth="true" smoothCount="20">
+                  <a-marker markerhandler type="barcode" value="2" smooth="true" smoothCount="20" id="2">
                     <a-entity position="0 0 0" scale="1" gltf-model="/expo-dko/public/artworks/triptychbyjandewitte/scene.gltf">
                     </a-entity>
                   </a-marker>
@@ -108,7 +121,7 @@
 
             
             
-                  <a-marker type="barcode" value="1" smooth="true" smoothCount="20">
+                  <a-marker markerhandler type="barcode" value="1" smooth="true" smoothCount="20" id="1">
                     <a-entity position="0 0 0" scale="1" gltf-model="/expo-dko/public/artworks/peinture_portrait_edmon_picard_1884/scene.gltf">
                     </a-entity>
                   </a-marker>
@@ -123,7 +136,7 @@
 
             
             
-                  <a-marker type="barcode" value="4" smooth="true" smoothCount="20">
+                  <a-marker markerhandler type="barcode" value="4" smooth="true" smoothCount="20" id="4">
                     <a-entity position="0 0 0" scale="1" gltf-model="/expo-dko/public/artworks/rustic_halt/scene.gltf">
                     </a-entity>
                   </a-marker>
@@ -138,7 +151,7 @@
 
             
             
-                  <a-marker type="barcode" value="5" smooth="true" smoothCount="20">
+                  <a-marker markerhandler type="barcode" value="5" smooth="true" smoothCount="20" id="5">
                     <a-entity position="0 0 0" scale="1" gltf-model="/expo-dko/public/artworks/the_inn/scene.gltf">
                     </a-entity>
                   </a-marker>
@@ -162,7 +175,7 @@
     
           
           
-          <div id="menu-description-3" class="menu container context">
+          <div id="menu-description-3" class="menu-description menu container context">
               <div class="row">
                   <div class="col">
                       <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#context-description-3">
@@ -173,7 +186,7 @@
           </div>
 
           
-          <div class="modal fade" id="#context-description-3" tabindex="-1" role="dialog" aria-labelledby="#context-description-3" aria-hidden="true">
+          <div class="modal fade" id="context-description-3" tabindex="-1" role="dialog" aria-labelledby="context-description-3" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
@@ -184,13 +197,14 @@
                 </div>
                 <div class="modal-body">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut lacus quis purus pharetra rhoncus. Donec sodales nulla condimentum nulla ultrices, eu sodales augue hendrerit. Integer at placerat nisi. Phasellus pellentesque leo vitae urna vulputate, id iaculis mi rutrum. Proin id porta arcu, quis rhoncus tortor.
+
 Ut turpis turpis, elementum eu est ut, efficitur rutrum erat. Quisque arcu arcu, facilisis efficitur porttitor in, pulvinar at lectus. Etiam aliquam est sit amet libero laoreet feugiat. Duis porttitor diam a turpis porttitor, vel suscipit arcu tincidunt. Donec tincidunt, lorem ac imperdiet dapibus, dui augue aliquam metus, vitae viverra metus sem quis augue. Proin id hendrerit diam. Pellentesque consequat massa ante, sit amet tincidunt dui rutrum quis. 
                 </div>
               </div>
             </div>
           </div>
           
-          <div id="menu-artist-3" class="menu container context">
+          <div id="menu-artist-3" class="menu-artist menu container context">
               <div class="row">
                   <div class="col">
                       <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#context-artist-3">
@@ -201,7 +215,7 @@ Ut turpis turpis, elementum eu est ut, efficitur rutrum erat. Quisque arcu arcu,
           </div>
 
           
-          <div class="modal fade" id="#context-artist-3" tabindex="-1" role="dialog" aria-labelledby="#context-artist-3" aria-hidden="true">
+          <div class="modal fade" id="context-artist-3" tabindex="-1" role="dialog" aria-labelledby="context-artist-3" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
@@ -225,7 +239,7 @@ Ut turpis turpis, elementum eu est ut, efficitur rutrum erat. Quisque arcu arcu,
     
           
           
-          <div id="menu-description-2" class="menu container context">
+          <div id="menu-description-2" class="menu-description menu container context">
               <div class="row">
                   <div class="col">
                       <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#context-description-2">
@@ -236,7 +250,7 @@ Ut turpis turpis, elementum eu est ut, efficitur rutrum erat. Quisque arcu arcu,
           </div>
 
           
-          <div class="modal fade" id="#context-description-2" tabindex="-1" role="dialog" aria-labelledby="#context-description-2" aria-hidden="true">
+          <div class="modal fade" id="context-description-2" tabindex="-1" role="dialog" aria-labelledby="context-description-2" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
@@ -247,15 +261,18 @@ Ut turpis turpis, elementum eu est ut, efficitur rutrum erat. Quisque arcu arcu,
                 </div>
                 <div class="modal-body">
                   Eik, drielobbig.
+
 Wapenschilden op beide luiken bovenaan. Een opschrift op de oorspronkelijke lijsten : Etatis. XXX.anom / hoc opus pfectu a° m. iiijc. LXXiii. XXVII / die julii. etatis. XVI. anom.
+
 Afmetingen: 74,5 x 38,5 (rechterluik) ; 74,5 x 38,7 (middenpaneel) ; 74,5 x 38,5 (linkerluik)
+
 Herkomst: Gekocht van de galerij Robert Finck, Brussel, 1963
                 </div>
               </div>
             </div>
           </div>
           
-          <div id="menu-artist-2" class="menu container context">
+          <div id="menu-artist-2" class="menu-artist menu container context">
               <div class="row">
                   <div class="col">
                       <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#context-artist-2">
@@ -266,7 +283,7 @@ Herkomst: Gekocht van de galerij Robert Finck, Brussel, 1963
           </div>
 
           
-          <div class="modal fade" id="#context-artist-2" tabindex="-1" role="dialog" aria-labelledby="#context-artist-2" aria-hidden="true">
+          <div class="modal fade" id="context-artist-2" tabindex="-1" role="dialog" aria-labelledby="context-artist-2" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
@@ -290,7 +307,7 @@ Herkomst: Gekocht van de galerij Robert Finck, Brussel, 1963
     
           
           
-          <div id="menu-description-1" class="menu container context">
+          <div id="menu-description-1" class="menu-description menu container context">
               <div class="row">
                   <div class="col">
                       <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#context-description-1">
@@ -301,7 +318,7 @@ Herkomst: Gekocht van de galerij Robert Finck, Brussel, 1963
           </div>
 
           
-          <div class="modal fade" id="#context-description-1" tabindex="-1" role="dialog" aria-labelledby="#context-description-1" aria-hidden="true">
+          <div class="modal fade" id="context-description-1" tabindex="-1" role="dialog" aria-labelledby="context-description-1" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
@@ -312,13 +329,14 @@ Herkomst: Gekocht van de galerij Robert Finck, Brussel, 1963
                 </div>
                 <div class="modal-body">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut lacus quis purus pharetra rhoncus. Donec sodales nulla condimentum nulla ultrices, eu sodales augue hendrerit. Integer at placerat nisi. Phasellus pellentesque leo vitae urna vulputate, id iaculis mi rutrum. Proin id porta arcu, quis rhoncus tortor.
+
 Ut turpis turpis, elementum eu est ut, efficitur rutrum erat. Quisque arcu arcu, facilisis efficitur porttitor in, pulvinar at lectus. Etiam aliquam est sit amet libero laoreet feugiat. Duis porttitor diam a turpis porttitor, vel suscipit arcu tincidunt. Donec tincidunt, lorem ac imperdiet dapibus, dui augue aliquam metus, vitae viverra metus sem quis augue. Proin id hendrerit diam. Pellentesque consequat massa ante, sit amet tincidunt dui rutrum quis. 
                 </div>
               </div>
             </div>
           </div>
           
-          <div id="menu-artist-1" class="menu container context">
+          <div id="menu-artist-1" class="menu-artist menu container context">
               <div class="row">
                   <div class="col">
                       <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#context-artist-1">
@@ -329,7 +347,7 @@ Ut turpis turpis, elementum eu est ut, efficitur rutrum erat. Quisque arcu arcu,
           </div>
 
           
-          <div class="modal fade" id="#context-artist-1" tabindex="-1" role="dialog" aria-labelledby="#context-artist-1" aria-hidden="true">
+          <div class="modal fade" id="context-artist-1" tabindex="-1" role="dialog" aria-labelledby="context-artist-1" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
@@ -353,7 +371,7 @@ Ut turpis turpis, elementum eu est ut, efficitur rutrum erat. Quisque arcu arcu,
     
           
           
-          <div id="menu-description-4" class="menu container context">
+          <div id="menu-description-4" class="menu-description menu container context">
               <div class="row">
                   <div class="col">
                       <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#context-description-4">
@@ -364,7 +382,7 @@ Ut turpis turpis, elementum eu est ut, efficitur rutrum erat. Quisque arcu arcu,
           </div>
 
           
-          <div class="modal fade" id="#context-description-4" tabindex="-1" role="dialog" aria-labelledby="#context-description-4" aria-hidden="true">
+          <div class="modal fade" id="context-description-4" tabindex="-1" role="dialog" aria-labelledby="context-description-4" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
@@ -375,13 +393,14 @@ Ut turpis turpis, elementum eu est ut, efficitur rutrum erat. Quisque arcu arcu,
                 </div>
                 <div class="modal-body">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut lacus quis purus pharetra rhoncus. Donec sodales nulla condimentum nulla ultrices, eu sodales augue hendrerit. Integer at placerat nisi. Phasellus pellentesque leo vitae urna vulputate, id iaculis mi rutrum. Proin id porta arcu, quis rhoncus tortor.
+
 Ut turpis turpis, elementum eu est ut, efficitur rutrum erat. Quisque arcu arcu, facilisis efficitur porttitor in, pulvinar at lectus. Etiam aliquam est sit amet libero laoreet feugiat. Duis porttitor diam a turpis porttitor, vel suscipit arcu tincidunt. Donec tincidunt, lorem ac imperdiet dapibus, dui augue aliquam metus, vitae viverra metus sem quis augue. Proin id hendrerit diam. Pellentesque consequat massa ante, sit amet tincidunt dui rutrum quis. 
                 </div>
               </div>
             </div>
           </div>
           
-          <div id="menu-artist-4" class="menu container context">
+          <div id="menu-artist-4" class="menu-artist menu container context">
               <div class="row">
                   <div class="col">
                       <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#context-artist-4">
@@ -392,7 +411,7 @@ Ut turpis turpis, elementum eu est ut, efficitur rutrum erat. Quisque arcu arcu,
           </div>
 
           
-          <div class="modal fade" id="#context-artist-4" tabindex="-1" role="dialog" aria-labelledby="#context-artist-4" aria-hidden="true">
+          <div class="modal fade" id="context-artist-4" tabindex="-1" role="dialog" aria-labelledby="context-artist-4" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
@@ -416,7 +435,7 @@ Ut turpis turpis, elementum eu est ut, efficitur rutrum erat. Quisque arcu arcu,
     
           
           
-          <div id="menu-description-5" class="menu container context">
+          <div id="menu-description-5" class="menu-description menu container context">
               <div class="row">
                   <div class="col">
                       <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#context-description-5">
@@ -427,7 +446,7 @@ Ut turpis turpis, elementum eu est ut, efficitur rutrum erat. Quisque arcu arcu,
           </div>
 
           
-          <div class="modal fade" id="#context-description-5" tabindex="-1" role="dialog" aria-labelledby="#context-description-5" aria-hidden="true">
+          <div class="modal fade" id="context-description-5" tabindex="-1" role="dialog" aria-labelledby="context-description-5" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
@@ -438,13 +457,16 @@ Ut turpis turpis, elementum eu est ut, efficitur rutrum erat. Quisque arcu arcu,
                 </div>
                 <div class="modal-body">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut lacus quis purus pharetra rhoncus. Donec sodales nulla condimentum nulla ultrices, eu sodales augue hendrerit. Integer at placerat nisi. Phasellus pellentesque leo vitae urna vulputate, id iaculis mi rutrum. Proin id porta arcu, quis rhoncus tortor.
+
+Test.
+
 Ut turpis turpis, elementum eu est ut, efficitur rutrum erat. Quisque arcu arcu, facilisis efficitur porttitor in, pulvinar at lectus. Etiam aliquam est sit amet libero laoreet feugiat. Duis porttitor diam a turpis porttitor, vel suscipit arcu tincidunt. Donec tincidunt, lorem ac imperdiet dapibus, dui augue aliquam metus, vitae viverra metus sem quis augue. Proin id hendrerit diam. Pellentesque consequat massa ante, sit amet tincidunt dui rutrum quis. 
                 </div>
               </div>
             </div>
           </div>
           
-          <div id="menu-artist-5" class="menu container context">
+          <div id="menu-artist-5" class="menu-artist menu container context">
               <div class="row">
                   <div class="col">
                       <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#context-artist-5">
@@ -455,7 +477,7 @@ Ut turpis turpis, elementum eu est ut, efficitur rutrum erat. Quisque arcu arcu,
           </div>
 
           
-          <div class="modal fade" id="#context-artist-5" tabindex="-1" role="dialog" aria-labelledby="#context-artist-5" aria-hidden="true">
+          <div class="modal fade" id="context-artist-5" tabindex="-1" role="dialog" aria-labelledby="context-artist-5" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
