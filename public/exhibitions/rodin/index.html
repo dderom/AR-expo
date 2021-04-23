@@ -1,4 +1,5 @@
 
+
   <!DOCTYPE html>
 
 <html>
@@ -8,110 +9,142 @@
     <title></title>
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js">  </script>
-    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
 
     <script>
-      AFRAME.registerComponent('markerhandler', {
+    AFRAME.registerComponent('markerhandler', {
         init: function () {
-          this.el.sceneEl.addEventListener('markerFound', () => {
-            // redirect to custom URL
-            window.location = 'https://github.com/AR-js-org/AR.js';
+          const marker = this.el;
+          marker.addEventListener("markerFound", ()=> {
+            var markerId = marker.id;
+            var markerArtistDIV = 'menu-artist-' + markerId;
+            var markerDescriptionDIV = 'menu-description-' + markerId;
+            var visibelvar = document.getElementById(markerArtistDIV).style.visibility = "visible";
+            var visibelvar2 = document.getElementById(markerDescriptionDIV).style.visibility = "visible";
+            console.log('Marker Found: ', markerId);
+            console.log('Menu Visible: ', markerArtistDIV);
+            console.log('Menu Visible: ', markerDescriptionDIV);
+            console.log("visibility: ", visibelvar);
           });
+          marker.addEventListener("markerLost",() =>{
+            var markerArtistDIV = 'menu-artist-' + markerId;
+            var markerDescriptionDIV = 'menu-description-' + markerId;
+            var visibelvar = document.getElementById(markerArtistDIV).style.visibility = "hidden";
+            var visibelvar2 = document.getElementById(markerDescriptionDIV).style.visibility = "hidden";
+            console.log('Marker Found: ', markerId);
+            console.log('Menu Visible: ', markerArtistDIV);
+            console.log('Menu Visible: ', markerDescriptionDIV);
+            console.log("visibility: ", visibelvar);
+          });
+        },
       });
-      },
     </script>
+
+    <style>
+      .menu {
+        position: absolute;
+         bottom: 0;
+         left: 0;
+         width: 10%;
+         height: 5em;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         z-index: 1;
+         visibility: hidden;
+      }
+
+      .btn {
+        margin-bottom: 2px;
+      }
+
+    </style>
+
+
     </head>
 
-    <body>
-
-    <div id="menu" class="buttons">
-      <button class="say-hi-button">SAY HI!</button>
-      <div id="menu">Hoera</div>
-    </div>
-    <a-scene
-        device-orientation-permission-ui="enabled: false" loading-screen="enabled: true;" embedded arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
+  
+  <body>
 
 
+    <a-scene device-orientation-permission-ui="enabled: false" loading-screen="enabled: false;" embedded arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
+        
+        
+        
+            
+            
+            
+            
+            
 
-
-        <a-marker markerhandler type='barcode' value='5'>
-            <a-box position='0 0.5 0' color="yellow"></a-box>
-        </a-marker>
-
-
-
-
-
-
-                  <a-marker
-                    type="barcode"
-                    value="5"
-                    smooth="true"
-                    smoothCount="20"
-                    markerhandler
-                    >
-
-                    <a-box
-                      position="0 0.5 0"
-                      color="red"
-                      >
-                      </a-box>
-
+            
+            
+                  <a-marker type="barcode" value="5" smooth="true" smoothCount="20">
+                    <a-entity position="0 0 0" scale="0.005 0.005 0.005" gltf-model="/expo-dko/public/artworks/lenfant_aux_sabots_par_robert_wlerick/scene4.gltf">
+                    </a-entity>
                   </a-marker>
 
+            
+        
+            
+            
+            
+            
+            
 
-
-
-
-
-
-
-
-
-
+            
+            
                   <a-marker type="barcode" value="0" smooth="true" smoothCount="20">
                     <a-entity position="0 0.5 0" scale="0.005 0.005 0.005" gltf-model="/expo-dko/public/artworks/lenfant_aux_sabots_par_robert_wlerick/scene.gltf">
                     </a-entity>
                   </a-marker>
 
+            
+        
+            
+            
+            
+            
+            
 
-
-
-
-
-
-
-
-
-
+            
+            
                   <a-marker type="barcode" value="1" smooth="true" smoothCount="20">
                     <a-entity position="0 0.5 0" scale="0.005 0.005 0.005" gltf-model="/expo-dko/public/artworks/lenfant_aux_sabots_par_robert_wlerick/scene2.gltf">
                     </a-entity>
                   </a-marker>
 
+            
+        
+            
+            
+            
+            
+            
 
-
-
-
-
-
-
-
-
-
+            
+            
                   <a-marker type="barcode" value="3" smooth="true" smoothCount="20">
                     <a-entity position="0 0.5 0" scale="0.005 0.005 0.005" gltf-model="/expo-dko/public/artworks/lenfant_aux_sabots_par_robert_wlerick/scene3.gltf">
                     </a-entity>
                   </a-marker>
 
+            
+        
 
 
 
-
-
-
+    
     <a-entity camera></a-entity>
   </a-scene>
-  </body>
+
+  
+
+
+
+
+
+
+
+</body>
 
 </html>

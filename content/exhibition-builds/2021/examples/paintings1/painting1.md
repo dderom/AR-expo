@@ -7,7 +7,7 @@ artwork_refs: "banksy_1" #add all the artworks using their unique ID Name
 type: #choose from geolocation, marker, custom_marker, picture
 exhibition_year: #give a year the exhibition was published/open, can be different of creation date of this item
 exhibitions: "Banksy" #provide the title as a custom category so it creates a page for the exhibition
-
+artist: "Banksy"
 
 
 

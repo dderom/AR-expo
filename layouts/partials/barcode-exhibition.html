@@ -1,3 +1,4 @@
+
   <body>
 
 
@@ -9,7 +10,7 @@
             {{ $position := .Params.position_artwork }}
             {{ $size := .Params.size_artwork }}
             {{ $exhibition_marker_type_set := .Parent.Params.marker_type_sets }}
-            {{ $marker_id := .Params.marker_id}}
+            {{ $marker_id := .Params.marker_id }}
 
             <!-- Now start fetching related content -->
             {{ range .Site.RegularPages.Related . }}
@@ -26,6 +27,3 @@
     <!-- add a simple camera -->
     <a-entity camera></a-entity>
   </a-scene>
-  </body>
-
-</html>
