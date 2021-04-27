@@ -11,6 +11,6 @@ Getty Images (https://search.getty.edu/gateway/about.html) heeft een archief van
 description: "De intocht van Christus te Brussel in 1889 is een postimpressionistisch schilderij van James Ensor uit 1888. Het monumentale werk is zijn meest spectaculaire: het is 2,58 meter hoog en 4,31 meter breed. Het doek, een sleutelwerk van het Fin de Siècle, is te zien in het J. Paul Getty Museum van Los Angeles.
 
 Om het werk te maken, moest Ensor het gedeelte van het doek dat hij zou beschilderen aan de muur spijkeren terwijl de rest op de grond bleef liggen. Hij ging te werk met beide kanten van zijn borstel en gebruikte ook paletmessen en spatels, waardoor het niet vreemd is dat het doek wordt beschouwd als een voorloper van het expressionisme. Ensor wilde de Intocht tonen op de salon van Les XX, maar de kunstbeweging die hij mee had opgericht, weigerde. Hij bewaarde het dan maar in zijn woonkamer in Oostende. "
-video: "https://www.youtube.com/watch?v=fogcQuLKxvQ"
+video: "https://www.youtube.com/embed/fogcQuLKxvQ"
 artType: "2d"
 ---

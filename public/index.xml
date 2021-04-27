@@ -18,6 +18,15 @@
     
     <item>
       <title>Painting 9</title>
+      <link>https://example.org/artworks/painting9/</link>
+      <pubDate>Fri, 19 Mar 2021 10:48:38 +0100</pubDate>
+      
+      <guid>https://example.org/artworks/painting9/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Painting 9</title>
       <link>https://example.org/exhibition-builds/2021/examples/paintings2/painting9/</link>
       <pubDate>Fri, 19 Mar 2021 10:48:38 +0100</pubDate>
       
@@ -36,6 +45,15 @@
     
     <item>
       <title>Painting 8</title>
+      <link>https://example.org/artworks/painting8/</link>
+      <pubDate>Fri, 19 Mar 2021 10:47:38 +0100</pubDate>
+      
+      <guid>https://example.org/artworks/painting8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Painting 8</title>
       <link>https://example.org/exhibition-builds/2021/examples/paintings2/painting8/</link>
       <pubDate>Fri, 19 Mar 2021 10:47:38 +0100</pubDate>
       
@@ -49,6 +67,15 @@
       <pubDate>Fri, 19 Mar 2021 10:46:38 +0100</pubDate>
       
       <guid>https://example.org/exhibition-builds/2021/examples/schilderijen2/painting1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Painting 7</title>
+      <link>https://example.org/artworks/painting7/</link>
+      <pubDate>Fri, 19 Mar 2021 10:46:38 +0100</pubDate>
+      
+      <guid>https://example.org/artworks/painting7/</guid>
       <description></description>
     </item>
     
@@ -180,10 +207,28 @@
     
     <item>
       <title>Painting 10</title>
+      <link>https://example.org/artworks/painting10/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>https://example.org/artworks/painting10/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Painting 10</title>
       <link>https://example.org/exhibition-builds/2021/examples/paintings2/painting10/</link>
       <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
       
       <guid>https://example.org/exhibition-builds/2021/examples/paintings2/painting10/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Painting 11</title>
+      <link>https://example.org/artworks/painting11/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>https://example.org/artworks/painting11/</guid>
       <description></description>
     </item>
     

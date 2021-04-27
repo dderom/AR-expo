@@ -86,10 +86,14 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                  <video width="320" height="240" autoplay muted>
-                      <source src="{{.Params.video }}" type="video/mp4">
-                  </video>
-      
+                  <iframe width="1280"
+                    height="720" src="{{.Params.video }}"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+    
+
                 </div>
               </div>
             </div>

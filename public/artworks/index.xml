@@ -6,7 +6,34 @@
     <description>Recent content in Artworks on DKO en AR - we finally meet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 19 Mar 2021 10:45:38 +0100</lastBuildDate><atom:link href="https://example.org/artworks/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 19 Mar 2021 10:48:38 +0100</lastBuildDate><atom:link href="https://example.org/artworks/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Painting 9</title>
+      <link>https://example.org/artworks/painting9/</link>
+      <pubDate>Fri, 19 Mar 2021 10:48:38 +0100</pubDate>
+      
+      <guid>https://example.org/artworks/painting9/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Painting 8</title>
+      <link>https://example.org/artworks/painting8/</link>
+      <pubDate>Fri, 19 Mar 2021 10:47:38 +0100</pubDate>
+      
+      <guid>https://example.org/artworks/painting8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Painting 7</title>
+      <link>https://example.org/artworks/painting7/</link>
+      <pubDate>Fri, 19 Mar 2021 10:46:38 +0100</pubDate>
+      
+      <guid>https://example.org/artworks/painting7/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Banksy 1</title>
       <link>https://example.org/artworks/banksy1/</link>
@@ -112,6 +139,24 @@
       <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
       
       <guid>https://example.org/artworks/jeanne_kefer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Painting 10</title>
+      <link>https://example.org/artworks/painting10/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>https://example.org/artworks/painting10/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Painting 11</title>
+      <link>https://example.org/artworks/painting11/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>https://example.org/artworks/painting11/</guid>
       <description></description>
     </item>
     

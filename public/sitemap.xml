@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://example.org/artworks/</loc>
+    <lastmod>2021-03-19T10:48:38+01:00</lastmod>
+  </url><url>
     <loc>https://example.org/</loc>
     <lastmod>2021-03-19T10:48:38+01:00</lastmod>
   </url><url>
@@ -14,10 +17,16 @@
     <loc>https://example.org/exhibition-builds/2021/examples/schilderijen2/painting3/</loc>
     <lastmod>2021-03-19T10:48:38+01:00</lastmod>
   </url><url>
+    <loc>https://example.org/artworks/painting9/</loc>
+    <lastmod>2021-03-19T10:48:38+01:00</lastmod>
+  </url><url>
     <loc>https://example.org/exhibition-builds/2021/examples/paintings2/painting9/</loc>
     <lastmod>2021-03-19T10:48:38+01:00</lastmod>
   </url><url>
     <loc>https://example.org/exhibition-builds/2021/examples/schilderijen2/painting2/</loc>
+    <lastmod>2021-03-19T10:47:38+01:00</lastmod>
+  </url><url>
+    <loc>https://example.org/artworks/painting8/</loc>
     <lastmod>2021-03-19T10:47:38+01:00</lastmod>
   </url><url>
     <loc>https://example.org/exhibition-builds/2021/examples/paintings2/painting8/</loc>
@@ -26,13 +35,13 @@
     <loc>https://example.org/exhibition-builds/2021/examples/schilderijen2/painting1/</loc>
     <lastmod>2021-03-19T10:46:38+01:00</lastmod>
   </url><url>
+    <loc>https://example.org/artworks/painting7/</loc>
+    <lastmod>2021-03-19T10:46:38+01:00</lastmod>
+  </url><url>
     <loc>https://example.org/exhibition-builds/2021/examples/paintings2/painting7/</loc>
     <lastmod>2021-03-19T10:46:38+01:00</lastmod>
   </url><url>
     <loc>https://example.org/artists/</loc>
-    <lastmod>2021-03-19T10:45:38+01:00</lastmod>
-  </url><url>
-    <loc>https://example.org/artworks/</loc>
     <lastmod>2021-03-19T10:45:38+01:00</lastmod>
   </url><url>
     <loc>https://example.org/artists/banksy/</loc>
@@ -95,7 +104,13 @@
     <loc>https://example.org/exhibition-builds/2021/examples/paintings1/painting1/</loc>
     <lastmod>2021-03-19T10:45:38+01:00</lastmod>
   </url><url>
+    <loc>https://example.org/artworks/painting10/</loc>
+    <lastmod>2021-03-19T10:45:38+01:00</lastmod>
+  </url><url>
     <loc>https://example.org/exhibition-builds/2021/examples/paintings2/painting10/</loc>
+    <lastmod>2021-03-19T10:45:38+01:00</lastmod>
+  </url><url>
+    <loc>https://example.org/artworks/painting11/</loc>
     <lastmod>2021-03-19T10:45:38+01:00</lastmod>
   </url><url>
     <loc>https://example.org/exhibition-builds/2021/examples/paintings2/painting11/</loc>
