@@ -22,8 +22,10 @@
             var markerId = marker.id;
             var markerArtistDIV = 'menu-artist-' + markerId;
             var markerDescriptionDIV = 'menu-description-' + markerId;
+            var markerVideoDIV = 'menu-video-' + markerId;
             var visibelvar = document.getElementById(markerArtistDIV).style.visibility = "visible";
             var visibelvar2 = document.getElementById(markerDescriptionDIV).style.visibility = "visible";
+            var visibelvar3 = document.getElementById(markerVideoDIV).style.visibility = "visible";
             console.log('Marker Found: ', markerId);
             console.log("visibility: ", visibelvar);
             console.log("Description ID: ", markerDescriptionDIV)
@@ -35,6 +37,7 @@
             var markerDescriptionDIV = 'menu-description-' + markerId;
             var visibelvar = document.getElementById(markerArtistDIV).style.visibility = "hidden";
             var visibelvar2 = document.getElementById(markerDescriptionDIV).style.visibility = "hidden";
+            var visibelvar3 = document.getElementById(markerVideoDIV).style.visibility = "hidden";
             console.log('Marker Found: ', markerId);
             console.log("visibility: ", visibelvar);
             console.log("Description ID: ", markerDescriptionDIV)
