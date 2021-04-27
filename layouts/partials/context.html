@@ -17,6 +17,7 @@
               </div>
           </div>
 
+
           <!-- Now build the description panel -->
           <div class="modal fade" id="context-description-{{$marker_id}}" tabindex="-1" role="dialog" aria-labelledby="context-description-{{$marker_id}}" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -60,5 +61,37 @@
               </div>
             </div>
           </div>
+
+          <!-- First build the button for the video if present -->
+          {{if .Params.video }}
+          <div id="menu-video-{{$marker_id}}" class="menu-artist menu container context">
+              <div class="row">
+                  <div class="col">
+                      <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#context-video-{{$marker_id}}">
+                           <img src="/expo-dko/public/static/resources/icons/YouTube_dark_icon.png" alt="Youtube Button">
+                      </button>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Now build the artist panel -->
+          <div class="modal fade" id="context-video-{{$marker_id}}" tabindex="-1" role="dialog" aria-labelledby="context-video-{{$marker_id}}" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Korte video over {{.Title }}</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">x</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <iframe class="embed-responsive-item" src="{{.Params.video }}"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          {{end}}
+
+
     {{ end }}
 {{ end }}
