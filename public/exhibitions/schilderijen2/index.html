@@ -1,0 +1,424 @@
+
+
+  <!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js">  </script>
+
+    
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <script>
+    AFRAME.registerComponent('markerhandler', {
+        init: function () {
+          const marker = this.el;
+          marker.addEventListener("markerFound", ()=> {
+            var markerId = marker.id;
+            var markerArtistDIV = 'menu-artist-' + markerId;
+            var markerDescriptionDIV = 'menu-description-' + markerId;
+            var visibelvar = document.getElementById(markerArtistDIV).style.visibility = "visible";
+            var visibelvar2 = document.getElementById(markerDescriptionDIV).style.visibility = "visible";
+            console.log('Marker Found: ', markerId);
+            console.log("visibility: ", visibelvar);
+            console.log("Description ID: ", markerDescriptionDIV)
+            console.log("Artist ID: ", markerArtistDIV)
+          });
+          marker.addEventListener("markerLost",() =>{
+            var markerId = marker.id;
+            var markerArtistDIV = 'menu-artist-' + markerId;
+            var markerDescriptionDIV = 'menu-description-' + markerId;
+            var visibelvar = document.getElementById(markerArtistDIV).style.visibility = "hidden";
+            var visibelvar2 = document.getElementById(markerDescriptionDIV).style.visibility = "hidden";
+            console.log('Marker Found: ', markerId);
+            console.log("visibility: ", visibelvar);
+            console.log("Description ID: ", markerDescriptionDIV)
+            console.log("Artist ID: ", markerArtistDIV)
+          });
+        },
+      });
+    </script>
+
+    <style>
+      .menu {
+         left: 0;
+         width: 10%;
+         height: 5em;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         z-index: 1;
+         visibility: hidden;
+      }
+
+      .menu-artist {
+        position: absolute;
+         top: 0;
+      }
+
+      .menu-description {
+        position: absolute;
+         bottom: 0;
+      }
+
+      .btn {
+        margin-bottom: 2px;
+      }
+
+    </style>
+
+
+    </head>
+
+  
+  <body>
+
+
+    <a-scene device-orientation-permission-ui="enabled: false" loading-screen="enabled: false;" embedded arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
+        
+        
+        
+            
+            
+            
+            
+            
+
+            
+            
+                  <a-marker markerhandler type="barcode" value="3" smooth="true" smoothCount="20" id="3">
+                    <a-entity position="0 0 0" scale="1" gltf-model="/expo-dko/public/artworks/de_rue_mosnier_met_vlaggen.jpg">
+                    </a-entity>
+                  </a-marker>
+
+            
+        
+            
+            
+            
+            
+            
+
+            
+            
+                  <a-marker markerhandler type="barcode" value="2" smooth="true" smoothCount="20" id="2">
+                    <a-entity position="0 0 0" scale="1" gltf-model="/expo-dko/public/artworks/de_intocht_van_christus_te_brussel.jpg">
+                    </a-entity>
+                  </a-marker>
+
+            
+        
+            
+            
+            
+            
+            
+
+            
+            
+                  <a-marker markerhandler type="barcode" value="1" smooth="true" smoothCount="20" id="1">
+                    <a-entity position="0 0 0" scale="1" gltf-model="/expo-dko/public/artworks/jeanne_kefer.jpg">
+                    </a-entity>
+                  </a-marker>
+
+            
+        
+            
+            
+            
+            
+            
+
+            
+            
+                  <a-marker markerhandler type="barcode" value="4" smooth="true" smoothCount="20" id="4">
+                    <a-entity position="0 0 0" scale="1" gltf-model="/expo-dko/public/artworks/boerinnetje.jpg">
+                    </a-entity>
+                  </a-marker>
+
+            
+        
+
+
+
+    
+    <a-entity camera></a-entity>
+  </a-scene>
+
+  
+    
+
+    
+    
+    
+    
+    
+          
+          
+          <div id="menu-description-3" class="menu-description menu container context">
+              <div class="row">
+                  <div class="col">
+                      <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#context-description-3">
+                          Info
+                      </button>
+                  </div>
+              </div>
+          </div>
+
+          
+          <div class="modal fade" id="context-description-3" tabindex="-1" role="dialog" aria-labelledby="context-description-3" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Over het werk</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">x</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  De Rue Mosnier met vlaggen (Frans: La Rue Mosnier aux drapeaux) is de titel van een schilderij van Édouard Manet. Hij schilderde het op 30 juni 1878 ter ere van de nationale feestdag. Tegenwoordig is het te zien in het het J. Paul Getty Museum in Los Angeles.
+De Frans-Duitse Oorlog van 1870-71 en de Commune van Parijs die erop volgde, hadden diepe wonden geslagen in Frankrijk. De eerste jaren erna werden gekenmerkt door grote politieke strubbelingen. Pas tegen het eind van het decennium belandde het land in rustiger vaarwater. De Franse regering greep de wereldtentoonstelling van 1878 in Parijs aan om het hernieuwde zelfbewustzijn aan de wereld te tonen. Om dat te onderstrepen werd 30 juni 1878 tot nationale feestdag uitgeroepen, het fête de la paix (vredesfeest). Op deze dag heerste er in Parijs een uitgelaten en feestelijke stemming met festiviteiten tot diep in de nacht. Twee jaar later koos de regering een nieuwe datum voor de feestdag: 14 juli.
+Van 1872 tot 1878 bezat Manet een atelier in de Rue de Saint-Pétersbourg in een nieuw aangelegd deel van het 8e arrondissement. Vanuit zijn raam keek uit op de Rue Mosnier, tegenwoordig de Rue de Berne. Op 30 juni was deze straat, net als de rest van Parijs, versierd met de Franse driekleur, een aanhankelijkheidsbetuiging aan de jonge republiek. Manet legde dit tafereel en de voorbereidingen erop in trefzekere penseelstreken op een aantal doeken en tekeningen vast.
+Manet was niet de enige schilder die op 30 juni aan de slag ging. Ook Claude Monet legde de feestdag vast, bijvoorbeeld op De Rue Montorgueil in Parijs. Waar dit laatste schilderij opvalt door de jubelende stemming die eruit spreekt, heeft De Rue Mosnier met vlaggen een dubbelzinniger karakter. Naast de vlaggen, de rijtuigen en de elegant geklede personen is links immers een invalide man op krukken te zien, wellicht een veteraan van de voorbije oorlog.[1] Hij loopt langs een terrein waar puin is achtergelaten van de uitbreiding van het spoorwegemplacement van het nabijgelegen Gare Saint-Lazare. Zoals eerder al in werken als De oude muzikant had Manet duidelijk oog voor de schaduwkanten van de voorspoed en vooruitgang.
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="menu-artist-3" class="menu-artist menu container context">
+              <div class="row">
+                  <div class="col">
+                      <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#context-artist-3">
+                          ?
+                      </button>
+                  </div>
+              </div>
+          </div>
+
+          
+          <div class="modal fade" id="context-artist-3" tabindex="-1" role="dialog" aria-labelledby="context-artist-3" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Korte beschrijving van James Ensor</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">x</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  De Rue Mosnier met vlaggen - 1878 by James Ensor
+                </div>
+              </div>
+            </div>
+          </div>
+    
+
+    
+    
+    
+    
+    
+          
+          
+          <div id="menu-description-2" class="menu-description menu container context">
+              <div class="row">
+                  <div class="col">
+                      <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#context-description-2">
+                          Info
+                      </button>
+                  </div>
+              </div>
+          </div>
+
+          
+          <div class="modal fade" id="context-description-2" tabindex="-1" role="dialog" aria-labelledby="context-description-2" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Over het werk</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">x</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  De intocht van Christus te Brussel in 1889 is een postimpressionistisch schilderij van James Ensor uit 1888. Het monumentale werk is zijn meest spectaculaire: het is 2,58 meter hoog en 4,31 meter breed. Het doek, een sleutelwerk van het Fin de Siècle, is te zien in het J. Paul Getty Museum van Los Angeles.
+Om het werk te maken, moest Ensor het gedeelte van het doek dat hij zou beschilderen aan de muur spijkeren terwijl de rest op de grond bleef liggen. Hij ging te werk met beide kanten van zijn borstel en gebruikte ook paletmessen en spatels, waardoor het niet vreemd is dat het doek wordt beschouwd als een voorloper van het expressionisme. Ensor wilde de Intocht tonen op de salon van Les XX, maar de kunstbeweging die hij mee had opgericht, weigerde. Hij bewaarde het dan maar in zijn woonkamer in Oostende. 
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="menu-artist-2" class="menu-artist menu container context">
+              <div class="row">
+                  <div class="col">
+                      <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#context-artist-2">
+                          ?
+                      </button>
+                  </div>
+              </div>
+          </div>
+
+          
+          <div class="modal fade" id="context-artist-2" tabindex="-1" role="dialog" aria-labelledby="context-artist-2" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Korte beschrijving van James Ensor</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">x</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  De Intocht van Christus te Brussel - 1889 by James Ensor
+                </div>
+              </div>
+            </div>
+          </div>
+    
+
+    
+    
+    
+    
+    
+          
+          
+          <div id="menu-description-1" class="menu-description menu container context">
+              <div class="row">
+                  <div class="col">
+                      <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#context-description-1">
+                          Info
+                      </button>
+                  </div>
+              </div>
+          </div>
+
+          
+          <div class="modal fade" id="context-description-1" tabindex="-1" role="dialog" aria-labelledby="context-description-1" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Over het werk</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">x</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  De schilderijen van Fernand Khnopff behoren tot het symbolisme. Khnopffs meest bekende onderwerpen zijn landschappen te Fosset, portretten van dames uit de Brusselse bourgeoisie, stadsgezichten van Brugge en symbolistische composities. Uit de meeste doeken spreekt een mysterieuze, bevreemdende sfeer. Zijn personages vertonen vaak androgyne trekken. Zijn meesterwerk is De liefkozing uit 1896, een afbeelding van Oedipus die zich tegen de sfinx aanvlijt.
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="menu-artist-1" class="menu-artist menu container context">
+              <div class="row">
+                  <div class="col">
+                      <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#context-artist-1">
+                          ?
+                      </button>
+                  </div>
+              </div>
+          </div>
+
+          
+          <div class="modal fade" id="context-artist-1" tabindex="-1" role="dialog" aria-labelledby="context-artist-1" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Korte beschrijving van Fernand Edmond Jean Marie Khnopff</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">x</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  Jeanne Kéfer - 1885 by Fernand Edmond Jean Marie Khnopff
+                </div>
+              </div>
+            </div>
+          </div>
+    
+
+    
+    
+    
+    
+    
+          
+          
+          <div id="menu-description-4" class="menu-description menu container context">
+              <div class="row">
+                  <div class="col">
+                      <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#context-description-4">
+                          Info
+                      </button>
+                  </div>
+              </div>
+          </div>
+
+          
+          <div class="modal fade" id="context-description-4" tabindex="-1" role="dialog" aria-labelledby="context-description-4" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Over het werk</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">x</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  In mei 1913 maakte Gustave Van de Woestyne samen met Valerius De Saedeleer een reis naar Firenze, waar hij het werk van Botticelli en Fra Angelico bewonderde. Zowel de zachte kleuren als de bijna etherische schoonheid van het meisje herinneren aan het werk van de Italiaanse meesters. Ook de invloed van het symbolisme, in het bijzonder van het mystiek geïnspireerde werk van Maurice Denis en Jan Toorop, is hier merkbaar in de idealisering van dit eenvoudige dorpsmeisje, in de gevoelige lijnvoering en het decoratieve patroon van het bloesje.
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="menu-artist-4" class="menu-artist menu container context">
+              <div class="row">
+                  <div class="col">
+                      <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#context-artist-4">
+                          ?
+                      </button>
+                  </div>
+              </div>
+          </div>
+
+          
+          <div class="modal fade" id="context-artist-4" tabindex="-1" role="dialog" aria-labelledby="context-artist-4" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Korte beschrijving van Gustave Van de Woestyne</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">x</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  boerinnetje - 1913 by Gustave Van de Woestyne
+                </div>
+              </div>
+            </div>
+          </div>
+    
+
+
+  
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>

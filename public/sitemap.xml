@@ -11,11 +11,20 @@
     <loc>https://example.org/exhibitions/</loc>
     <lastmod>2021-03-19T10:48:38+01:00</lastmod>
   </url><url>
+    <loc>https://example.org/exhibition-builds/2021/examples/schilderijen2/painting3/</loc>
+    <lastmod>2021-03-19T10:48:38+01:00</lastmod>
+  </url><url>
     <loc>https://example.org/exhibition-builds/2021/examples/paintings2/painting9/</loc>
     <lastmod>2021-03-19T10:48:38+01:00</lastmod>
   </url><url>
+    <loc>https://example.org/exhibition-builds/2021/examples/schilderijen2/painting2/</loc>
+    <lastmod>2021-03-19T10:47:38+01:00</lastmod>
+  </url><url>
     <loc>https://example.org/exhibition-builds/2021/examples/paintings2/painting8/</loc>
     <lastmod>2021-03-19T10:47:38+01:00</lastmod>
+  </url><url>
+    <loc>https://example.org/exhibition-builds/2021/examples/schilderijen2/painting1/</loc>
+    <lastmod>2021-03-19T10:46:38+01:00</lastmod>
   </url><url>
     <loc>https://example.org/exhibition-builds/2021/examples/paintings2/painting7/</loc>
     <lastmod>2021-03-19T10:46:38+01:00</lastmod>
@@ -47,19 +56,40 @@
     <loc>https://example.org/artworks/banksy6/</loc>
     <lastmod>2021-03-19T10:45:38+01:00</lastmod>
   </url><url>
+    <loc>https://example.org/artworks/boerinnetje/</loc>
+    <lastmod>2021-03-19T10:45:38+01:00</lastmod>
+  </url><url>
+    <loc>https://example.org/artworks/de_intocht_van_christus_te_brussel/</loc>
+    <lastmod>2021-03-19T10:45:38+01:00</lastmod>
+  </url><url>
+    <loc>https://example.org/artworks/de_rue_mosnier_met_vlaggen/</loc>
+    <lastmod>2021-03-19T10:45:38+01:00</lastmod>
+  </url><url>
     <loc>https://example.org/artists/edmond-picard/</loc>
     <lastmod>2021-03-19T10:45:38+01:00</lastmod>
   </url><url>
     <loc>https://example.org/artworks/picard/</loc>
     <lastmod>2021-03-19T10:45:38+01:00</lastmod>
   </url><url>
+    <loc>https://example.org/artists/fernand-edmond-jean-marie-khnopff/</loc>
+    <lastmod>2021-03-19T10:45:38+01:00</lastmod>
+  </url><url>
     <loc>https://example.org/artists/geoffrey-marchal/</loc>
+    <lastmod>2021-03-19T10:45:38+01:00</lastmod>
+  </url><url>
+    <loc>https://example.org/artists/gustave-van-de-woestyne/</loc>
+    <lastmod>2021-03-19T10:45:38+01:00</lastmod>
+  </url><url>
+    <loc>https://example.org/artists/james-ensor/</loc>
     <lastmod>2021-03-19T10:45:38+01:00</lastmod>
   </url><url>
     <loc>https://example.org/artists/jan-de-witte/</loc>
     <lastmod>2021-03-19T10:45:38+01:00</lastmod>
   </url><url>
     <loc>https://example.org/artworks/jan_de_witte/</loc>
+    <lastmod>2021-03-19T10:45:38+01:00</lastmod>
+  </url><url>
+    <loc>https://example.org/artworks/jeanne_kefer/</loc>
     <lastmod>2021-03-19T10:45:38+01:00</lastmod>
   </url><url>
     <loc>https://example.org/exhibition-builds/2021/examples/paintings1/painting1/</loc>
@@ -78,6 +108,9 @@
     <lastmod>2021-03-19T10:45:38+01:00</lastmod>
   </url><url>
     <loc>https://example.org/exhibition-builds/2021/examples/paintings1/painting4/</loc>
+    <lastmod>2021-03-19T10:45:38+01:00</lastmod>
+  </url><url>
+    <loc>https://example.org/exhibition-builds/2021/examples/schilderijen2/painting4/</loc>
     <lastmod>2021-03-19T10:45:38+01:00</lastmod>
   </url><url>
     <loc>https://example.org/exhibition-builds/2021/examples/paintings1/painting5/</loc>
@@ -147,6 +180,9 @@
     <lastmod>2021-02-01T16:18:44+01:00</lastmod>
   </url><url>
     <loc>https://example.org/exhibitions/schilderijen/</loc>
+    <lastmod>2021-01-01T16:18:44+01:00</lastmod>
+  </url><url>
+    <loc>https://example.org/exhibitions/schilderijen2/</loc>
     <lastmod>2021-01-01T16:18:44+01:00</lastmod>
   </url><url>
     <loc>https://example.org/categories/</loc>
