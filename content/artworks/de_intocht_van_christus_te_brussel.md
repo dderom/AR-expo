@@ -12,4 +12,5 @@ description: "De intocht van Christus te Brussel in 1889 is een postimpressionis
 
 Om het werk te maken, moest Ensor het gedeelte van het doek dat hij zou beschilderen aan de muur spijkeren terwijl de rest op de grond bleef liggen. Hij ging te werk met beide kanten van zijn borstel en gebruikte ook paletmessen en spatels, waardoor het niet vreemd is dat het doek wordt beschouwd als een voorloper van het expressionisme. Ensor wilde de Intocht tonen op de salon van Les XX, maar de kunstbeweging die hij mee had opgericht, weigerde. Hij bewaarde het dan maar in zijn woonkamer in Oostende. "
 video: "https://www.youtube.com/watch?v=fogcQuLKxvQ"
+artType: "2d"
 ---
