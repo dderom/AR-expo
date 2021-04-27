@@ -30,11 +30,13 @@
             console.log("visibility: ", visibelvar);
             console.log("Description ID: ", markerDescriptionDIV)
             console.log("Artist ID: ", markerArtistDIV)
+            console.log("Video ID: ", markerVideoDIV)
           });
           marker.addEventListener("markerLost",() =>{
             var markerId = marker.id;
             var markerArtistDIV = 'menu-artist-' + markerId;
             var markerDescriptionDIV = 'menu-description-' + markerId;
+            var markerVideoDIV = 'menu-video-' + markerId;
             var visibelvar = document.getElementById(markerArtistDIV).style.visibility = "hidden";
             var visibelvar2 = document.getElementById(markerDescriptionDIV).style.visibility = "hidden";
             var visibelvar3 = document.getElementById(markerVideoDIV).style.visibility = "hidden";
@@ -42,12 +44,14 @@
             console.log("visibility: ", visibelvar);
             console.log("Description ID: ", markerDescriptionDIV)
             console.log("Artist ID: ", markerArtistDIV)
+            console.log("Video ID: ", markerVideoDIV)
           });
         },
       });
     </script>
 
     <style>
+
       .menu {
          left: 0;
          width: 10%;
@@ -70,15 +74,17 @@
 
       .menu-description {
         position: absolute;
-        bottom: 0;
-        margin-left: 52px;
+        bottom: 80px;
+        left: 2px;
       }
 
       .menu-video {
         position: absolute;
-        bottom: 0;
-        margin-left: 132px;
+        bottom: 160px;
+        left: 2px;
       }
+
+
 
       .btn {
         margin-bottom: 2px;
