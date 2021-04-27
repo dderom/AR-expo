@@ -86,7 +86,10 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                  <iframe class="embed-responsive-item" src="{{.Params.video }}"></iframe>
+                  <video width="320" height="240" autoplay muted>
+                      <source src="{{.Params.video }}" type="video/mp4">
+                  </video>
+      
                 </div>
               </div>
             </div>
