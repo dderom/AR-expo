@@ -16,7 +16,7 @@
             {{ range .Site.RegularPages.Related . }}
                   <a-marker markerhandler type="{{$exhibition_type}}" value="{{$marker_id}}" smooth="true" smoothCount="20" id="{{$marker_id}}">
                     {{ if eq .Params.artType "2d"}}
-                    <a-image position="{{ $position }}" scale="{{ $size }}" src="/expo-dko/public/artworks/{{ .Params.model }}">
+                    <a-image rotation="90 0 180" position="{{ $position }}" scale="{{ $size }}" src="/expo-dko/public/artworks/{{ .Params.model }}">
                     </a-image>
                     {{ else }}
                     <a-entity position="{{ $position }}" scale="{{ $size }}" gltf-model="/expo-dko/public/artworks/{{ .Params.model }}">
