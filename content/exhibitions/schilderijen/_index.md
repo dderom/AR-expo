@@ -8,4 +8,7 @@ exhibition_types: "barcode" #Choose from geolocation, barcode, custom_barcode, p
 marker_type_sets: "3x3" #choose from 3x3
 
 context: true
+sky: true
+videoId: "expo_video"
+video_360: "https://www.youtube.com/embed/qHJKhnXrUf4"
 ---

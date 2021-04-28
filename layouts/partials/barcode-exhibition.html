@@ -3,6 +3,16 @@
 
 
     <a-scene device-orientation-permission-ui="enabled: false" loading-screen="enabled: false;" embedded arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: {{ .Params.marker_type_sets}};">
+        <!-- Check if there is a sky -->
+        {{ if .Params.sky }}
+        <a-assets>
+            <video id="{{.Params.videoId}}" autoplay loop="true" src="{{ .Params.video_360 }}"> </video>
+
+
+        </a-assets>
+        <!-- Using the asset management system. -->
+        <a-videosphere src="#{{.Params.videoId}}"></a-videosphere>
+        {{end}}
         <!-- Get some data before your process -->
         {{ $exhibition_type := .Params.exhibition_types}}
         {{ $artTypeExhibition := .Params.artType }}
