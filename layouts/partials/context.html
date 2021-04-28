@@ -5,8 +5,9 @@
     {{ $menu_button_id := .Params.marker_id}}
     <!-- Now start fetching related content -->
     {{ range .Site.RegularPages.Related . }}
-          {{ $artist_work := .Params.artists }}
 
+          {{ $artist_work := .Params.artists }}
+          {{ if eq .Type "artworks"}}
           <!-- First build the button for the description -->
           <div id="menu-description-{{ $marker_id }}" class="menu-description menu container context">
               <div class="row">
@@ -99,6 +100,7 @@
               </div>
             </div>
           </div>
+          {{end}}
           {{end}}
 
     {{ end }}
