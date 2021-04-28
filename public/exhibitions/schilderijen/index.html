@@ -10,7 +10,7 @@
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js">  </script>
 
-    
+
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 
@@ -29,18 +29,18 @@
             var visibelvar2 = document.getElementById(markerDescriptionDIV).style.visibility = "visible";
             var visibelvar3 = document.getElementById(markerVideoDIV).style.visibility = "visible";
             $(document).ready(function(){
-                
+
 
                 var url = $("#" + markeriframeId).attr('src');
                 console.log("Video URL: ", url);
-                
+
 
                 $("#" + markerVideoDIViframe).on('hide.bs.modal', function(){
                     $("#" + markeriframeId).attr('src', '');
                     console.log("Video autoplay: ", markerVideoDIViframe);
                 });
 
-                
+
 
                 $("#" + markerVideoDIViframe).on('show.bs.modal', function(){
                     $("#" + markeriframeId).attr('src', url);
@@ -126,38 +126,38 @@
 
     </head>
 
-  
+
   <body>
 
 
     <a-scene device-orientation-permission-ui="enabled: false" loading-screen="enabled: false;" embedded arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
-        
-        
+
+
         <a-assets timeout="10000">
-            <video id="expo_video" autoplay loop="true" src="https://www.youtube.com/embed/qHJKhnXrUf4"> </video>
+            <video id="expo_video" autoplay loop="true" src="/expo-dko/static/video/concert_czardas.mp4"> </video>
 
 
         </a-assets>
-        
+
         <a-videosphere src="#expo_video"></a-videosphere>
-        
-        
-        
-        
-        
-            
-            
-            
-            
-            
 
-            
-            
-                  
 
-            
-                  
-                      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                       <a-marker markerhandler type="barcode" value="3" id="3">
                         <a-image rotation="90 0 180" position="0 0 0" scale="3 3 3" src="/expo-dko/public/artworks/de_rue_mosnier_met_vlaggen.jpg">
@@ -165,24 +165,24 @@
 
                       </a-marker>
 
-                      
-                    
 
-            
-        
-            
-            
-            
-            
-            
 
-            
-            
-                  
 
-            
-                  
-                      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                       <a-marker markerhandler type="barcode" value="2" id="2">
                         <a-image rotation="90 0 180" position="0 0 0" scale="3 3 3" src="/expo-dko/public/artworks/de_intocht_van_christus_te_brussel.jpg">
@@ -190,24 +190,24 @@
 
                       </a-marker>
 
-                      
-                    
 
-            
-        
-            
-            
-            
-            
-            
 
-            
-            
-                  
 
-            
-                  
-                      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                       <a-marker markerhandler type="barcode" value="1" id="1">
                         <a-image rotation="90 0 180" position="0 0 0" scale="3 3 3" src="/expo-dko/public/artworks/jeanne_kefer.jpg">
@@ -215,24 +215,24 @@
 
                       </a-marker>
 
-                      
-                    
 
-            
-        
-            
-            
-            
-            
-            
 
-            
-            
-                  
 
-            
-                  
-                      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                       <a-marker markerhandler type="barcode" value="4" id="4">
                         <a-image rotation="90 0 180" position="0 0 0" scale="3 3 3" src="/expo-dko/public/artworks/boerinnetje.jpg">
@@ -240,35 +240,35 @@
 
                       </a-marker>
 
-                      
-                    
-
-            
-        
 
 
 
-    
+
+
+
+
+
+
     <a-entity camera></a-entity>
   </a-scene>
 
-  
-    
 
-    
-    
-    
-    
-    
 
-          
-          
 
-    
 
-          
-          
-          
+
+
+
+
+
+
+
+
+
+
+
+
+
           <div id="menu-description-3" class="menu-description menu container context">
               <div class="row">
                   <div class="col">
@@ -280,7 +280,7 @@
           </div>
 
 
-          
+
           <div class="modal fade" id="context-description-3" tabindex="-1" role="dialog" aria-labelledby="context-description-3" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
@@ -299,7 +299,7 @@ Manet was niet de enige schilder die op 30 juni aan de slag ging. Ook Claude Mon
               </div>
             </div>
           </div>
-          
+
           <div id="menu-artist-3" class="menu-artist menu container context">
               <div class="row">
                   <div class="col">
@@ -310,7 +310,7 @@ Manet was niet de enige schilder die op 30 juni aan de slag ging. Ook Claude Mon
               </div>
           </div>
 
-          
+
           <div class="modal fade" id="context-artist-3" tabindex="-1" role="dialog" aria-labelledby="context-artist-3" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
@@ -327,26 +327,26 @@ Manet was niet de enige schilder die op 30 juni aan de slag ging. Ook Claude Mon
             </div>
           </div>
 
-          
-          
-          
 
-    
 
-    
-    
-    
-    
-    
 
-          
-          
 
-    
 
-          
-          
-          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
           <div id="menu-description-2" class="menu-description menu container context">
               <div class="row">
                   <div class="col">
@@ -358,7 +358,7 @@ Manet was niet de enige schilder die op 30 juni aan de slag ging. Ook Claude Mon
           </div>
 
 
-          
+
           <div class="modal fade" id="context-description-2" tabindex="-1" role="dialog" aria-labelledby="context-description-2" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
@@ -370,12 +370,12 @@ Manet was niet de enige schilder die op 30 juni aan de slag ging. Ook Claude Mon
                 </div>
                 <div class="modal-body">
                   De intocht van Christus te Brussel in 1889 is een postimpressionistisch schilderij van James Ensor uit 1888. Het monumentale werk is zijn meest spectaculaire: het is 2,58 meter hoog en 4,31 meter breed. Het doek, een sleutelwerk van het Fin de Siècle, is te zien in het J. Paul Getty Museum van Los Angeles.
-Om het werk te maken, moest Ensor het gedeelte van het doek dat hij zou beschilderen aan de muur spijkeren terwijl de rest op de grond bleef liggen. Hij ging te werk met beide kanten van zijn borstel en gebruikte ook paletmessen en spatels, waardoor het niet vreemd is dat het doek wordt beschouwd als een voorloper van het expressionisme. Ensor wilde de Intocht tonen op de salon van Les XX, maar de kunstbeweging die hij mee had opgericht, weigerde. Hij bewaarde het dan maar in zijn woonkamer in Oostende. 
+Om het werk te maken, moest Ensor het gedeelte van het doek dat hij zou beschilderen aan de muur spijkeren terwijl de rest op de grond bleef liggen. Hij ging te werk met beide kanten van zijn borstel en gebruikte ook paletmessen en spatels, waardoor het niet vreemd is dat het doek wordt beschouwd als een voorloper van het expressionisme. Ensor wilde de Intocht tonen op de salon van Les XX, maar de kunstbeweging die hij mee had opgericht, weigerde. Hij bewaarde het dan maar in zijn woonkamer in Oostende.
                 </div>
               </div>
             </div>
           </div>
-          
+
           <div id="menu-artist-2" class="menu-artist menu container context">
               <div class="row">
                   <div class="col">
@@ -386,7 +386,7 @@ Om het werk te maken, moest Ensor het gedeelte van het doek dat hij zou beschild
               </div>
           </div>
 
-          
+
           <div class="modal fade" id="context-artist-2" tabindex="-1" role="dialog" aria-labelledby="context-artist-2" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
@@ -403,8 +403,8 @@ Om het werk te maken, moest Ensor het gedeelte van het doek dat hij zou beschild
             </div>
           </div>
 
-          
-          
+
+
           <div id="menu-video-2" class="menu-video menu container context">
               <div class="row">
                   <div class="col">
@@ -415,7 +415,7 @@ Om het werk te maken, moest Ensor het gedeelte van het doek dat hij zou beschild
               </div>
           </div>
 
-          
+
           <div class="modal fade" id="context-video-2" tabindex="-1" role="dialog" aria-labelledby="context-video-2" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
@@ -439,25 +439,25 @@ Om het werk te maken, moest Ensor het gedeelte van het doek dat hij zou beschild
               </div>
             </div>
           </div>
-          
-          
 
-    
 
-    
-    
-    
-    
-    
 
-          
-          
 
-    
 
-          
-          
-          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
           <div id="menu-description-1" class="menu-description menu container context">
               <div class="row">
                   <div class="col">
@@ -469,7 +469,7 @@ Om het werk te maken, moest Ensor het gedeelte van het doek dat hij zou beschild
           </div>
 
 
-          
+
           <div class="modal fade" id="context-description-1" tabindex="-1" role="dialog" aria-labelledby="context-description-1" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
@@ -485,7 +485,7 @@ Om het werk te maken, moest Ensor het gedeelte van het doek dat hij zou beschild
               </div>
             </div>
           </div>
-          
+
           <div id="menu-artist-1" class="menu-artist menu container context">
               <div class="row">
                   <div class="col">
@@ -496,7 +496,7 @@ Om het werk te maken, moest Ensor het gedeelte van het doek dat hij zou beschild
               </div>
           </div>
 
-          
+
           <div class="modal fade" id="context-artist-1" tabindex="-1" role="dialog" aria-labelledby="context-artist-1" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
@@ -513,26 +513,26 @@ Om het werk te maken, moest Ensor het gedeelte van het doek dat hij zou beschild
             </div>
           </div>
 
-          
-          
-          
 
-    
 
-    
-    
-    
-    
-    
 
-          
-          
 
-    
 
-          
-          
-          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
           <div id="menu-description-4" class="menu-description menu container context">
               <div class="row">
                   <div class="col">
@@ -544,7 +544,7 @@ Om het werk te maken, moest Ensor het gedeelte van het doek dat hij zou beschild
           </div>
 
 
-          
+
           <div class="modal fade" id="context-description-4" tabindex="-1" role="dialog" aria-labelledby="context-description-4" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
@@ -560,7 +560,7 @@ Om het werk te maken, moest Ensor het gedeelte van het doek dat hij zou beschild
               </div>
             </div>
           </div>
-          
+
           <div id="menu-artist-4" class="menu-artist menu container context">
               <div class="row">
                   <div class="col">
@@ -571,7 +571,7 @@ Om het werk te maken, moest Ensor het gedeelte van het doek dat hij zou beschild
               </div>
           </div>
 
-          
+
           <div class="modal fade" id="context-artist-4" tabindex="-1" role="dialog" aria-labelledby="context-artist-4" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
@@ -588,8 +588,8 @@ Om het werk te maken, moest Ensor het gedeelte van het doek dat hij zou beschild
             </div>
           </div>
 
-          
-          
+
+
           <div id="menu-video-4" class="menu-video menu container context">
               <div class="row">
                   <div class="col">
@@ -600,7 +600,7 @@ Om het werk te maken, moest Ensor het gedeelte van het doek dat hij zou beschild
               </div>
           </div>
 
-          
+
           <div class="modal fade" id="context-video-4" tabindex="-1" role="dialog" aria-labelledby="context-video-4" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
@@ -624,13 +624,13 @@ Om het werk te maken, moest Ensor het gedeelte van het doek dat hij zou beschild
               </div>
             </div>
           </div>
-          
-          
-
-    
 
 
-  
+
+
+
+
+
 
 
 
