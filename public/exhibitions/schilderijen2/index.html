@@ -23,14 +23,37 @@
             var markerArtistDIV = 'menu-artist-' + markerId;
             var markerDescriptionDIV = 'menu-description-' + markerId;
             var markerVideoDIV = 'menu-video-' + markerId;
+            var markeriframeId = 'iframe-' + markerId;
+            var markerVideoDIViframe = 'context-video-' + markerId;
             var visibelvar = document.getElementById(markerArtistDIV).style.visibility = "visible";
             var visibelvar2 = document.getElementById(markerDescriptionDIV).style.visibility = "visible";
             var visibelvar3 = document.getElementById(markerVideoDIV).style.visibility = "visible";
+            $(document).ready(function(){
+                
+
+                var url = $("#" + markeriframeId).attr('src');
+                console.log("Video URL: ", url);
+                
+
+                $("#" + markerVideoDIViframe).on('hide.bs.modal', function(){
+                    $("#" + markeriframeId).attr('src', '');
+                    console.log("Video autoplay: ", markerVideoDIViframe);
+                });
+
+                
+
+                $("#" + markerVideoDIViframe).on('show.bs.modal', function(){
+                    $("#" + markeriframeId).attr('src', url);
+                    console.log("Video autoplay: ", markerVideoDIViframe);
+                });
+
+            });
             console.log('Marker Found: ', markerId);
             console.log("visibility: ", visibelvar);
-            console.log("Description ID: ", markerDescriptionDIV)
-            console.log("Artist ID: ", markerArtistDIV)
-            console.log("Video ID: ", markerVideoDIV)
+            console.log("Description ID: ", markerDescriptionDIV);
+            console.log("Artist ID: ", markerArtistDIV);
+            console.log("Video ID: ", markerVideoDIV);
+            console.log("Video autoplay: ", markerVideoDIViframe);
           });
           marker.addEventListener("markerLost",() =>{
             var markerId = marker.id;
@@ -359,7 +382,8 @@ Om het werk te maken, moest Ensor het gedeelte van het doek dat hij zou beschild
                   </button>
                 </div>
                 <div class="modal-body">
-                  <iframe width="100%"
+                  <iframe id="iframe-2"
+                    width="100%"
                     src="https://www.youtube.com/embed/fogcQuLKxvQ"
                     title="YouTube video player"
                     frameborder="0"
@@ -529,8 +553,9 @@ Om het werk te maken, moest Ensor het gedeelte van het doek dat hij zou beschild
                   </button>
                 </div>
                 <div class="modal-body">
-                  <iframe width="100%"
-                    src="https://www.youtube.com/watch?v=8KUvEdBBqJI"
+                  <iframe id="iframe-4"
+                    width="100%"
+                    src="https://www.youtube.com/embed/8KUvEdBBqJI"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

@@ -23,14 +23,37 @@
             var markerArtistDIV = 'menu-artist-' + markerId;
             var markerDescriptionDIV = 'menu-description-' + markerId;
             var markerVideoDIV = 'menu-video-' + markerId;
+            var markeriframeId = 'iframe-' + markerId;
+            var markerVideoDIViframe = 'context-video-' + markerId;
             var visibelvar = document.getElementById(markerArtistDIV).style.visibility = "visible";
             var visibelvar2 = document.getElementById(markerDescriptionDIV).style.visibility = "visible";
             var visibelvar3 = document.getElementById(markerVideoDIV).style.visibility = "visible";
+            $(document).ready(function(){
+                
+
+                var url = $("#" + markeriframeId).attr('src');
+                console.log("Video URL: ", url);
+                
+
+                $("#" + markerVideoDIViframe).on('hide.bs.modal', function(){
+                    $("#" + markeriframeId).attr('src', '');
+                    console.log("Video autoplay: ", markerVideoDIViframe);
+                });
+
+                
+
+                $("#" + markerVideoDIViframe).on('show.bs.modal', function(){
+                    $("#" + markeriframeId).attr('src', url);
+                    console.log("Video autoplay: ", markerVideoDIViframe);
+                });
+
+            });
             console.log('Marker Found: ', markerId);
             console.log("visibility: ", visibelvar);
-            console.log("Description ID: ", markerDescriptionDIV)
-            console.log("Artist ID: ", markerArtistDIV)
-            console.log("Video ID: ", markerVideoDIV)
+            console.log("Description ID: ", markerDescriptionDIV);
+            console.log("Artist ID: ", markerArtistDIV);
+            console.log("Video ID: ", markerVideoDIV);
+            console.log("Video autoplay: ", markerVideoDIViframe);
           });
           marker.addEventListener("markerLost",() =>{
             var markerId = marker.id;

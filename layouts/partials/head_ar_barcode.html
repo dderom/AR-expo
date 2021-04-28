@@ -21,14 +21,37 @@
             var markerArtistDIV = 'menu-artist-' + markerId;
             var markerDescriptionDIV = 'menu-description-' + markerId;
             var markerVideoDIV = 'menu-video-' + markerId;
+            var markeriframeId = 'iframe-' + markerId;
+            var markerVideoDIViframe = 'context-video-' + markerId;
             var visibelvar = document.getElementById(markerArtistDIV).style.visibility = "visible";
             var visibelvar2 = document.getElementById(markerDescriptionDIV).style.visibility = "visible";
             var visibelvar3 = document.getElementById(markerVideoDIV).style.visibility = "visible";
+            $(document).ready(function(){
+                /* Get iframe src attribute value i.e. YouTube video url
+                and store it in a variable */
+                var url = $("#" + markeriframeId).attr('src');
+                console.log("Video URL: ", url);
+                /* Assign empty url value to the iframe src attribute when
+                modal hide, which stop the video playing */
+                $("#" + markerVideoDIViframe).on('hide.bs.modal', function(){
+                    $("#" + markeriframeId).attr('src', '');
+                    console.log("Video autoplay: ", markerVideoDIViframe);
+                });
+
+                /* Assign the initially stored url back to the iframe src
+                attribute when modal is displayed again */
+                $("#" + markerVideoDIViframe).on('show.bs.modal', function(){
+                    $("#" + markeriframeId).attr('src', url);
+                    console.log("Video autoplay: ", markerVideoDIViframe);
+                });
+
+            });
             console.log('Marker Found: ', markerId);
             console.log("visibility: ", visibelvar);
-            console.log("Description ID: ", markerDescriptionDIV)
-            console.log("Artist ID: ", markerArtistDIV)
-            console.log("Video ID: ", markerVideoDIV)
+            console.log("Description ID: ", markerDescriptionDIV);
+            console.log("Artist ID: ", markerArtistDIV);
+            console.log("Video ID: ", markerVideoDIV);
+            console.log("Video autoplay: ", markerVideoDIViframe);
           });
           marker.addEventListener("markerLost",() =>{
             var markerId = marker.id;
