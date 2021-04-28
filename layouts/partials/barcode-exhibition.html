@@ -5,6 +5,7 @@
     <a-scene device-orientation-permission-ui="enabled: false" loading-screen="enabled: false;" embedded arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: {{ .Params.marker_type_sets}};">
         <!-- Get some data before your process -->
         {{ $exhibition_type := .Params.exhibition_types}}
+        {{ $artTypeExhibition := .Params.artType }}
         {{ range .RegularPages }}
             <!--  Get all the data from the exhibition item ref -->
             {{ $position := .Params.position_artwork }}
@@ -14,20 +15,23 @@
 
             <!-- Now start fetching related content -->
             {{ range .Site.RegularPages.Related . }}
+                  {{ if eq .Type "artworks"}}
+                      {{ if eq .Params.artType "2d"}}
 
-                  {{ if eq .Params.artType "2d"}}
-                  <a-marker markerhandler type="{{$exhibition_type}}" value="{{$marker_id}}" id="{{$marker_id}}">
-                    <a-image rotation="90 0 180" position="{{ $position }}" scale="{{ $size }}" src="/expo-dko/public/artworks/{{ .Params.model }}">
-                    </a-image>
+                      <a-marker markerhandler type="{{$exhibition_type}}" value="{{$marker_id}}" id="{{$marker_id}}">
+                        <a-image rotation="90 0 180" position="{{ $position }}" scale="{{ $size }}" src="/expo-dko/public/artworks/{{ .Params.model }}">
+                        </a-image>
 
-                  </a-marker>
+                      </a-marker>
 
-                  {{ else }}
-                  <a-marker markerhandler type="{{$exhibition_type}}" value="{{$marker_id}}" smooth="true" smoothCount="20" id="{{$marker_id}}">
-                    <a-entity position="{{ $position }}" scale="{{ $size }}" gltf-model="/expo-dko/public/artworks/{{ .Params.model }}">
-                    </a-entity>
-                  </a-marker>
-                  {{end}}
+                      {{ else }}
+
+                      <a-marker markerhandler type="{{$exhibition_type}}" value="{{$marker_id}}" smooth="true" smoothCount="20" id="{{$marker_id}}">
+                        <a-entity position="{{ $position }}" scale="{{ $size }}" gltf-model="/expo-dko/public/artworks/{{ .Params.model }}">
+                        </a-entity>
+                      </a-marker>
+                      {{end}}
+                    {{ end}}
 
             {{ end }}
         {{ end }}

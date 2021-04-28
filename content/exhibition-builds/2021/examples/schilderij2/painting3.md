@@ -1,5 +1,5 @@
 ---
-title: "Painting 3"
+title: "Painting 2-3"
 date: 2021-03-19 10:48:38 +01:00
 draft: false
 Organiser: #add the organiser if required
