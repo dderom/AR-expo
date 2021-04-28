@@ -8,20 +8,20 @@
     <language>en-us</language>
     <lastBuildDate>Fri, 19 Mar 2021 10:45:38 +0100</lastBuildDate><atom:link href="https://example.org/artists/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Banksy</title>
-      <link>https://example.org/artists/banksy/</link>
+      <title>beelden</title>
+      <link>https://example.org/artists/beelden/</link>
       <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
       
-      <guid>https://example.org/artists/banksy/</guid>
+      <guid>https://example.org/artists/beelden/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Edmond Picard</title>
-      <link>https://example.org/artists/edmond-picard/</link>
+      <title>Camille Claudel</title>
+      <link>https://example.org/artists/camille-claudel/</link>
       <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
       
-      <guid>https://example.org/artists/edmond-picard/</guid>
+      <guid>https://example.org/artists/camille-claudel/</guid>
       <description></description>
     </item>
     
@@ -31,15 +31,6 @@
       <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
       
       <guid>https://example.org/artists/fernand-edmond-jean-marie-khnopff/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Geoffrey Marchal</title>
-      <link>https://example.org/artists/geoffrey-marchal/</link>
-      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
-      
-      <guid>https://example.org/artists/geoffrey-marchal/</guid>
       <description></description>
     </item>
     
@@ -62,20 +53,11 @@
     </item>
     
     <item>
-      <title>Jan De Witte</title>
-      <link>https://example.org/artists/jan-de-witte/</link>
+      <title>Robert Wlérick</title>
+      <link>https://example.org/artists/robert-wl%C3%A9rick/</link>
       <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
       
-      <guid>https://example.org/artists/jan-de-witte/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Rodin</title>
-      <link>https://example.org/artists/rodin/</link>
-      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
-      
-      <guid>https://example.org/artists/rodin/</guid>
+      <guid>https://example.org/artists/robert-wl%C3%A9rick/</guid>
       <description></description>
     </item>
     

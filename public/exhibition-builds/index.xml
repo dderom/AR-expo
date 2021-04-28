@@ -9,172 +9,100 @@
     <lastBuildDate>Fri, 19 Mar 2021 10:48:38 +0100</lastBuildDate><atom:link href="https://example.org/exhibition-builds/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Painting 3</title>
-      <link>https://example.org/exhibition-builds/2021/examples/schilderijen2/painting3/</link>
+      <link>https://example.org/exhibition-builds/2021/examples/schilderij/painting3/</link>
       <pubDate>Fri, 19 Mar 2021 10:48:38 +0100</pubDate>
       
-      <guid>https://example.org/exhibition-builds/2021/examples/schilderijen2/painting3/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Painting 9</title>
-      <link>https://example.org/exhibition-builds/2021/examples/paintings2/painting9/</link>
-      <pubDate>Fri, 19 Mar 2021 10:48:38 +0100</pubDate>
-      
-      <guid>https://example.org/exhibition-builds/2021/examples/paintings2/painting9/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Painting 2</title>
-      <link>https://example.org/exhibition-builds/2021/examples/schilderijen2/painting2/</link>
-      <pubDate>Fri, 19 Mar 2021 10:47:38 +0100</pubDate>
-      
-      <guid>https://example.org/exhibition-builds/2021/examples/schilderijen2/painting2/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Painting 8</title>
-      <link>https://example.org/exhibition-builds/2021/examples/paintings2/painting8/</link>
-      <pubDate>Fri, 19 Mar 2021 10:47:38 +0100</pubDate>
-      
-      <guid>https://example.org/exhibition-builds/2021/examples/paintings2/painting8/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Painting 1</title>
-      <link>https://example.org/exhibition-builds/2021/examples/schilderijen2/painting1/</link>
-      <pubDate>Fri, 19 Mar 2021 10:46:38 +0100</pubDate>
-      
-      <guid>https://example.org/exhibition-builds/2021/examples/schilderijen2/painting1/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Painting 7</title>
-      <link>https://example.org/exhibition-builds/2021/examples/paintings2/painting7/</link>
-      <pubDate>Fri, 19 Mar 2021 10:46:38 +0100</pubDate>
-      
-      <guid>https://example.org/exhibition-builds/2021/examples/paintings2/painting7/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Painting 1</title>
-      <link>https://example.org/exhibition-builds/2021/examples/paintings1/painting1/</link>
-      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
-      
-      <guid>https://example.org/exhibition-builds/2021/examples/paintings1/painting1/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Painting 10</title>
-      <link>https://example.org/exhibition-builds/2021/examples/paintings2/painting10/</link>
-      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
-      
-      <guid>https://example.org/exhibition-builds/2021/examples/paintings2/painting10/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Painting 11</title>
-      <link>https://example.org/exhibition-builds/2021/examples/paintings2/painting11/</link>
-      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
-      
-      <guid>https://example.org/exhibition-builds/2021/examples/paintings2/painting11/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Painting 2</title>
-      <link>https://example.org/exhibition-builds/2021/examples/paintings1/painting2/</link>
-      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
-      
-      <guid>https://example.org/exhibition-builds/2021/examples/paintings1/painting2/</guid>
+      <guid>https://example.org/exhibition-builds/2021/examples/schilderij/painting3/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Painting 3</title>
-      <link>https://example.org/exhibition-builds/2021/examples/paintings1/painting3/</link>
+      <link>https://example.org/exhibition-builds/2021/examples/schilderij2/painting3/</link>
+      <pubDate>Fri, 19 Mar 2021 10:48:38 +0100</pubDate>
+      
+      <guid>https://example.org/exhibition-builds/2021/examples/schilderij2/painting3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Painting 2</title>
+      <link>https://example.org/exhibition-builds/2021/examples/schilderij/painting2/</link>
+      <pubDate>Fri, 19 Mar 2021 10:47:38 +0100</pubDate>
+      
+      <guid>https://example.org/exhibition-builds/2021/examples/schilderij/painting2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Painting 2</title>
+      <link>https://example.org/exhibition-builds/2021/examples/schilderij2/painting2/</link>
+      <pubDate>Fri, 19 Mar 2021 10:47:38 +0100</pubDate>
+      
+      <guid>https://example.org/exhibition-builds/2021/examples/schilderij2/painting2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Painting 1</title>
+      <link>https://example.org/exhibition-builds/2021/examples/schilderij/painting1/</link>
+      <pubDate>Fri, 19 Mar 2021 10:46:38 +0100</pubDate>
+      
+      <guid>https://example.org/exhibition-builds/2021/examples/schilderij/painting1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Painting 1</title>
+      <link>https://example.org/exhibition-builds/2021/examples/schilderij2/painting1/</link>
+      <pubDate>Fri, 19 Mar 2021 10:46:38 +0100</pubDate>
+      
+      <guid>https://example.org/exhibition-builds/2021/examples/schilderij2/painting1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Les Bourgeois - Rodin</title>
+      <link>https://example.org/exhibition-builds/2021/examples/beelden/sculpture2/</link>
       <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
       
-      <guid>https://example.org/exhibition-builds/2021/examples/paintings1/painting3/</guid>
+      <guid>https://example.org/exhibition-builds/2021/examples/beelden/sculpture2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Les Valseurs</title>
+      <link>https://example.org/exhibition-builds/2021/examples/beelden/sculpture1/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>https://example.org/exhibition-builds/2021/examples/beelden/sculpture1/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Painting 4</title>
-      <link>https://example.org/exhibition-builds/2021/examples/paintings1/painting4/</link>
+      <link>https://example.org/exhibition-builds/2021/examples/schilderij/painting4/</link>
       <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
       
-      <guid>https://example.org/exhibition-builds/2021/examples/paintings1/painting4/</guid>
+      <guid>https://example.org/exhibition-builds/2021/examples/schilderij/painting4/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Painting 4</title>
-      <link>https://example.org/exhibition-builds/2021/examples/schilderijen2/painting4/</link>
+      <link>https://example.org/exhibition-builds/2021/examples/schilderij2/painting4/</link>
       <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
       
-      <guid>https://example.org/exhibition-builds/2021/examples/schilderijen2/painting4/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Painting 5</title>
-      <link>https://example.org/exhibition-builds/2021/examples/paintings1/painting5/</link>
-      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
-      
-      <guid>https://example.org/exhibition-builds/2021/examples/paintings1/painting5/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Painting 6</title>
-      <link>https://example.org/exhibition-builds/2021/examples/paintings1/painting6/</link>
-      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
-      
-      <guid>https://example.org/exhibition-builds/2021/examples/paintings1/painting6/</guid>
+      <guid>https://example.org/exhibition-builds/2021/examples/schilderij2/painting4/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Wlerick enfant</title>
-      <link>https://example.org/exhibition-builds/2021/examples/sculptures/sculpture10/</link>
+      <link>https://example.org/exhibition-builds/2021/examples/beelden/sculpture3/</link>
       <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
       
-      <guid>https://example.org/exhibition-builds/2021/examples/sculptures/sculpture10/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Wlerick enfant</title>
-      <link>https://example.org/exhibition-builds/2021/examples/sculptures/sculpture4/</link>
-      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
-      
-      <guid>https://example.org/exhibition-builds/2021/examples/sculptures/sculpture4/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Wlerick enfant</title>
-      <link>https://example.org/exhibition-builds/2021/examples/sculptures/sculpture8/</link>
-      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
-      
-      <guid>https://example.org/exhibition-builds/2021/examples/sculptures/sculpture8/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Wlerick enfant</title>
-      <link>https://example.org/exhibition-builds/2021/examples/sculptures/sculpture9/</link>
-      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
-      
-      <guid>https://example.org/exhibition-builds/2021/examples/sculptures/sculpture9/</guid>
+      <guid>https://example.org/exhibition-builds/2021/examples/beelden/sculpture3/</guid>
       <description></description>
     </item>
     
