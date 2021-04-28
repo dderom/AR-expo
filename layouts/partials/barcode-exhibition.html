@@ -5,7 +5,7 @@
     <a-scene device-orientation-permission-ui="enabled: false" loading-screen="enabled: false;" embedded arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: {{ .Params.marker_type_sets}};">
         <!-- Check if there is a sky -->
         {{ if .Params.sky }}
-        <a-assets>
+        <a-assets timeout="10000">
             <video id="{{.Params.videoId}}" autoplay loop="true" src="{{ .Params.video_360 }}"> </video>
 
 
