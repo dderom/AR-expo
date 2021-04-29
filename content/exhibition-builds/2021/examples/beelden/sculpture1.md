@@ -12,7 +12,7 @@ exhibitions: "beelden" #provide the title as a custom category so it creates a p
 latitude : "50.730862"
 longitude : "3.806083"
 position_artwork: "0 0.5 0" #set how much it will hover above/beside marker/geolocation. Use "0 0 0" for 3 axes
-size_artwork: "0.01 0.01 0.01" # set size either relative to itself of to markers
+size_artwork: "0.04 0.04 0.04" # set size either relative to itself of to markers
 marker_id: 5 # provide a unique markerID
 
 weight: #choose, if required, a weight for the exhibition_item, only integers
