@@ -7,8 +7,8 @@ artwork_refs: "jeanne_kefer" #add all the artworks using their unique ID Name
 type: #choose from geolocation, marker, custom_marker, picture
 exhibition_year: #give a year the exhibition was published/open, can be different of creation date of this item
 exhibitions: "geolocatie" #provide the title as a custom category so it creates a page for the exhibition
-longitude: "50.730413"
-latitude: "3.805929"
+latitude: "50.730413"
+longitude: "3.805929"
 
 
 
