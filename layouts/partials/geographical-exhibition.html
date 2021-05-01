@@ -9,12 +9,23 @@
     {{ $size := .Params.size_artwork }}
     {{ $position := .Params.position_artwork }}
     {{ range .Site.RegularPages.Related . }}
-        <a-entity gps-entity-place="latitude: {{ $latitude }}; longitude: {{ $longitude }};" position="{{ $position }}" scale="{{ $size }}" gltf-model="/expo-dko/public/artworks/{{ .Params.model }}">
+        {{ if eq .Type "artworks"}}
+        <a-entity look-at="[gps-camera]" gps-entity-place="latitude: {{ $latitude }}; longitude: {{ $longitude }};" position="{{ $position }}" scale="{{ $size }}" gltf-model="/expo-dko/public/artworks/{{ .Params.model }}">
         </a-entity>
+        <a-text
+        value="This content will always face you."
+        look-at="[gps-camera]"
+        scale="120 120 120"
+        gps-entity-place="latitude: <add-your-latitude>; longitude: <add-your-longitude>;"
+      ></a-text>
+        {{end}}
     {{ end}}
   {{ end }}
 
-    <a-camera gps-camera rotation-reader> </a-camera>
+    <a-camera id='camera1' look-controls-enabled='false'
+    arjs-look-controls='smoothingFactor: 0.1'
+    gps-camera='gpsMinDistance: 5'
+    rotation-reader> </a-camera>
   </a-scene>
 </body>
 

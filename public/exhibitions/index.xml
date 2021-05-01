@@ -18,6 +18,15 @@
     
     <item>
       <title>Expo van klassieke schilderijen</title>
+      <link>https://example.org/exhibitions/geolocatie/</link>
+      <pubDate>Fri, 01 Jan 2021 16:18:44 +0100</pubDate>
+      
+      <guid>https://example.org/exhibitions/geolocatie/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Expo van klassieke schilderijen</title>
       <link>https://example.org/exhibitions/schilderijen/</link>
       <pubDate>Fri, 01 Jan 2021 16:18:44 +0100</pubDate>
       
