@@ -47,16 +47,14 @@
           </a-animation>
         </a-image>
 
-        <a-sphere look-at="[gps-camera]"
-        scale="60 60 60"
-        gps-entity-place="latitude: 50.730970; longitude: 3.806465;"
-        position="-10 300 0"
-        rotation="0 90 0"
-        color ="red"
-        >
-            <a-animation attribute="scale" dur="1000" from="1 1 1" to="2 2 2" direction="alternate-reverse" easing="ease-in-out-circ" repeat="indefinite">
-            </a-animation>
-        </a-sphere>
+        <a-box
+                scale="6 6 6"
+                rotation="0 0 0"
+                color ="red"
+                >
+                    <a-animation attribute="scale" dur="1000" from="1 1 1" to="2 2 2" direction="alternate-reverse" easing="ease-in-out-circ" repeat="indefinite">
+                    </a-animation>
+        </a-box>
 
   </a-entity>
 
