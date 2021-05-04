@@ -13,9 +13,9 @@
 
   <div class="">
     <!-- single page card -->
-    <div class="">
-      <div style="background-color: rgba(0, 152, 255, 0.3); border-radius: 10px; border: solid 2px black; margin: 10px; padding: 5px; width: 400px; ">
-      <a href="{{ .RelPermalink }}" style="color: black; font-weight: bold; text-decoration: none;"><span class="h3">{{ .Title }}</span></a> <!-- Added url prefix for Github -->
+    <div class="list-blocks">
+      <div class="list-blocks-title">
+      <a href="{{ .RelPermalink }}"><span class="h3">{{ .Title }}</span></a> <!-- Added url prefix for Github -->
       <ul>
         <li><span class="text-right Counter Counter--gray">Een totaal van {{ len .Pages }} virtuele kunstwerken.</span></li>
 
