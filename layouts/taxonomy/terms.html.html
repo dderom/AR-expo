@@ -16,19 +16,19 @@
     <div class="list-blocks">
       <div class="list-blocks-title">
       <a href="{{ .RelPermalink }}"><span class="h3">{{ .Title }}</span></a> <!-- Added url prefix for Github -->
-      <ul>
+      <ul class="list-bullet">
         <li><span class="text-right Counter Counter--gray">Een totaal van {{ len .Pages }} virtuele kunstwerken.</span></li>
 
       <li class="text-right Counter Counter--gray">Maakt gebruik van de marker(s):</li>
 
-            <ul>{{ range .RegularPages }}
+            <ul>
+              {{ range .RegularPages }}
               <li>{{  .Params.marker_id}}</li>
               {{end}}
-
             </ul>
         <br>
-        <li style="background: #00008B;color: #00008B; width: max-content; font-weight: bold; text-decoration: none; border: 2px solid #6495ED; border-radius: 10px;list-style-type:none; padding: 5px;">
-          <a style="color: white; font-weight: bold; text-decoration: none;" href="{{ .RelPermalink }}">Test de website</a>
+        <li class="list-bullet-link">
+          <a href="{{ .RelPermalink }}">Test de website</a>
         </li>
 
         </ul>
