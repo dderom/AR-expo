@@ -2,46 +2,47 @@
   {{ .Title }} &ndash; {{ .Site.Title }}
 {{ end }}
 
-
 {{ define "main" }}
 <!-- list template -->
+
 <div>
 
-  <h1>{{ .Title }}</h1>
-  {{ .Content }}
-
   {{ range .Paginator.Pages }}
+
+
 
   <div class="rounded-2 box-shadow-medium px-3 pb-2 pt-2 mb-2">
     <!-- single page card -->
     <div class="mb-2">
-      <a href="/expo-dko/public/{{ .RelPermalink }}" class="link-gray-dark"><span class="h2">{{ .Title }}</span></a> <!-- Added url prefix for Github -->
-      <span class="text-right Counter Counter--gray">With a total of {{ len .Pages }} works of art.</span>
+      <div style="background-color: rgba(0, 152, 255, 0.3); border-radius: 10px; border: solid 2px black; margin: 10px; padding: 5px; width: 400px; ">
+      <a href="/expo-dko/public/{{ .RelPermalink }}" style="color: black; font-weight: bold; text-decoration: none;"><span class="h3">{{ .Title }}</span></a> <!-- Added url prefix for Github -->
+      <ul>
+        <li><span class="text-right Counter Counter--gray">Een totaal van {{ len .Pages }} virtuele kunstwerken.</span></li>
+        
+      <li class="text-right Counter Counter--gray">Maakt gebruik van de marker(s):</li>
+
+            <ul>{{ range .RegularPages }}
+              <li>{{  .Params.marker_id}}</li>
+              {{end}}
+
+            </ul>
+        <br>
+        <li style="background: #00008B;color: #00008B; width: max-content; font-weight: bold; text-decoration: none; border: 2px solid #6495ED; border-radius: 10px;list-style-type:none; padding: 5px;">
+          <a style="color: white; font-weight: bold; text-decoration: none;" href="{{ .RelPermalink }}">Test de website</a>
+        </li>
+
+        </ul>
+        </div>
+      </div>
+
     </div>
     <div class="text-gray">
-      <!--{{ range .Pages }}
-        {{ with $related := .Site.RegularPages.Related . }}
-            {{ range . }}
-            {{ .Params.artists }}
-            {{ end }}
-        {{ end }}
 
-
-      {{ end }}-->
 
     </div>
   </div>
   {{ end }}
 
-  <!-- paginator nav -->
-  {{ partial "paginator.html" . }}
-
-
 </div>
 
-{{ end }}
-
-
-{{ define "side" }}
-  {{ partial "side.taxonomy.html" . }}
 {{ end }}

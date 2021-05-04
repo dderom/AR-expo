@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Type-Artworks on DKO en AR - we finally meet</title>
-    <link>https://example.org/type-artworks/</link>
-    <description>Recent content in Type-Artworks on DKO en AR - we finally meet</description>
+    <title>Type-Artworks on DKO en AR - demosite en playground for AR en art exhibitions</title>
+    <link>https://dderom.github.io/expo-dko/public/type-artworks/</link>
+    <description>Recent content in Type-Artworks on DKO en AR - demosite en playground for AR en art exhibitions</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://example.org/type-artworks/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://dderom.github.io/expo-dko/public/type-artworks/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

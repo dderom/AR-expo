@@ -1,5 +1,5 @@
 ---
-title: "Expo voorbeeld using Rodin en geolocation"
+title: "3D Beelden - schaalbaarheid met goede performantie"
 date: 2021-02-01 16:18:44+01:00
 draft: false
 

@@ -1,5 +1,5 @@
 ---
-title: "Expo van klassieke schilderijen"
+title: "Schilderijen - met extra content (video, text, links...)"
 date: 2021-01-01 16:18:44+01:00
 draft: false
 

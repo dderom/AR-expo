@@ -1,63 +1,63 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Artists on DKO en AR - we finally meet</title>
-    <link>https://example.org/artists/</link>
-    <description>Recent content in Artists on DKO en AR - we finally meet</description>
+    <title>Artists on DKO en AR - demosite en playground for AR en art exhibitions</title>
+    <link>https://dderom.github.io/expo-dko/public/artists/</link>
+    <description>Recent content in Artists on DKO en AR - demosite en playground for AR en art exhibitions</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 19 Mar 2021 10:45:38 +0100</lastBuildDate><atom:link href="https://example.org/artists/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 19 Mar 2021 10:45:38 +0100</lastBuildDate><atom:link href="https://dderom.github.io/expo-dko/public/artists/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>beelden</title>
-      <link>https://example.org/artists/beelden/</link>
+      <link>https://dderom.github.io/expo-dko/public/artists/beelden/</link>
       <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
       
-      <guid>https://example.org/artists/beelden/</guid>
+      <guid>https://dderom.github.io/expo-dko/public/artists/beelden/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Camille Claudel</title>
-      <link>https://example.org/artists/camille-claudel/</link>
+      <link>https://dderom.github.io/expo-dko/public/artists/camille-claudel/</link>
       <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
       
-      <guid>https://example.org/artists/camille-claudel/</guid>
+      <guid>https://dderom.github.io/expo-dko/public/artists/camille-claudel/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Fernand Edmond Jean Marie Khnopff</title>
-      <link>https://example.org/artists/fernand-edmond-jean-marie-khnopff/</link>
+      <link>https://dderom.github.io/expo-dko/public/artists/fernand-edmond-jean-marie-khnopff/</link>
       <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
       
-      <guid>https://example.org/artists/fernand-edmond-jean-marie-khnopff/</guid>
+      <guid>https://dderom.github.io/expo-dko/public/artists/fernand-edmond-jean-marie-khnopff/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Gustave Van de Woestyne</title>
-      <link>https://example.org/artists/gustave-van-de-woestyne/</link>
+      <link>https://dderom.github.io/expo-dko/public/artists/gustave-van-de-woestyne/</link>
       <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
       
-      <guid>https://example.org/artists/gustave-van-de-woestyne/</guid>
+      <guid>https://dderom.github.io/expo-dko/public/artists/gustave-van-de-woestyne/</guid>
       <description></description>
     </item>
     
     <item>
       <title>James Ensor</title>
-      <link>https://example.org/artists/james-ensor/</link>
+      <link>https://dderom.github.io/expo-dko/public/artists/james-ensor/</link>
       <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
       
-      <guid>https://example.org/artists/james-ensor/</guid>
+      <guid>https://dderom.github.io/expo-dko/public/artists/james-ensor/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Robert Wlérick</title>
-      <link>https://example.org/artists/robert-wl%C3%A9rick/</link>
+      <link>https://dderom.github.io/expo-dko/public/artists/robert-wl%C3%A9rick/</link>
       <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
       
-      <guid>https://example.org/artists/robert-wl%C3%A9rick/</guid>
+      <guid>https://dderom.github.io/expo-dko/public/artists/robert-wl%C3%A9rick/</guid>
       <description></description>
     </item>
     

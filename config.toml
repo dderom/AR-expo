@@ -1,6 +1,6 @@
-baseURL = "https://example.org/"
+baseURL = "https://dderom.github.io/expo-dko/public"
 languageCode = "en-us"
-title = "DKO en AR - we finally meet"
+title = "DKO en AR - demosite en playground for AR en art exhibitions"
 theme = "hugo-primer"
 
 
