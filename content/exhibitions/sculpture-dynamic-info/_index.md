@@ -9,7 +9,7 @@ exhibition_types: "barcode" #Choose from geolocation, barcode, custom_barcode, p
 marker_type_sets: "3x3" #choose from 3x3
 
 context: true
-finished: true
+finished: false
 ---
 
 A sample of 3D rendered sculptures, varying in size. Simple demo to display the proof of concept.
