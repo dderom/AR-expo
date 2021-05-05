@@ -51,7 +51,9 @@
 
             <ul>
               {{ range .RegularPages }}
-              <li>{{ .Params.marker_id}}</li>
+                {{ if .Params.marker_id }}
+                <li>{{ .Params.marker_id}}</li>
+                {{end}}
               {{end}}
             </ul>
         <br>
