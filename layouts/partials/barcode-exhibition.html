@@ -28,7 +28,7 @@
                       {{ if eq .Params.artType "2d"}}
 
                       <a-marker markerhandler type="{{$exhibition_type}}" value="{{$marker_id}}" id="{{$marker_id}}">
-                        <a-image rotation="90 0 180" position="{{ $position }}" scale="{{ $size }}" src="/expo-dko/public/artworks/{{ .Params.model }}">
+                        <a-image rotation="90 0 180" position="{{ $position }}" scale="{{ $size }}" src="/AR-expo/public/artworks/{{ .Params.model }}">
                         </a-image>
 
                       </a-marker>
@@ -36,7 +36,7 @@
                       {{ else }}
 
                       <a-marker markerhandler type="{{$exhibition_type}}" value="{{$marker_id}}" smooth="true" smoothCount="20" id="{{$marker_id}}">
-                        <a-entity position="{{ $position }}" scale="{{ $size }}" gltf-model="/expo-dko/public/artworks/{{ .Params.model }}">
+                        <a-entity position="{{ $position }}" scale="{{ $size }}" gltf-model="/AR-expo/public/artworks/{{ .Params.model }}">
                         </a-entity>
                       </a-marker>
                       {{end}}
