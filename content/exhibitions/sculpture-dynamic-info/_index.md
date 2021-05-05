@@ -10,6 +10,7 @@ marker_type_sets: "3x3" #choose from 3x3
 
 context: true
 finished: false
+dynamic_annotations: true
 ---
 
 A sample of 3D rendered sculptures, varying in size. Simple demo to display the proof of concept.

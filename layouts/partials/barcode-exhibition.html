@@ -15,6 +15,7 @@
         <!-- Get some data before your process -->
         {{ $exhibition_type := .Params.exhibition_types}}
         {{ $artTypeExhibition := .Params.artType }}
+        {{$dynamic_annotations:= .Params.dynamic_annotations }}
         {{ range .RegularPages }}
             <!--  Get all the data from the exhibition item ref -->
             {{ $position := .Params.position_artwork }}
@@ -38,6 +39,9 @@
                       <a-marker markerhandler type="{{$exhibition_type}}" value="{{$marker_id}}" smooth="true" smoothCount="20" id="{{$marker_id}}">
                         <a-entity position="{{ $position }}" scale="{{ $size }}" gltf-model="/AR-expo/public/artworks/{{ .Params.model }}">
                         </a-entity>
+                        {{if $dynamic_annotations }}
+                          <a-sphere clickhandler position="0.571 1.344 -3.557" scale="0.1 0.1 0.1" color="black" wireframe=true></a-sphere>
+                        {{end}}
                       </a-marker>
                       {{end}}
                     {{ end}}
@@ -49,4 +53,8 @@
 
     <!-- add a simple camera -->
     <a-entity camera></a-entity>
+    <!-- add cursor entity if set true -->
+    {{if .Params.dynamic_annotations }}
+    <a-entity cursor="rayOrigin:mouse"></a-entity>
+    {{end}}
   </a-scene>

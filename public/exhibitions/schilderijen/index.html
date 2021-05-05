@@ -73,6 +73,16 @@
       });
     </script>
 
+    
+    <script>
+        AFRAME.registerComponent('clickhandler', {
+            init: function() {
+                this.el.addEventListener('click', () => {
+                    alert('Clicked!')
+                });
+        }});
+    </script>
+
     <style>
 
       .menu {
@@ -139,6 +149,7 @@
         </a-assets>
         
         <a-sky src="#sky"></a-sky>
+        
         
         
         
@@ -252,6 +263,8 @@
 
     
     <a-entity camera></a-entity>
+    
+    
   </a-scene>
 
   

@@ -73,6 +73,16 @@
       });
     </script>
 
+    
+    <script>
+        AFRAME.registerComponent('clickhandler', {
+            init: function() {
+                this.el.addEventListener('click', () => {
+                    alert('Clicked!')
+                });
+        }});
+    </script>
+
     <style>
 
       .menu {
@@ -137,6 +147,7 @@
         
         
         
+        
             
             
             
@@ -151,6 +162,9 @@
                       <a-marker markerhandler type="barcode" value="4" smooth="true" smoothCount="20" id="4">
                         <a-entity position="0 -0.5 0" scale="0.08 0.08 0.08" gltf-model="/AR-expo/public/artworks/les_bourgeois_de_calais_by_rodin/scene.gltf">
                         </a-entity>
+                        
+                          <a-sphere clickhandler position="0.571 1.344 -3.557" scale="0.1 0.1 0.1" color="black" wireframe=true></a-sphere>
+                        
                       </a-marker>
                       
                     
@@ -186,6 +200,9 @@
                       <a-marker markerhandler type="barcode" value="5" smooth="true" smoothCount="20" id="5">
                         <a-entity position="0 -0.5 0" scale="0.2 0.2 0.2" gltf-model="/AR-expo/public/artworks/les_bourgeois_de_calais_by_rodin/scene.gltf">
                         </a-entity>
+                        
+                          <a-sphere clickhandler position="0.571 1.344 -3.557" scale="0.1 0.1 0.1" color="black" wireframe=true></a-sphere>
+                        
                       </a-marker>
                       
                     
@@ -212,6 +229,10 @@
 
     
     <a-entity camera></a-entity>
+    
+    
+    <a-entity cursor="rayOrigin:mouse"></a-entity>
+    
   </a-scene>
 
   
