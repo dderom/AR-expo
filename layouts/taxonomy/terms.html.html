@@ -14,12 +14,12 @@
   <div class="demo">
     {{if .Params.finished }}
     <div class="list-blocks">
-      <h2>Demo's</h2>
+      <h2>Demo</h2>
       <div class="list-blocks-title">
       <a href="{{ .RelPermalink }}"><span class="h3">{{ .Title }}</span></a> <!-- Added url prefix for Github -->
       <span class="description-block">{{ .Content }}</span>
       <ul class="list-bullet">
-        <li><span>Een totaal van {{ len .Pages }} virtuele kunstwerken.</span></li>
+        <li><span>Displaying a total of {{ len .Pages }} virtual works of art.</span></li>
 
       <li>Use the following markers:</li>
 
@@ -30,7 +30,7 @@
             </ul>
         <br>
         <li class="list-bullet-link">
-          <a href="{{ .RelPermalink }}">Test de website</a>
+          <a href="{{ .RelPermalink }}">Demo</a>
         </li>
 
         </ul>
@@ -40,7 +40,7 @@
     </div>
     {{else}}
     <div class="list-blocks-unfinished">
-      <h2>Early stage Demo's</h2>
+      <h2>Early stage Demo</h2>
       <div class="list-blocks-title">
       <a href="{{ .RelPermalink }}"><span class="h3">{{ .Title }}</span></a> <!-- Added url prefix for Github -->
       <span class="description-block">{{ .Content }}</span>
@@ -51,12 +51,12 @@
 
             <ul>
               {{ range .RegularPages }}
-              <li>{{  .Params.marker_id}}</li>
+              <li>{{ .Params.marker_id}}</li>
               {{end}}
             </ul>
         <br>
         <li class="list-bullet-link">
-          <a href="{{ .RelPermalink }}">Test de website</a>
+          <a href="{{ .RelPermalink }}">Demo</a>
         </li>
 
         </ul>
