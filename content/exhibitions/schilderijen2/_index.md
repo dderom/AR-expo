@@ -8,5 +8,6 @@ exhibition_types: "barcode" #Choose from geolocation, barcode, custom_barcode, p
 marker_type_sets: "3x3" #choose from 3x3
 
 context: true
-
+finished: true
 ---
+Proof of concept using sky and black box in combination with AR. 

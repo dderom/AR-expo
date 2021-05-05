@@ -11,11 +11,13 @@
 
 
 
-  <div class="">
-    <!-- single page card -->
+  <div class="finished">
+    {{if .Params.finished }}
+    <h2>Finished Demo's</h2>
     <div class="list-blocks">
       <div class="list-blocks-title">
       <a href="{{ .RelPermalink }}"><span class="h3">{{ .Title }}</span></a> <!-- Added url prefix for Github -->
+      <span class="description-block">{{ .Content }}</span>
       <ul class="list-bullet">
         <li><span class="text-right Counter Counter--gray">Een totaal van {{ len .Pages }} virtuele kunstwerken.</span></li>
 
@@ -36,7 +38,37 @@
       </div>
 
     </div>
-    <div class="text-gray">
+    {{else}}
+    <div class="list-blocks-unfinished">
+      <h2>Early stage Demo's</h2>
+      <div class="list-blocks-title">
+      <a href="{{ .RelPermalink }}"><span class="h3">{{ .Title }}</span></a> <!-- Added url prefix for Github -->
+      <span class="description-block">{{ .Content }}</span>
+      <ul class="list-bullet">
+        <li><span class="text-right Counter Counter--gray">Een totaal van {{ len .Pages }} virtuele kunstwerken.</span></li>
+
+      <li class="text-right Counter Counter--gray">Maakt gebruik van de marker(s):</li>
+
+            <ul>
+              {{ range .RegularPages }}
+              <li>{{  .Params.marker_id}}</li>
+              {{end}}
+            </ul>
+        <br>
+        <li class="list-bullet-link">
+          <a href="{{ .RelPermalink }}">Test de website</a>
+        </li>
+
+        </ul>
+        </div>
+      </div>
+
+    </div>
+    {{end}}
+
+
+
+    <div >
 
 
     </div>

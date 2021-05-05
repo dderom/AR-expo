@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Exhibitions on DKO en AR - demosite en playground for AR en art exhibitions</title>
-    <link>https://dderom.github.io/expo-dko/public/exhibitions/</link>
+    <link>https://dderom.github.io/AR-expo/public/exhibitions/</link>
     <description>Recent content in Exhibitions on DKO en AR - demosite en playground for AR en art exhibitions</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 19 Mar 2021 10:48:38 +0100</lastBuildDate><atom:link href="https://dderom.github.io/expo-dko/public/exhibitions/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 19 Mar 2021 10:48:38 +0100</lastBuildDate><atom:link href="https://dderom.github.io/AR-expo/public/exhibitions/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>3D Beelden - schaalbaarheid met goede performantie</title>
-      <link>https://dderom.github.io/expo-dko/public/exhibitions/beelden/</link>
+      <title>3D sculptures - proof of concept using markers</title>
+      <link>https://dderom.github.io/AR-expo/public/exhibitions/beelden/</link>
       <pubDate>Mon, 01 Feb 2021 16:18:44 +0100</pubDate>
       
-      <guid>https://dderom.github.io/expo-dko/public/exhibitions/beelden/</guid>
-      <description></description>
+      <guid>https://dderom.github.io/AR-expo/public/exhibitions/beelden/</guid>
+      <description>A sample of 3D rendered sculptures, varying in size. Simple demo to display the proof of concept.</description>
     </item>
     
     <item>
-      <title>Geolocatie - testfase voor geolocatie en overlay als alternatief menu (in flux)</title>
-      <link>https://dderom.github.io/expo-dko/public/exhibitions/geolocatie/</link>
+      <title>Geolocatie</title>
+      <link>https://dderom.github.io/AR-expo/public/exhibitions/geolocatie/</link>
       <pubDate>Fri, 01 Jan 2021 16:18:44 +0100</pubDate>
       
-      <guid>https://dderom.github.io/expo-dko/public/exhibitions/geolocatie/</guid>
-      <description></description>
+      <guid>https://dderom.github.io/AR-expo/public/exhibitions/geolocatie/</guid>
+      <description>Sandbox to use geolocation as menu for navigating exhibition website instead of classic mobile menu. Possibly using leaflet.js to enhance features. Goal is nft emulation.</description>
     </item>
     
     <item>
       <title>Schilderijen - met extra content (video, text, links...)</title>
-      <link>https://dderom.github.io/expo-dko/public/exhibitions/schilderijen/</link>
+      <link>https://dderom.github.io/AR-expo/public/exhibitions/schilderijen/</link>
       <pubDate>Fri, 01 Jan 2021 16:18:44 +0100</pubDate>
       
-      <guid>https://dderom.github.io/expo-dko/public/exhibitions/schilderijen/</guid>
-      <description></description>
+      <guid>https://dderom.github.io/AR-expo/public/exhibitions/schilderijen/</guid>
+      <description>Proof of concept of paintings, using 2D images rendered in 3D environment.</description>
     </item>
     
     <item>
       <title>Schilderijen - met extra content (video, text, links...) en achtergrond effect ifv VR</title>
-      <link>https://dderom.github.io/expo-dko/public/exhibitions/schilderijen2/</link>
+      <link>https://dderom.github.io/AR-expo/public/exhibitions/schilderijen2/</link>
       <pubDate>Fri, 01 Jan 2021 16:18:44 +0100</pubDate>
       
-      <guid>https://dderom.github.io/expo-dko/public/exhibitions/schilderijen2/</guid>
-      <description></description>
+      <guid>https://dderom.github.io/AR-expo/public/exhibitions/schilderijen2/</guid>
+      <description>Proof of concept using sky and black box in combination with AR.</description>
     </item>
     
   </channel>

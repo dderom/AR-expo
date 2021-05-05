@@ -13,4 +13,7 @@ sky_image: "/video/cubic_map_by_tatasz_da6uf3d.jpg"
 video_environment: false
 videoId: "expo_video"
 video_360: "https://www.youtube.com/embed/qHJKhnXrUf4"
+
+finished: true
 ---
+Proof of concept of paintings, using 2D images rendered in 3D environment. 
