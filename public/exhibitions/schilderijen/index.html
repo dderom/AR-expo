@@ -6,8 +6,10 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
+    <title>Schilderijen - met extra content (video, text, links...)</title>
+    
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js">  </script>
 
     
@@ -27,33 +29,41 @@
             var markerVideoDIViframe = 'context-video-' + markerId;
             var visibelvar = document.getElementById(markerArtistDIV).style.visibility = "visible";
             var visibelvar2 = document.getElementById(markerDescriptionDIV).style.visibility = "visible";
+            if (document.getElementById(markerVideoDIV) !== null) {
             var visibelvar3 = document.getElementById(markerVideoDIV).style.visibility = "visible";
-            $(document).ready(function(){
-                
 
-                var url = $("#" + markeriframeId).attr('src');
-                console.log("Video URL: ", url);
-                
+                $(document).ready(function(){
+                    
 
-                $("#" + markerVideoDIViframe).on('hide.bs.modal', function(){
-                    $("#" + markeriframeId).attr('src', '');
-                    console.log("Video autoplay: ", markerVideoDIViframe);
+                    var url = $("#" + markeriframeId).attr('src');
+                    console.log("Video URL: ", url);
+                    
+
+                    $("#" + markerVideoDIViframe).on('hide.bs.modal', function(){
+                        $("#" + markeriframeId).attr('src', '');
+                        console.log("Video autoplay: ", markerVideoDIViframe);
+                    });
+
+                    
+
+                    $("#" + markerVideoDIViframe).on('show.bs.modal', function(){
+                        $("#" + markeriframeId).attr('src', url);
+                        console.log("Video autoplay: ", markerVideoDIViframe);
+                    });
+
+
                 });
+            }
+            
 
-                
-
-                $("#" + markerVideoDIViframe).on('show.bs.modal', function(){
-                    $("#" + markeriframeId).attr('src', url);
-                    console.log("Video autoplay: ", markerVideoDIViframe);
-                });
-
-            });
+            
             console.log('Marker Found: ', markerId);
             console.log("visibility: ", visibelvar);
             console.log("Description ID: ", markerDescriptionDIV);
             console.log("Artist ID: ", markerArtistDIV);
             console.log("Video ID: ", markerVideoDIV);
             console.log("Video autoplay: ", markerVideoDIViframe);
+
           });
           marker.addEventListener("markerLost",() =>{
             var markerId = marker.id;
@@ -62,26 +72,21 @@
             var markerVideoDIV = 'menu-video-' + markerId;
             var visibelvar = document.getElementById(markerArtistDIV).style.visibility = "hidden";
             var visibelvar2 = document.getElementById(markerDescriptionDIV).style.visibility = "hidden";
-            var visibelvar3 = document.getElementById(markerVideoDIV).style.visibility = "hidden";
-            console.log('Marker Found: ', markerId);
+            if (document.getElementById(markerVideoDIV) !== null) {
+              var visibelvar3 = document.getElementById(markerVideoDIV).style.visibility = "hidden";
+            }
+            console.log('Marker Lost: ', markerId);
             console.log("visibility: ", visibelvar);
-            console.log("Description ID: ", markerDescriptionDIV)
-            console.log("Artist ID: ", markerArtistDIV)
-            console.log("Video ID: ", markerVideoDIV)
+            console.log("Description ID - hidden: ", markerDescriptionDIV)
+            console.log("Artist ID - hidden: ", markerArtistDIV)
+            console.log("Video ID - hidden: ", markerVideoDIV)
           });
         },
       });
     </script>
 
     
-    <script>
-        AFRAME.registerComponent('clickhandler', {
-            init: function() {
-                this.el.addEventListener('click', () => {
-                    alert('Clicked!')
-                });
-        }});
-    </script>
+    
 
     <style>
 

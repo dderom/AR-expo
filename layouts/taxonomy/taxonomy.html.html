@@ -1,6 +1,6 @@
 <!-- Build the menu if applicable -->
 {{ if eq .Params.exhibition_types "barcode" }}
-  {{ partial "head_ar_barcode.html" }}
+  {{ partial "head_ar_barcode.html" . }}
   {{ partial "barcode-exhibition.html" . }}
   {{ if .Params.context }}
     {{ partial "context.html" . }}
