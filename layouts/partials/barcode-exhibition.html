@@ -57,6 +57,7 @@
     <a-entity camera></a-entity>
     <!-- add cursor entity if set true -->
     {{if .Params.dynamic_annotations }}
+    <a-camera rotation-reader></a-camera>
     <a-entity cursor="rayOrigin:mouse"></a-entity>
     {{end}}
   </a-scene>
