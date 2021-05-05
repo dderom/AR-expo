@@ -75,13 +75,17 @@
 
 
     <script>
-        AFRAME.registerComponent('clickhandler', {
-            init: function() {
-                this.el.addEventListener('click', () => {
-                    alert('Clicked!')
-                });
-        }});
-    </script>
+        window.onload = function () {
+          document
+            .querySelector(".say-hi-button")
+            .addEventListener("click", function () {
+              // here you can change also a-scene or a-entity properties, like
+              // changing your 3D model source, size, position and so on
+              // or you can just open links, trigger actions...
+              alert("Hi there!");
+            });
+        };
+      </script>
 
     <style>
 
@@ -165,7 +169,11 @@
                         <a-entity position="0 -0.5 0" scale="0.08 0.08 0.08" gltf-model="/AR-expo/public/artworks/les_bourgeois_de_calais_by_rodin/scene.gltf">
                         </a-entity>
 
-                          <a-sphere clickhandler position="-2.425 5.782 -0.205" scale="0.1 0.1 0.1" color="black" wireframe=true></a-sphere>
+                          <a-sphere clickhandler position="-2.425 5.782 -0.205" scale="0.1 0.1 0.1" color="black" wireframe=true>
+                            <div class="buttons">
+                              <button class="say-hi-button"></button>
+                              </div>
+                          </a-sphere>
 
                       </a-marker>
 
