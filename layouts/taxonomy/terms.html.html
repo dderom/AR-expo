@@ -11,17 +11,17 @@
 
 
 
-  <div class="finished">
+  <div class="demo">
     {{if .Params.finished }}
-    <h2>Finished Demo's</h2>
     <div class="list-blocks">
+      <h2>Demo's</h2>
       <div class="list-blocks-title">
       <a href="{{ .RelPermalink }}"><span class="h3">{{ .Title }}</span></a> <!-- Added url prefix for Github -->
       <span class="description-block">{{ .Content }}</span>
       <ul class="list-bullet">
-        <li><span class="text-right Counter Counter--gray">Een totaal van {{ len .Pages }} virtuele kunstwerken.</span></li>
+        <li><span>Een totaal van {{ len .Pages }} virtuele kunstwerken.</span></li>
 
-      <li class="text-right Counter Counter--gray">Maakt gebruik van de marker(s):</li>
+      <li>Use the following markers:</li>
 
             <ul>
               {{ range .RegularPages }}
@@ -45,9 +45,9 @@
       <a href="{{ .RelPermalink }}"><span class="h3">{{ .Title }}</span></a> <!-- Added url prefix for Github -->
       <span class="description-block">{{ .Content }}</span>
       <ul class="list-bullet">
-        <li><span class="text-right Counter Counter--gray">Een totaal van {{ len .Pages }} virtuele kunstwerken.</span></li>
+        <li><span>Een totaal van {{ len .Pages }} virtuele kunstwerken.</span></li>
 
-      <li class="text-right Counter Counter--gray">Maakt gebruik van de marker(s):</li>
+      <li>Use the following markers:</li>
 
             <ul>
               {{ range .RegularPages }}
