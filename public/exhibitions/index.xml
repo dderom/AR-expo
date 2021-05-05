@@ -8,6 +8,15 @@
     <language>en-us</language>
     <lastBuildDate>Fri, 19 Mar 2021 10:48:38 +0100</lastBuildDate><atom:link href="https://dderom.github.io/AR-expo/public/exhibitions/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>3D sculptures - markers &#43; annotation</title>
+      <link>https://dderom.github.io/AR-expo/public/exhibitions/sculpture-dynamic-info/</link>
+      <pubDate>Mon, 01 Feb 2021 16:18:44 +0100</pubDate>
+      
+      <guid>https://dderom.github.io/AR-expo/public/exhibitions/sculpture-dynamic-info/</guid>
+      <description>A sample of 3D rendered sculptures, varying in size. Simple demo to display the proof of concept.</description>
+    </item>
+    
+    <item>
       <title>3D sculptures - proof of concept using markers</title>
       <link>https://dderom.github.io/AR-expo/public/exhibitions/beelden/</link>
       <pubDate>Mon, 01 Feb 2021 16:18:44 +0100</pubDate>
