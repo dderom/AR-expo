@@ -1,3 +1,5 @@
+{{"<!-- BEGINNING of context items -->" | safeHTML }}
+
 {{ $exhibition_type := .Params.exhibition_types}}
 {{ range .RegularPages }}
     <!--  Get all the data from the exhibition item ref -->
@@ -105,3 +107,6 @@
 
     {{ end }}
 {{ end }}
+
+
+{{"<!-- END of context items -->" | safeHTML }}

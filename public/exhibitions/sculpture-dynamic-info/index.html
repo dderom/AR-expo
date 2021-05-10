@@ -7,15 +7,37 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>3D sculptures - markers &#43; annotation</title>
-
+    
     <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
-
+    
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js">  </script>
 
-
+    
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+    
+      
+      
+      
+      
+      
+    
 
+    <!-- Script to hide/show the dynamic annotation scripts divs -->
+    <script>
+    AFRAME.registerComponent('clickhandler', {
+         init: function() {
+           const pin = this.el;
+           pin.addEventListener('click', () => {
+                var pinId = pin.getAttribute('pin-id');
+                 alert('Clicked! 1');
+                 console.log('Dynamic annotation for ID: ', pinId)
+             });
+
+     }});
+     </script>
+
+     <!-- Script to hide/show the context divs -->
     <script>
     AFRAME.registerComponent('markerhandler', {
         init: function () {
@@ -33,18 +55,18 @@
             var visibelvar3 = document.getElementById(markerVideoDIV).style.visibility = "visible";
 
                 $(document).ready(function(){
-
+                    
 
                     var url = $("#" + markeriframeId).attr('src');
                     console.log("Video URL: ", url);
-
+                    
 
                     $("#" + markerVideoDIViframe).on('hide.bs.modal', function(){
                         $("#" + markeriframeId).attr('src', '');
                         console.log("Video autoplay: ", markerVideoDIViframe);
                     });
 
-
+                    
 
                     $("#" + markerVideoDIViframe).on('show.bs.modal', function(){
                         $("#" + markeriframeId).attr('src', url);
@@ -54,9 +76,9 @@
 
                 });
             }
+            
 
-
-
+            
             console.log('Marker Found: ', markerId);
             console.log("visibility: ", visibelvar);
             console.log("Description ID: ", markerDescriptionDIV);
@@ -85,22 +107,11 @@
       });
     </script>
 
+    
+    
 
 
-    <script>
-     AFRAME.registerComponent('clickhandler', {
-         init: function() {
-           const pin = this.el;
-           pin.addEventListener('click', () => {
-                var pinId = pin.getAttribute('pin-id');
-                 alert('Clicked! 1');
-                 console.log('Dynamic annotation for ID: ', pinId)
-             });
-
-     }});
-     </script>
-
-
+    
 
     <style>
 
@@ -155,126 +166,259 @@
 
     </head>
 
-
+  
   <body>
     <a-scene vcursor='rayOrigin: mouse; fuse: true; fuseTimeout: 0;'
           raycaster="objects: [clickhandler];"
           vr-mode-ui="enabled: false"
   		embedded
   	 arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                      <a-marker markerhandler type="barcode" value="4" smooth="true" smoothCount="20" id="4">
-                        <a-entity position="0 -0.5 0" scale="0.08 0.08 0.08" gltf-model="/AR-expo/public/artworks/les_bourgeois_de_calais_by_rodin/scene.gltf">
-                        </a-entity>
-
-                          <a-sphere pin-id="A" clickhandler position="0 0.2 0"
-                              scale="0.3 0.3 0.3"
-                              look-at="camera"
-                              material="color: red;transparency: true; opacity: 0.5;"></a-sphere>
-
-                      </a-marker>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                      <a-marker markerhandler type="barcode" value="5" smooth="true" smoothCount="20" id="5">
-                        <a-entity position="0 -0.5 0" scale="0.2 0.2 0.2" gltf-model="/AR-expo/public/artworks/les_bourgeois_de_calais_by_rodin/scene.gltf">
-                        </a-entity>
-
-                          <a-sphere pin-id="B" clickhandler position="0 0.2 0"
-                              scale="0.3 0.3 0.3"
-                              look-at="camera"
-                              material="color: red;transparency: true; opacity: 0.5;"></a-sphere>
-
-                      </a-marker>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        
+        
+        
+        
+        
+        
+        
+        Printing range of taxonomy term:  exhibition-builds - Les Bourgeois - Rodin 1
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+
+            
+                  <!-- Start printing Artworks and Dynamic annotations if relevant-->
+                  
+                      
+                      
+                      
+                          
+                            <a-marker markerhandler type="barcode" value="4" smooth="true" smoothCount="20" id="4">
+                              <a-entity position="0 -0.5 0" scale="0.08 0.08 0.08" gltf-model="/AR-expo/public/artworks/les_bourgeois_de_calais_by_rodin/scene.gltf">
+                              </a-entity>
+                          
+                      
+
+                      
+
+                      
+                      
+                    
+                      
+                      
+                      
+
+                      
+
+                      
+                      
+                    
+                      
+                      
+                      
+
+                      
+
+                      
+                      
+                    
+                      
+                      
+                      
+
+                      
+
+                      
+                      
+                    
+                      
+                      
+                      
+
+                      
+
+                      
+                      
+                    
+                      
+                      
+                      
+
+                      
+
+                      
+                      
+                    
+                      
+                      
+                      
+
+                      
+                        Dynamic annotations: dynamic-annotations - Pin 1 - Les Bourgeois - Rodin
+                        <a-sphere type="button" data-toggle="modal" data-target="#pin-4"
+                                  clickhandler
+                                  pin-id="pin-4"
+                                  position="0 0.2 0"
+                                  scale="0.3 0.3 0.3"
+                                  look-at="camera"
+                                  material="color: red;transparency: true; opacity: 0.5;"></a-sphere>
+                      
+
+                      
+                      
+                    
+                      
+                      
+                      
+
+                      
+                        Dynamic annotations: dynamic-annotations - Pin 2 - Les Bourgeois - Rodin
+                        <a-sphere type="button" data-toggle="modal" data-target="#pin-4"
+                                  clickhandler
+                                  pin-id="pin-4"
+                                  position="0 0.2 0"
+                                  scale="0.3 0.3 0.3"
+                                  look-at="camera"
+                                  material="color: red;transparency: true; opacity: 0.5;"></a-sphere>
+                      
+
+                      
+                      
+                        </a-marker>
+                      
+                    
+            
+        Printing range of taxonomy term:  exhibition-builds - Les Bourgeois - Rodin 2
+
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+
+            
+                  <!-- Start printing Artworks and Dynamic annotations if relevant-->
+                  
+                      
+                      
+                      
+                          
+                            <a-marker markerhandler type="barcode" value="5" smooth="true" smoothCount="20" id="5">
+                              <a-entity position="0 -0.5 0" scale="0.2 0.2 0.2" gltf-model="/AR-expo/public/artworks/les_bourgeois_de_calais_by_rodin/scene.gltf">
+                              </a-entity>
+                          
+                      
+
+                      
+
+                      
+                      
+                    
+                      
+                      
+                      
+
+                      
+
+                      
+                      
+                    
+                      
+                      
+                      
+
+                      
+
+                      
+                      
+                    
+                      
+                      
+                      
+
+                      
+
+                      
+                      
+                    
+                      
+                      
+                      
+
+                      
+
+                      
+                      
+                    
+                      
+                      
+                      
+
+                      
+
+                      
+                      
+                    
+                      
+                      
+                      
+
+                      
+                        Dynamic annotations: dynamic-annotations - Pin 3 - Les Bourgeois - Rodin
+                        <a-sphere type="button" data-toggle="modal" data-target="#pin-5"
+                                  clickhandler
+                                  pin-id="pin-5"
+                                  position="0 0.2 0"
+                                  scale="0.3 0.3 0.3"
+                                  look-at="camera"
+                                  material="color: red;transparency: true; opacity: 0.5;"></a-sphere>
+                      
+
+                      
+                      
+                        </a-marker>
+                      
+                    
+            
+
+
+
+
+    
     <a-entity camera></a-entity>
-
-
+    
+    
 
     <a-entity cursor="rayOrigin:mouse"></a-entity>
-
+    
   </a-scene>
 
+  
+    <!-- BEGINNING of context items -->
 
 
 
+    
+    
+    
+    
+    
 
-
-
-
-
-
-
-
-
+          
+          
+          
           <div id="menu-description-4" class="menu-description menu container context">
               <div class="row">
                   <div class="col">
@@ -286,7 +430,7 @@
           </div>
 
 
-
+          
           <div class="modal fade" id="context-description-4" tabindex="-1" role="dialog" aria-labelledby="context-description-4" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
@@ -302,7 +446,7 @@
               </div>
             </div>
           </div>
-
+          
           <div id="menu-artist-4" class="menu-artist menu container context">
               <div class="row">
                   <div class="col">
@@ -313,7 +457,7 @@
               </div>
           </div>
 
-
+          
           <div class="modal fade" id="context-artist-4" tabindex="-1" role="dialog" aria-labelledby="context-artist-4" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
@@ -330,46 +474,56 @@
             </div>
           </div>
 
+          
+          
+          
 
+    
 
+          
+          
 
+    
 
+          
+          
 
+    
 
+          
+          
 
+    
 
+          
+          
 
+    
 
+          
+          
 
+    
 
+          
+          
 
+    
 
+          
+          
 
+    
 
+    
+    
+    
+    
+    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+          
+          
+          
           <div id="menu-description-5" class="menu-description menu container context">
               <div class="row">
                   <div class="col">
@@ -381,7 +535,7 @@
           </div>
 
 
-
+          
           <div class="modal fade" id="context-description-5" tabindex="-1" role="dialog" aria-labelledby="context-description-5" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
@@ -397,7 +551,7 @@
               </div>
             </div>
           </div>
-
+          
           <div id="menu-artist-5" class="menu-artist menu container context">
               <div class="row">
                   <div class="col">
@@ -408,7 +562,7 @@
               </div>
           </div>
 
-
+          
           <div class="modal fade" id="context-artist-5" tabindex="-1" role="dialog" aria-labelledby="context-artist-5" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
@@ -425,39 +579,47 @@
             </div>
           </div>
 
+          
+          
+          
+
+    
+
+          
+          
+
+    
+
+          
+          
+
+    
+
+          
+          
+
+    
+
+          
+          
+
+    
+
+          
+          
+
+    
+
+          
+          
+
+    
 
 
 
+<!-- END of context items -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
 
 
 

@@ -1,0 +1,1 @@
+AFRAME.registerComponent('clickhandler',{init:function(){const a=this.el;a.addEventListener('click',()=>{var b=a.getAttribute('pin-id');alert('Clicked! 1'),console.log('Dynamic annotation for ID: ',b)})}})

@@ -15,7 +15,25 @@
     
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+    
+      
+    
 
+    <!-- Script to hide/show the dynamic annotation scripts divs -->
+    <script>
+    AFRAME.registerComponent('clickhandler', {
+         init: function() {
+           const pin = this.el;
+           pin.addEventListener('click', () => {
+                var pinId = pin.getAttribute('pin-id');
+                 alert('Clicked! 1');
+                 console.log('Dynamic annotation for ID: ', pinId)
+             });
+
+     }});
+     </script>
+
+     <!-- Script to hide/show the context divs -->
     <script>
     AFRAME.registerComponent('markerhandler', {
         init: function () {
@@ -155,6 +173,8 @@
         
         
         
+        Printing range of taxonomy term:  exhibition-builds - Les Bourgeois - Rodin 3
+
             
             
             
@@ -163,142 +183,313 @@
 
             
             
+            
+            
+
+            
+                  <!-- Start printing Artworks and Dynamic annotations if relevant-->
                   
                       
-
-                      <a-marker markerhandler type="barcode" value="4" smooth="true" smoothCount="20" id="4">
-                        <a-entity position="0 -0.5 0" scale="0.08 0.08 0.08" gltf-model="/AR-expo/public/artworks/les_bourgeois_de_calais_by_rodin/scene.gltf">
-                        </a-entity>
-                        
-                      </a-marker>
                       
-                    
-
-            
-                  
-
-            
-                  
-
-            
-                  
-
-            
-                  
-
-            
-                  
-
-            
-        
-            
-            
-            
-            
-            
-
-            
-            
-                  
+                      
+                          
+                            <a-marker markerhandler type="barcode" value="4" smooth="true" smoothCount="20" id="4">
+                              <a-entity position="0 -0.5 0" scale="0.08 0.08 0.08" gltf-model="/AR-expo/public/artworks/les_bourgeois_de_calais_by_rodin/scene.gltf">
+                              </a-entity>
+                          
                       
 
-                      <a-marker markerhandler type="barcode" value="5" smooth="true" smoothCount="20" id="5">
-                        <a-entity position="0 -0.5 0" scale="0.2 0.2 0.2" gltf-model="/AR-expo/public/artworks/les_bourgeois_de_calais_by_rodin/scene.gltf">
-                        </a-entity>
-                        
-                      </a-marker>
+                      
+
+                      
                       
                     
-
-            
-                  
-
-            
-                  
-
-            
-                  
-
-            
-                  
-
-            
-                  
-
-            
-        
-            
-            
-            
-            
-            
-
-            
-            
-                  
+                      
+                      
                       
 
-                      <a-marker markerhandler type="barcode" value="6" smooth="true" smoothCount="20" id="6">
-                        <a-entity position="0 -0.5 0" scale="0.5 0.5 0.5" gltf-model="/AR-expo/public/artworks/les_bourgeois_de_calais_by_rodin/scene.gltf">
-                        </a-entity>
-                        
-                      </a-marker>
+                      
+
+                      
                       
                     
-
-            
-                  
-
-            
-                  
-
-            
-                  
-
-            
-                  
-
-            
-                  
-
-            
-        
-            
-            
-            
-            
-            
-
-            
-            
-                  
+                      
+                      
                       
 
-                      <a-marker markerhandler type="barcode" value="7" smooth="true" smoothCount="20" id="7">
-                        <a-entity position="0 -2 0" scale="0.5 0.5 0.5" gltf-model="/AR-expo/public/artworks/les_bourgeois_de_calais_by_rodin/scene.gltf">
-                        </a-entity>
-                        
-                      </a-marker>
+                      
+
+                      
                       
                     
+                      
+                      
+                      
+
+                      
+
+                      
+                      
+                    
+                      
+                      
+                      
+
+                      
+
+                      
+                      
+                    
+                      
+                      
+                      
+
+                      
+
+                      
+                      
+                        </a-marker>
+                      
+                    
+            
+        Printing range of taxonomy term:  exhibition-builds - Les Bourgeois - Rodin 4
 
             
+            
+            
+            
+            
+
+            
+            
+            
+            
+
+            
+                  <!-- Start printing Artworks and Dynamic annotations if relevant-->
                   
+                      
+                      
+                      
+                          
+                            <a-marker markerhandler type="barcode" value="5" smooth="true" smoothCount="20" id="5">
+                              <a-entity position="0 -0.5 0" scale="0.2 0.2 0.2" gltf-model="/AR-expo/public/artworks/les_bourgeois_de_calais_by_rodin/scene.gltf">
+                              </a-entity>
+                          
+                      
+
+                      
+
+                      
+                      
+                    
+                      
+                      
+                      
+
+                      
+
+                      
+                      
+                    
+                      
+                      
+                      
+
+                      
+
+                      
+                      
+                    
+                      
+                      
+                      
+
+                      
+
+                      
+                      
+                    
+                      
+                      
+                      
+
+                      
+
+                      
+                      
+                    
+                      
+                      
+                      
+
+                      
+
+                      
+                      
+                        </a-marker>
+                      
+                    
+            
+        Printing range of taxonomy term:  exhibition-builds - Les Bourgeois - Rodin 5
 
             
+            
+            
+            
+            
+
+            
+            
+            
+            
+
+            
+                  <!-- Start printing Artworks and Dynamic annotations if relevant-->
                   
+                      
+                      
+                      
+                          
+                            <a-marker markerhandler type="barcode" value="6" smooth="true" smoothCount="20" id="6">
+                              <a-entity position="0 -0.5 0" scale="0.5 0.5 0.5" gltf-model="/AR-expo/public/artworks/les_bourgeois_de_calais_by_rodin/scene.gltf">
+                              </a-entity>
+                          
+                      
+
+                      
+
+                      
+                      
+                    
+                      
+                      
+                      
+
+                      
+
+                      
+                      
+                    
+                      
+                      
+                      
+
+                      
+
+                      
+                      
+                    
+                      
+                      
+                      
+
+                      
+
+                      
+                      
+                    
+                      
+                      
+                      
+
+                      
+
+                      
+                      
+                    
+                      
+                      
+                      
+
+                      
+
+                      
+                      
+                        </a-marker>
+                      
+                    
+            
+        Printing range of taxonomy term:  exhibition-builds - Les Bourgeois - Rodin 6
 
             
+            
+            
+            
+            
+
+            
+            
+            
+            
+
+            
+                  <!-- Start printing Artworks and Dynamic annotations if relevant-->
                   
+                      
+                      
+                      
+                          
+                            <a-marker markerhandler type="barcode" value="7" smooth="true" smoothCount="20" id="7">
+                              <a-entity position="0 -2 0" scale="0.5 0.5 0.5" gltf-model="/AR-expo/public/artworks/les_bourgeois_de_calais_by_rodin/scene.gltf">
+                              </a-entity>
+                          
+                      
 
-            
-                  
+                      
 
-            
-                  
+                      
+                      
+                    
+                      
+                      
+                      
 
+                      
+
+                      
+                      
+                    
+                      
+                      
+                      
+
+                      
+
+                      
+                      
+                    
+                      
+                      
+                      
+
+                      
+
+                      
+                      
+                    
+                      
+                      
+                      
+
+                      
+
+                      
+                      
+                    
+                      
+                      
+                      
+
+                      
+
+                      
+                      
+                        </a-marker>
+                      
+                    
             
-        
+
 
 
 
@@ -309,7 +500,9 @@
   </a-scene>
 
   
-    
+    <!-- BEGINNING of context items -->
+
+
 
     
     
@@ -691,6 +884,9 @@
 
     
 
+
+
+<!-- END of context items -->
 
   
 

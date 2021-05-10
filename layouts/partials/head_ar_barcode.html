@@ -15,7 +15,29 @@
     <!-- Bootstrap CSS -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+    <!-- Adding JS -->
+      {{if .Params.dynamic_annotations }}
+      {{ $dynamic_annoations := resources.Get "/js/dynamic_annotations.js" }}
+      {{ $context_panes := resources.Get "/js/context_panes.js" }}
+      {{ $allscript := slice $dynamic_annoations $context_panes | resources.Concat "/js/vendor2.js" | minify | fingerprint }}
+      {{end}}
+    {{/*<script src="{{ $allscript.RelPermalink }}"></script>*/}}
 
+    {{"<!-- Script to hide/show the dynamic annotation scripts divs -->" | safeHTML}}
+    <script>
+    AFRAME.registerComponent('clickhandler', {
+         init: function() {
+           const pin = this.el;
+           pin.addEventListener('click', () => {
+                var pinId = pin.getAttribute('pin-id');
+                 alert('Clicked! 1');
+                 console.log('Dynamic annotation for ID: ', pinId)
+             });
+
+     }});
+     </script>
+
+     {{"<!-- Script to hide/show the context divs -->" | safeHTML}}
     <script>
     AFRAME.registerComponent('markerhandler', {
         init: function () {
@@ -87,16 +109,7 @@
 
     <!-- Used to create dynamic annotations -->
     {{if .Params.dynamic_annotations }}
-    <script>
-     AFRAME.registerComponent('clickhandler', {
-         init: function() {
-             this.el.addEventListener('click', () => {
-                 alert('Clicked!');
-                 console.log('Dynamic annotation for ID: ')
-             });
 
-     }});
-     </script>
 
     {{end}}
 

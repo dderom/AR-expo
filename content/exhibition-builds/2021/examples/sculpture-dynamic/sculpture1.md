@@ -1,5 +1,5 @@
 ---
-title: "Les Bourgeois - Rodin"
+title: "Les Bourgeois - Rodin 1"
 date: 2021-03-19 10:45:38 +01:00
 draft: false
 Organiser: #add the organiser if required
@@ -16,4 +16,6 @@ marker_id: 4 # provide a unique markerID
 
 weight: #choose, if required, a weight for the exhibition_item, only integers
 date_creation: #choose date when work of art was created (can be just the year if needed)
+
+pin-refs: ["les_bourgeois_de_calais_by_rodin_pin1", "les_bourgeois_de_calais_by_rodin_pin2"]
 ---

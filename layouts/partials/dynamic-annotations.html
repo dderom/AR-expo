@@ -1,0 +1,41 @@
+{{"<!-- BEGINNING of dynamic annotations -->" | safeHTML }}
+
+{{ $exhibition_type := .Params.exhibition_types}}
+{{ range .RegularPages }}
+    <!--  Get all the data from the exhibition item ref -->
+    {{ $marker_id := .Params.marker_id}}
+    {{ $pin_button_id := .Params.marker_id}}
+    <!-- Now start fetching related content -->
+    {{ range .Site.RegularPages.Related . }}
+          {{ if eq .Type "dynamic-annotations"}}
+
+
+
+          {{"<!-- Build a text panel if applicable -->" | safeHTML }}
+
+
+                <div class="modal fade" id="{{$pin_button_id}}" tabindex="-1" role="dialog" aria-labelledby="{{$pin_button_id}}" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">"{{.Title}}"</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">x</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        {{ .Params.description }}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+          {{end}}
+
+    {{ end }}
+{{"<!-- END of dynamic annotations -->" | safeHTML }}
+{{ end }}
+
+
+{{"<!-- No dynamic annotations added-->" | safeHTML }}
