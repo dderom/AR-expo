@@ -18,10 +18,28 @@
     
     <item>
       <title>Painting 3</title>
+      <link>https://dderom.github.io/AR-expo/public/exhibition-builds/2021/examples/schilderij-annotations/painting3/</link>
+      <pubDate>Fri, 19 Mar 2021 10:48:38 +0100</pubDate>
+      
+      <guid>https://dderom.github.io/AR-expo/public/exhibition-builds/2021/examples/schilderij-annotations/painting3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Painting 3</title>
       <link>https://dderom.github.io/AR-expo/public/exhibition-builds/2021/examples/schilderij/painting3/</link>
       <pubDate>Fri, 19 Mar 2021 10:48:38 +0100</pubDate>
       
       <guid>https://dderom.github.io/AR-expo/public/exhibition-builds/2021/examples/schilderij/painting3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Painting 2</title>
+      <link>https://dderom.github.io/AR-expo/public/exhibition-builds/2021/examples/schilderij-annotations/painting2/</link>
+      <pubDate>Fri, 19 Mar 2021 10:47:38 +0100</pubDate>
+      
+      <guid>https://dderom.github.io/AR-expo/public/exhibition-builds/2021/examples/schilderij-annotations/painting2/</guid>
       <description></description>
     </item>
     
@@ -49,6 +67,15 @@
       <pubDate>Fri, 19 Mar 2021 10:46:38 +0100</pubDate>
       
       <guid>https://dderom.github.io/AR-expo/public/exhibition-builds/2021/examples/geolocatie/painting1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Painting 1</title>
+      <link>https://dderom.github.io/AR-expo/public/exhibition-builds/2021/examples/schilderij-annotations/painting1/</link>
+      <pubDate>Fri, 19 Mar 2021 10:46:38 +0100</pubDate>
+      
+      <guid>https://dderom.github.io/AR-expo/public/exhibition-builds/2021/examples/schilderij-annotations/painting1/</guid>
       <description></description>
     </item>
     
@@ -207,6 +234,15 @@
     
     <item>
       <title>Pin 1 - Les Bourgeois - Rodin</title>
+      <link>https://dderom.github.io/AR-expo/public/dynamic-annotations/schilderijen-annotations/pin1/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>https://dderom.github.io/AR-expo/public/dynamic-annotations/schilderijen-annotations/pin1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pin 1 - Les Bourgeois - Rodin</title>
       <link>https://dderom.github.io/AR-expo/public/dynamic-annotations/sculpture-dynamic/pin1/</link>
       <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
       
@@ -216,10 +252,100 @@
     
     <item>
       <title>Pin 2 - Les Bourgeois - Rodin</title>
+      <link>https://dderom.github.io/AR-expo/public/dynamic-annotations/schilderijen-annotations/pin2/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>https://dderom.github.io/AR-expo/public/dynamic-annotations/schilderijen-annotations/pin2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pin 2 - Les Bourgeois - Rodin</title>
       <link>https://dderom.github.io/AR-expo/public/dynamic-annotations/sculpture-dynamic/pin2/</link>
       <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
       
       <guid>https://dderom.github.io/AR-expo/public/dynamic-annotations/sculpture-dynamic/pin2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pin 3 - Les Bourgeois - Rodin</title>
+      <link>https://dderom.github.io/AR-expo/public/dynamic-annotations/schilderijen-annotations/pin10/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>https://dderom.github.io/AR-expo/public/dynamic-annotations/schilderijen-annotations/pin10/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pin 3 - Les Bourgeois - Rodin</title>
+      <link>https://dderom.github.io/AR-expo/public/dynamic-annotations/schilderijen-annotations/pin11/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>https://dderom.github.io/AR-expo/public/dynamic-annotations/schilderijen-annotations/pin11/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pin 3 - Les Bourgeois - Rodin</title>
+      <link>https://dderom.github.io/AR-expo/public/dynamic-annotations/schilderijen-annotations/pin3/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>https://dderom.github.io/AR-expo/public/dynamic-annotations/schilderijen-annotations/pin3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pin 3 - Les Bourgeois - Rodin</title>
+      <link>https://dderom.github.io/AR-expo/public/dynamic-annotations/schilderijen-annotations/pin4/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>https://dderom.github.io/AR-expo/public/dynamic-annotations/schilderijen-annotations/pin4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pin 3 - Les Bourgeois - Rodin</title>
+      <link>https://dderom.github.io/AR-expo/public/dynamic-annotations/schilderijen-annotations/pin5/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>https://dderom.github.io/AR-expo/public/dynamic-annotations/schilderijen-annotations/pin5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pin 3 - Les Bourgeois - Rodin</title>
+      <link>https://dderom.github.io/AR-expo/public/dynamic-annotations/schilderijen-annotations/pin6/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>https://dderom.github.io/AR-expo/public/dynamic-annotations/schilderijen-annotations/pin6/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pin 3 - Les Bourgeois - Rodin</title>
+      <link>https://dderom.github.io/AR-expo/public/dynamic-annotations/schilderijen-annotations/pin7/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>https://dderom.github.io/AR-expo/public/dynamic-annotations/schilderijen-annotations/pin7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pin 3 - Les Bourgeois - Rodin</title>
+      <link>https://dderom.github.io/AR-expo/public/dynamic-annotations/schilderijen-annotations/pin8/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>https://dderom.github.io/AR-expo/public/dynamic-annotations/schilderijen-annotations/pin8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pin 3 - Les Bourgeois - Rodin</title>
+      <link>https://dderom.github.io/AR-expo/public/dynamic-annotations/schilderijen-annotations/pin9/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>https://dderom.github.io/AR-expo/public/dynamic-annotations/schilderijen-annotations/pin9/</guid>
       <description></description>
     </item>
     

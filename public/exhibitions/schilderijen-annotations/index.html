@@ -6,9 +6,9 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Schilderijen - met extra content (video, text, links...) en achtergrond effect ifv VR</title>
+    <title>Schilderijen - met extra content (video, text, links...)</title>
     
-    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
     
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js">  </script>
 
@@ -16,6 +16,10 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     
+      
+      
+      
+      
       
     
 
@@ -92,6 +96,9 @@
     
     
 
+
+    
+
     <style>
 
       .menu {
@@ -154,12 +161,19 @@
   	 arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
         
         
+        <a-assets>
+            <img id="sky" src="/video/cubic_map_by_tatasz_da6uf3d.jpg">
+
+        </a-assets>
+        
+        <a-sky src="#sky"></a-sky>
         
         
         
         
         
-        Printing range of taxonomy term:  exhibition-builds - Painting 2-3
+        
+        Printing range of taxonomy term:  exhibition-builds - Painting 3
             
             
             
@@ -203,11 +217,96 @@
                       
                       
                       
+                    
+                  
+                      
+                      
+                      
+                      
+                      
+                        <a-sphere type="button" data-toggle="modal" data-target="#pin-3-pin9"
+                                  clickhandler
+                                  radius="0.2"
+                                  position="2 0.01 0.8"
+                                  rotation="-90 0 0"
+                                  look-at="camera"
+                                  material="color: red;transparency: true; opacity: 0.5;"></a-sphere>
+                      
+                      
+                      
+                    
+                  
+                      
+                      
+                      
+                      
+                      
+                        <a-sphere type="button" data-toggle="modal" data-target="#pin-3-pin7"
+                                  clickhandler
+                                  radius="0.2"
+                                  position="0.5 0.01 0.5"
+                                  rotation="-90 0 0"
+                                  look-at="camera"
+                                  material="color: red;transparency: true; opacity: 0.5;"></a-sphere>
+                      
+                      
+                      
+                    
+                  
+                      
+                      
+                      
+                      
+                      
+                        <a-sphere type="button" data-toggle="modal" data-target="#pin-3-pin11"
+                                  clickhandler
+                                  radius="0.2"
+                                  position="1.9 0.01 0.9"
+                                  rotation="-90 0 0"
+                                  look-at="camera"
+                                  material="color: red;transparency: true; opacity: 0.5;"></a-sphere>
+                      
+                      
+                      
+                    
+                  
+                      
+                      
+                      
+                      
+                      
+                        <a-sphere type="button" data-toggle="modal" data-target="#pin-3-pin10"
+                                  clickhandler
+                                  radius="0.2"
+                                  position="1.2 0.01 -1.2"
+                                  rotation="-90 0 0"
+                                  look-at="camera"
+                                  material="color: red;transparency: true; opacity: 0.5;"></a-sphere>
+                      
+                      
+                      
+                    
+                  
+                      
+                      
+                      
+                      
+                      
+                        <a-sphere type="button" data-toggle="modal" data-target="#pin-3-pin8"
+                                  clickhandler
+                                  radius="0.2"
+                                  position="1.5 0.01 0.5"
+                                  rotation="-90 0 0"
+                                  look-at="camera"
+                                  material="color: red;transparency: true; opacity: 0.5;"></a-sphere>
+                      
+                      
+                      
                         </a-marker>
                       
                     
             
-        Printing range of taxonomy term:  exhibition-builds - Painting 2-2
+        Printing range of taxonomy term:  exhibition-builds - Painting 2
             
             
             
@@ -251,11 +350,62 @@
                       
                       
                       
+                    
+                  
+                      
+                      
+                      
+                      
+                      
+                        <a-sphere type="button" data-toggle="modal" data-target="#pin-2-pin5"
+                                  clickhandler
+                                  radius="0.2"
+                                  position="0 0.01 0"
+                                  rotation="-90 0 0"
+                                  look-at="camera"
+                                  material="color: red;transparency: true; opacity: 0.5;"></a-sphere>
+                      
+                      
+                      
+                    
+                  
+                      
+                      
+                      
+                      
+                      
+                        <a-sphere type="button" data-toggle="modal" data-target="#pin-2-pin4"
+                                  clickhandler
+                                  radius="0.2"
+                                  position="-1 0.01 0"
+                                  rotation="-90 0 0"
+                                  look-at="camera"
+                                  material="color: red;transparency: true; opacity: 0.5;"></a-sphere>
+                      
+                      
+                      
+                    
+                  
+                      
+                      
+                      
+                      
+                      
+                        <a-sphere type="button" data-toggle="modal" data-target="#pin-2-pin6"
+                                  clickhandler
+                                  radius="0.2"
+                                  position="0.5 0.01 0.5"
+                                  rotation="-90 0 0"
+                                  look-at="camera"
+                                  material="color: red;transparency: true; opacity: 0.5;"></a-sphere>
+                      
+                      
+                      
                         </a-marker>
                       
                     
             
-        Printing range of taxonomy term:  exhibition-builds - Painting 2-1
+        Printing range of taxonomy term:  exhibition-builds - Painting 1
             
             
             
@@ -307,43 +457,54 @@
                       
                       
                       
-                        </a-marker>
-                      
                     
-            
-        Printing range of taxonomy term:  exhibition-builds - Painting 2-4
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
                   
                       
                       
                       
+                      
+                      
+                        <a-sphere type="button" data-toggle="modal" data-target="#pin-1-pin1"
+                                  clickhandler
+                                  radius="0.2"
+                                  position="1 0.01 0"
+                                  rotation="-90 0 0"
+                                  look-at="camera"
+                                  material="color: red;transparency: true; opacity: 0.5;"></a-sphere>
                       
                       
                       
                     
                   
+                      
+                      
+                      
+                      
+                      
+                        <a-sphere type="button" data-toggle="modal" data-target="#pin-1-pin2"
+                                  clickhandler
+                                  radius="0.2"
+                                  position="-1 0.01 0"
+                                  rotation="-90 0 0"
+                                  look-at="camera"
+                                  material="color: red;transparency: true; opacity: 0.5;"></a-sphere>
+                      
+                      
+                      
+                    
                   
-                  
                       
                       
                       
-                          
-                          <a-marker markerhandler type="barcode" value="4" id="4">
-                            <a-image rotation="90 0 180" position="0 0 0" scale="3 3 3" src="/AR-expo/public/artworks/boerinnetje.jpg">
-                            </a-image>
-
-                            
                       
+                      
+                        <a-sphere type="button" data-toggle="modal" data-target="#pin-1-pin3"
+                                  clickhandler
+                                  radius="0.2"
+                                  position="1.5 0.01 0"
+                                  rotation="-90 0 0"
+                                  look-at="camera"
+                                  material="color: red;transparency: true; opacity: 0.5;"></a-sphere>
                       
                       
                       
@@ -354,6 +515,8 @@
     
     <a-entity camera></a-entity>
     
+    
+    <a-entity cursor="rayOrigin:mouse"></a-entity>
     
   </a-scene>
 
@@ -440,6 +603,31 @@ Manet was niet de enige schilder die op 30 juni aan de slag ging. Ook Claude Mon
           </div>
 
           
+          
+          
+
+    
+
+          
+          
+
+    
+
+          
+          
+
+    
+
+          
+          
+
+    
+
+          
+          
+
+    
+
           
           
 
@@ -561,6 +749,21 @@ Om het werk te maken, moest Ensor het gedeelte van het doek dat hij zou beschild
 
     
 
+          
+          
+
+    
+
+          
+          
+
+    
+
+          
+          
+
+    
+
     
     
     
@@ -646,12 +849,6 @@ Om het werk te maken, moest Ensor het gedeelte van het doek dat hij zou beschild
 
     
 
-    
-    
-    
-    
-    
-
           
           
 
@@ -659,98 +856,9 @@ Om het werk te maken, moest Ensor het gedeelte van het doek dat hij zou beschild
 
           
           
-          
-          <div id="menu-description-4" class="menu-description menu container context">
-              <div class="row">
-                  <div class="col">
-                      <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#context-description-4">
-                          Info
-                      </button>
-                  </div>
-              </div>
-          </div>
 
+    
 
-          
-          <div class="modal fade" id="context-description-4" tabindex="-1" role="dialog" aria-labelledby="context-description-4" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Over het werk</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">x</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  In mei 1913 maakte Gustave Van de Woestyne samen met Valerius De Saedeleer een reis naar Firenze, waar hij het werk van Botticelli en Fra Angelico bewonderde. Zowel de zachte kleuren als de bijna etherische schoonheid van het meisje herinneren aan het werk van de Italiaanse meesters. Ook de invloed van het symbolisme, in het bijzonder van het mystiek geïnspireerde werk van Maurice Denis en Jan Toorop, is hier merkbaar in de idealisering van dit eenvoudige dorpsmeisje, in de gevoelige lijnvoering en het decoratieve patroon van het bloesje.
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div id="menu-artist-4" class="menu-artist menu container context">
-              <div class="row">
-                  <div class="col">
-                      <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#context-artist-4">
-                          ?
-                      </button>
-                  </div>
-              </div>
-          </div>
-
-          
-          <div class="modal fade" id="context-artist-4" tabindex="-1" role="dialog" aria-labelledby="context-artist-4" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Korte beschrijving van Gustave Van de Woestyne</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">x</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  boerinnetje - 1913 by Gustave Van de Woestyne
-                </div>
-              </div>
-            </div>
-          </div>
-
-          
-          
-          <div id="menu-video-4" class="menu-video menu container context">
-              <div class="row">
-                  <div class="col">
-                      <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#context-video-4">
-                           Video
-                      </button>
-                  </div>
-              </div>
-          </div>
-
-          
-          <div class="modal fade" id="context-video-4" tabindex="-1" role="dialog" aria-labelledby="context-video-4" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Korte video over boerinnetje - 1913</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">x</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <iframe id="iframe-4"
-                    width="100%"
-                    src="https://www.youtube.com/embed/8KUvEdBBqJI"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-
-
-                </div>
-              </div>
-            </div>
-          </div>
           
           
 
@@ -761,6 +869,371 @@ Om het werk te maken, moest Ensor het gedeelte van het doek dat hij zou beschild
 <!-- END of context items -->
 
   
+  
+    <!-- BEGINNING of dynamic annotations -->
+
+
+
+    
+    
+    
+    
+          
+
+    
+          
+
+    
+          
+
+    
+          
+          
+
+
+
+          <!-- Build a text panel if applicable -->
+
+
+                <div class="modal fade" id="pin-3-pin11" tabindex="-1" role="dialog" aria-labelledby="pin-3" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">"Pin 3 - Les Bourgeois - Rodin"</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">x</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        Testing the dynamic description using Pin 3
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+          
+
+    
+          
+          
+
+
+
+          <!-- Build a text panel if applicable -->
+
+
+                <div class="modal fade" id="pin-3-pin7" tabindex="-1" role="dialog" aria-labelledby="pin-3" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">"Pin 3 - Les Bourgeois - Rodin"</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">x</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        Testing the dynamic description using Pin 3
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+          
+
+    
+          
+          
+
+
+
+          <!-- Build a text panel if applicable -->
+
+
+                <div class="modal fade" id="pin-3-pin10" tabindex="-1" role="dialog" aria-labelledby="pin-3" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">"Pin 3 - Les Bourgeois - Rodin"</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">x</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        Testing the dynamic description using Pin 3
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+          
+
+    
+          
+          
+
+
+
+          <!-- Build a text panel if applicable -->
+
+
+                <div class="modal fade" id="pin-3-pin8" tabindex="-1" role="dialog" aria-labelledby="pin-3" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">"Pin 3 - Les Bourgeois - Rodin"</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">x</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        Testing the dynamic description using Pin 3
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+          
+
+    
+          
+          
+
+
+
+          <!-- Build a text panel if applicable -->
+
+
+                <div class="modal fade" id="pin-3-pin9" tabindex="-1" role="dialog" aria-labelledby="pin-3" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">"Pin 3 - Les Bourgeois - Rodin"</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">x</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        Testing the dynamic description using Pin 3
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+          
+
+    
+<!-- END of dynamic annotations -->
+
+    
+    
+    
+    
+          
+
+    
+          
+
+    
+          
+
+    
+          
+          
+
+
+
+          <!-- Build a text panel if applicable -->
+
+
+                <div class="modal fade" id="pin-2-pin5" tabindex="-1" role="dialog" aria-labelledby="pin-2" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">"Pin 3 - Les Bourgeois - Rodin"</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">x</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        Testing the dynamic description using Pin 3
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+          
+
+    
+          
+          
+
+
+
+          <!-- Build a text panel if applicable -->
+
+
+                <div class="modal fade" id="pin-2-pin4" tabindex="-1" role="dialog" aria-labelledby="pin-2" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">"Pin 3 - Les Bourgeois - Rodin"</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">x</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        Testing the dynamic description using Pin 3
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+          
+
+    
+          
+          
+
+
+
+          <!-- Build a text panel if applicable -->
+
+
+                <div class="modal fade" id="pin-2-pin6" tabindex="-1" role="dialog" aria-labelledby="pin-2" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">"Pin 3 - Les Bourgeois - Rodin"</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">x</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        Testing the dynamic description using Pin 3
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+          
+
+    
+<!-- END of dynamic annotations -->
+
+    
+    
+    
+    
+          
+
+    
+          
+
+    
+          
+
+    
+          
+
+    
+          
+          
+
+
+
+          <!-- Build a text panel if applicable -->
+
+
+                <div class="modal fade" id="pin-1-pin1" tabindex="-1" role="dialog" aria-labelledby="pin-1" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">"Pin 1 - Les Bourgeois - Rodin"</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">x</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        Testing the dynamic description using Pin 1
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+          
+
+    
+          
+          
+
+
+
+          <!-- Build a text panel if applicable -->
+
+
+                <div class="modal fade" id="pin-1-pin2" tabindex="-1" role="dialog" aria-labelledby="pin-1" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">"Pin 2 - Les Bourgeois - Rodin"</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">x</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        Testing the dynamic description using Pin 2
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+          
+
+    
+          
+          
+
+
+
+          <!-- Build a text panel if applicable -->
+
+
+                <div class="modal fade" id="pin-1-pin3" tabindex="-1" role="dialog" aria-labelledby="pin-1" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">"Pin 3 - Les Bourgeois - Rodin"</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">x</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        Testing the dynamic description using Pin 3
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+          
+
+    
+<!-- END of dynamic annotations -->
+
+
+
+<!-- No dynamic annotations added-->
+
   
 
 

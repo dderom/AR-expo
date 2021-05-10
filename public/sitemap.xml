@@ -14,8 +14,14 @@
     <loc>https://dderom.github.io/AR-expo/public/exhibition-builds/2021/examples/schilderij2/painting3/</loc>
     <lastmod>2021-03-19T10:48:38+01:00</lastmod>
   </url><url>
+    <loc>https://dderom.github.io/AR-expo/public/exhibition-builds/2021/examples/schilderij-annotations/painting3/</loc>
+    <lastmod>2021-03-19T10:48:38+01:00</lastmod>
+  </url><url>
     <loc>https://dderom.github.io/AR-expo/public/exhibition-builds/2021/examples/schilderij/painting3/</loc>
     <lastmod>2021-03-19T10:48:38+01:00</lastmod>
+  </url><url>
+    <loc>https://dderom.github.io/AR-expo/public/exhibition-builds/2021/examples/schilderij-annotations/painting2/</loc>
+    <lastmod>2021-03-19T10:47:38+01:00</lastmod>
   </url><url>
     <loc>https://dderom.github.io/AR-expo/public/exhibition-builds/2021/examples/schilderij/painting2/</loc>
     <lastmod>2021-03-19T10:47:38+01:00</lastmod>
@@ -24,6 +30,9 @@
     <lastmod>2021-03-19T10:47:38+01:00</lastmod>
   </url><url>
     <loc>https://dderom.github.io/AR-expo/public/exhibition-builds/2021/examples/geolocatie/painting1/</loc>
+    <lastmod>2021-03-19T10:46:38+01:00</lastmod>
+  </url><url>
+    <loc>https://dderom.github.io/AR-expo/public/exhibition-builds/2021/examples/schilderij-annotations/painting1/</loc>
     <lastmod>2021-03-19T10:46:38+01:00</lastmod>
   </url><url>
     <loc>https://dderom.github.io/AR-expo/public/exhibition-builds/2021/examples/schilderij/painting1/</loc>
@@ -101,10 +110,43 @@
     <loc>https://dderom.github.io/AR-expo/public/exhibition-builds/2021/examples/schilderij/painting4/</loc>
     <lastmod>2021-03-19T10:45:38+01:00</lastmod>
   </url><url>
+    <loc>https://dderom.github.io/AR-expo/public/dynamic-annotations/schilderijen-annotations/pin1/</loc>
+    <lastmod>2021-03-19T10:45:38+01:00</lastmod>
+  </url><url>
     <loc>https://dderom.github.io/AR-expo/public/dynamic-annotations/sculpture-dynamic/pin1/</loc>
     <lastmod>2021-03-19T10:45:38+01:00</lastmod>
   </url><url>
+    <loc>https://dderom.github.io/AR-expo/public/dynamic-annotations/schilderijen-annotations/pin2/</loc>
+    <lastmod>2021-03-19T10:45:38+01:00</lastmod>
+  </url><url>
     <loc>https://dderom.github.io/AR-expo/public/dynamic-annotations/sculpture-dynamic/pin2/</loc>
+    <lastmod>2021-03-19T10:45:38+01:00</lastmod>
+  </url><url>
+    <loc>https://dderom.github.io/AR-expo/public/dynamic-annotations/schilderijen-annotations/pin10/</loc>
+    <lastmod>2021-03-19T10:45:38+01:00</lastmod>
+  </url><url>
+    <loc>https://dderom.github.io/AR-expo/public/dynamic-annotations/schilderijen-annotations/pin11/</loc>
+    <lastmod>2021-03-19T10:45:38+01:00</lastmod>
+  </url><url>
+    <loc>https://dderom.github.io/AR-expo/public/dynamic-annotations/schilderijen-annotations/pin3/</loc>
+    <lastmod>2021-03-19T10:45:38+01:00</lastmod>
+  </url><url>
+    <loc>https://dderom.github.io/AR-expo/public/dynamic-annotations/schilderijen-annotations/pin4/</loc>
+    <lastmod>2021-03-19T10:45:38+01:00</lastmod>
+  </url><url>
+    <loc>https://dderom.github.io/AR-expo/public/dynamic-annotations/schilderijen-annotations/pin5/</loc>
+    <lastmod>2021-03-19T10:45:38+01:00</lastmod>
+  </url><url>
+    <loc>https://dderom.github.io/AR-expo/public/dynamic-annotations/schilderijen-annotations/pin6/</loc>
+    <lastmod>2021-03-19T10:45:38+01:00</lastmod>
+  </url><url>
+    <loc>https://dderom.github.io/AR-expo/public/dynamic-annotations/schilderijen-annotations/pin7/</loc>
+    <lastmod>2021-03-19T10:45:38+01:00</lastmod>
+  </url><url>
+    <loc>https://dderom.github.io/AR-expo/public/dynamic-annotations/schilderijen-annotations/pin8/</loc>
+    <lastmod>2021-03-19T10:45:38+01:00</lastmod>
+  </url><url>
+    <loc>https://dderom.github.io/AR-expo/public/dynamic-annotations/schilderijen-annotations/pin9/</loc>
     <lastmod>2021-03-19T10:45:38+01:00</lastmod>
   </url><url>
     <loc>https://dderom.github.io/AR-expo/public/dynamic-annotations/sculpture-dynamic/pin3/</loc>
@@ -120,6 +162,9 @@
     <lastmod>2021-02-01T16:18:44+01:00</lastmod>
   </url><url>
     <loc>https://dderom.github.io/AR-expo/public/exhibitions/geolocatie/</loc>
+    <lastmod>2021-01-01T16:18:44+01:00</lastmod>
+  </url><url>
+    <loc>https://dderom.github.io/AR-expo/public/exhibitions/schilderijen-annotations/</loc>
     <lastmod>2021-01-01T16:18:44+01:00</lastmod>
   </url><url>
     <loc>https://dderom.github.io/AR-expo/public/exhibitions/schilderijen/</loc>
