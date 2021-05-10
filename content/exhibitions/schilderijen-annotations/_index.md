@@ -14,7 +14,7 @@ video_environment: false
 videoId: "expo_video"
 video_360: "https://www.youtube.com/embed/qHJKhnXrUf4"
 
-finished: true
+finished: false
 dynamic_annotations: true
 ---
-Proof of concept of paintings, using 2D images rendered in 3D environment, with annotations. 
+Proof of concept of paintings, using 2D images rendered in 3D environment, with annotations.
