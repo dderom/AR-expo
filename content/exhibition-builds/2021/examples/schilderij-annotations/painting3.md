@@ -11,7 +11,7 @@ exhibitions: "schilderijen-annotations" #provide the title as a custom category 
 
 
 position_artwork: "0 0 0" #set how much it will hover above/beside marker/geolocation. Use "0 0 0" for 3 axes
-size_artwork: "3 3 3" # set size either relative to itself of to markers
+size_artwork: "7 7 7" # set size either relative to itself of to markers
 marker_id: 3 # provide a unique markerID
 
 weight: #choose, if required, a weight for the exhibition_item, only integers

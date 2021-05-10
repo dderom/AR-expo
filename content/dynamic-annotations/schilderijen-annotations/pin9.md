@@ -5,7 +5,7 @@ draft: false
 pin-refs: "de_rue_mosnier_met_vlaggen_pin9"
 pin_type: "text" #choose from text, video, audio
 video-url: #add the URL if relevant
-position: "2 0.01 0.8" #define the position relative to the object, use aframe inspector to set correctly
+position: "2 0.3 0.8" #define the position relative to the object, use aframe inspector to set correctly
 scale: "0.5 0.5 0.5" #define the size if relevant
 description: "Testing the dynamic description using Pin 3" #set description if relevant
 ---
