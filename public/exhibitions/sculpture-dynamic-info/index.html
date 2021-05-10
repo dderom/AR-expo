@@ -23,20 +23,6 @@
       
     
 
-    <!-- Script to hide/show the dynamic annotation scripts divs -->
-    <script>
-    AFRAME.registerComponent('clickhandler', {
-         init: function() {
-           const pin = this.el;
-           pin.addEventListener('click', () => {
-                var pinId = pin.getAttribute('pin-id');
-                 alert('Clicked! 1');
-                 console.log('Dynamic annotation for ID: ', pinId)
-             });
-
-     }});
-     </script>
-
      <!-- Script to hide/show the context divs -->
     <script>
     AFRAME.registerComponent('markerhandler', {
@@ -181,20 +167,19 @@
         
         
         Printing range of taxonomy term:  exhibition-builds - Les Bourgeois - Rodin 1
-
             
             
             
             
             
-
             
             
             
             
-
             
-                  <!-- Start printing Artworks and Dynamic annotations if relevant-->
+            
+                  
+                  
                   
                       
                       
@@ -205,90 +190,81 @@
                               </a-entity>
                           
                       
-
                       
-
                       
                       
                     
+                  
                       
                       
                       
-
                       
-
                       
                       
                     
+                  
                       
                       
                       
-
                       
-
                       
                       
                     
+                  
                       
                       
                       
-
                       
-
                       
                       
                     
+                  
                       
                       
                       
-
                       
-
                       
                       
                     
+                  
                       
                       
                       
-
                       
-
                       
                       
                     
+                  
                       
                       
                       
-
                       
-                        Dynamic annotations: dynamic-annotations - Pin 1 - Les Bourgeois - Rodin
-                        <a-sphere type="button" data-toggle="modal" data-target="#pin-4"
+                      
+                        <a-sphere type="button" data-toggle="modal" data-target="#pin-4-pin1"
                                   clickhandler
-                                  pin-id="pin-4"
-                                  position="0 0.2 0"
-                                  scale="0.3 0.3 0.3"
+                                  radius="0.2"
+                                  position="1 0 0"
+                                  rotation="-90 0 0"
                                   look-at="camera"
                                   material="color: red;transparency: true; opacity: 0.5;"></a-sphere>
                       
-
                       
                       
                     
+                  
                       
                       
                       
-
                       
-                        Dynamic annotations: dynamic-annotations - Pin 2 - Les Bourgeois - Rodin
-                        <a-sphere type="button" data-toggle="modal" data-target="#pin-4"
+                      
+                        <a-sphere type="button" data-toggle="modal" data-target="#pin-4-pin2"
                                   clickhandler
-                                  pin-id="pin-4"
-                                  position="0 0.2 0"
-                                  scale="0.3 0.3 0.3"
+                                  radius="0.2"
+                                  position="-1 0 0"
+                                  rotation="-90 0 0"
                                   look-at="camera"
                                   material="color: red;transparency: true; opacity: 0.5;"></a-sphere>
                       
-
                       
                       
                         </a-marker>
@@ -296,20 +272,19 @@
                     
             
         Printing range of taxonomy term:  exhibition-builds - Les Bourgeois - Rodin 2
-
             
             
             
             
             
-
             
             
             
             
-
             
-                  <!-- Start printing Artworks and Dynamic annotations if relevant-->
+            
+                  
+                  
                   
                       
                       
@@ -320,87 +295,74 @@
                               </a-entity>
                           
                       
-
                       
-
                       
                       
                     
+                  
                       
                       
                       
-
                       
-
                       
                       
                     
+                  
                       
                       
                       
-
                       
-
                       
                       
                     
+                  
                       
                       
                       
-
                       
-
                       
                       
                     
+                  
                       
                       
                       
-
                       
-
                       
                       
                     
+                  
                       
                       
                       
-
                       
-
                       
                       
                     
+                  
                       
                       
                       
-
                       
-                        Dynamic annotations: dynamic-annotations - Pin 3 - Les Bourgeois - Rodin
-                        <a-sphere type="button" data-toggle="modal" data-target="#pin-5"
+                      
+                        <a-sphere type="button" data-toggle="modal" data-target="#pin-5-pin3"
                                   clickhandler
-                                  pin-id="pin-5"
-                                  position="0 0.2 0"
-                                  scale="0.3 0.3 0.3"
+                                  radius="0.2"
+                                  position="1 0 0"
+                                  rotation="-90 0 0"
                                   look-at="camera"
                                   material="color: red;transparency: true; opacity: 0.5;"></a-sphere>
                       
-
                       
                       
                         </a-marker>
                       
                     
             
-
-
-
-
     
     <a-entity camera></a-entity>
     
     
-
     <a-entity cursor="rayOrigin:mouse"></a-entity>
     
   </a-scene>
@@ -618,6 +580,148 @@
 
 
 <!-- END of context items -->
+
+  
+  
+    <!-- BEGINNING of dynamic annotations -->
+
+
+
+    
+    
+    
+    
+          
+
+    
+          
+
+    
+          
+
+    
+          
+
+    
+          
+
+    
+          
+
+    
+          
+          
+
+
+
+          <!-- Build a text panel if applicable -->
+
+
+                <div class="modal fade" id="pin-4-pin1" tabindex="-1" role="dialog" aria-labelledby="pin-4" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">"Pin 1 - Les Bourgeois - Rodin"</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">x</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        Testing the dynamic description using Pin 1
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+          
+
+    
+          
+          
+
+
+
+          <!-- Build a text panel if applicable -->
+
+
+                <div class="modal fade" id="pin-4-pin2" tabindex="-1" role="dialog" aria-labelledby="pin-4" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">"Pin 2 - Les Bourgeois - Rodin"</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">x</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        Testing the dynamic description using Pin 2
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+          
+
+    
+<!-- END of dynamic annotations -->
+
+    
+    
+    
+    
+          
+
+    
+          
+
+    
+          
+
+    
+          
+
+    
+          
+
+    
+          
+
+    
+          
+          
+
+
+
+          <!-- Build a text panel if applicable -->
+
+
+                <div class="modal fade" id="pin-5-pin3" tabindex="-1" role="dialog" aria-labelledby="pin-5" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">"Pin 3 - Les Bourgeois - Rodin"</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">x</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        Testing the dynamic description using Pin 3
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+          
+
+    
+<!-- END of dynamic annotations -->
+
+
+
+<!-- No dynamic annotations added-->
 
   
 

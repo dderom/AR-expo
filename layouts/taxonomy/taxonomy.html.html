@@ -5,6 +5,9 @@
   {{ if .Params.context }}
     {{ partial "context.html" . }}
   {{ end }}
+  {{ if .Params.dynamic_annotations }}
+    {{ partial "dynamic-annotations.html" . }}
+  {{ end }}
 {{end}}
 
 {{ if eq .Params.exhibition_types "geolocation" }}

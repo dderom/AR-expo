@@ -20,22 +20,19 @@
         {{ $dynamic_annotations:= .Params.dynamic_annotations }}
         {{ range .RegularPages }}
         Printing range of taxonomy term:  {{.Type}} - {{ .Title}}
-
             <!--  Get all the data from the exhibition item ref -->
             {{ $position := .Params.position_artwork }}
             {{ $size := .Params.size_artwork }}
             {{ $exhibition_marker_type_set := .Parent.Params.marker_type_sets }}
             {{ $marker_id := .Params.marker_id }}
-
             <!-- Get the index of the range to close off later on }}-->
             {{$range := .Site.RegularPages.Related .}}
             {{$len_range := len $range}}
             {{$last_len_range := sub $len_range 1 }}
-
             <!-- Now start fetching related content-->
-            {{- range $index, $element := .Site.RegularPages.Related . -}}
+            {{ range $index, $element := .Site.RegularPages.Related . }}
                   {{ if eq .Type "artworks"}}
-                  {{"<!-- Start printing Artworks and Dynamic annotations if relevant-->" | safeHTML }}
+                  <!-- Start printing Artworks and Dynamic annotations if relevant-->
                   {{ end}}
                       <!-- Assumption is there is only 1 artwork for each exhibition build-->
                       <!-- Range loops through related for each exhibition build, prints all related using if statement -->
@@ -51,33 +48,26 @@
                               </a-entity>
                           {{end}}
                       {{end}}
-
                       {{ if eq .Type "dynamic-annotations"}}
-                        Dynamic annotations: {{.Type}} - {{.Title }}
-                        <a-sphere type="button" data-toggle="modal" data-target="#pin-{{ $marker_id }}"
+                      {{ $pin_id_name := .File.TranslationBaseName}}
+                        <a-sphere type="button" data-toggle="modal" data-target="#pin-{{ $marker_id }}-{{$pin_id_name}}"
                                   clickhandler
-                                  pin-id="pin-{{$marker_id}}"
-                                  position="0 0.2 0"
-                                  scale="0.3 0.3 0.3"
+                                  radius="0.2"
+                                  position="{{.Params.position}}"
+                                  rotation="-90 0 0"
                                   look-at="camera"
                                   material="color: red;transparency: true; opacity: 0.5;"></a-sphere>
                       {{end}}
-
                       <!-- Close the marker when last related is reached-->
                       {{if eq $index $last_len_range}}
                         </a-marker>
                       {{end}}
                     {{ end}}
             {{ end }}
-
-
-
-
     <!-- add a simple camera -->
     <a-entity camera></a-entity>
     <!-- add cursor entity if set true -->
     {{if .Params.dynamic_annotations }}
-
     <a-entity cursor="rayOrigin:mouse"></a-entity>
     {{end}}
   </a-scene>

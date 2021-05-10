@@ -4,17 +4,17 @@
 {{ range .RegularPages }}
     <!--  Get all the data from the exhibition item ref -->
     {{ $marker_id := .Params.marker_id}}
-    {{ $pin_button_id := .Params.marker_id}}
     <!-- Now start fetching related content -->
     {{ range .Site.RegularPages.Related . }}
           {{ if eq .Type "dynamic-annotations"}}
+          {{ $pin_id_name := .File.TranslationBaseName}}
 
 
 
           {{"<!-- Build a text panel if applicable -->" | safeHTML }}
 
 
-                <div class="modal fade" id="{{$pin_button_id}}" tabindex="-1" role="dialog" aria-labelledby="{{$pin_button_id}}" aria-hidden="true">
+                <div class="modal fade" id="pin-{{$marker_id}}-{{$pin_id_name}}" tabindex="-1" role="dialog" aria-labelledby="pin-{{$marker_id}}" aria-hidden="true">
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
                       <div class="modal-header">

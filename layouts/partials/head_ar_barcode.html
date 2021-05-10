@@ -23,20 +23,6 @@
       {{end}}
     {{/*<script src="{{ $allscript.RelPermalink }}"></script>*/}}
 
-    {{"<!-- Script to hide/show the dynamic annotation scripts divs -->" | safeHTML}}
-    <script>
-    AFRAME.registerComponent('clickhandler', {
-         init: function() {
-           const pin = this.el;
-           pin.addEventListener('click', () => {
-                var pinId = pin.getAttribute('pin-id');
-                 alert('Clicked! 1');
-                 console.log('Dynamic annotation for ID: ', pinId)
-             });
-
-     }});
-     </script>
-
      {{"<!-- Script to hide/show the context divs -->" | safeHTML}}
     <script>
     AFRAME.registerComponent('markerhandler', {
