@@ -93,9 +93,20 @@
       });
     </script>
 
-    
-    
 
+
+    
+    
+    <script>
+    AFRAME.registerComponent('clickhandler', {
+         init: function() {
+           const pin = this.el;
+           pin.addEventListener('click', () => {
+                var pinId = pin.getAttribute('pin-id');
+                 console.log('Dynamic annotation for ID: ', pinId)
+             });
+     }});
+     </script>
 
     
 
@@ -154,7 +165,7 @@
 
   
   <body>
-    <a-scene vcursor='rayOrigin: mouse; fuse: true; fuseTimeout: 0;'
+    <a-scene cursor='rayOrigin: mouse; fuse: true; fuseTimeout: 0;'
           raycaster="objects: [clickhandler];"
           vr-mode-ui="enabled: false"
   		embedded
@@ -240,12 +251,12 @@
                       
                       
                       
-                        <a-sphere type="button" data-toggle="modal" data-target="#pin-4-pin1"
+                        <a-circle type="button" data-toggle="modal" data-target="#pin-4-pin1"
                                   radius="0.2"
                                   position="1 0 0"
                                   rotation="-90 0 0"
                                   look-at="camera"
-                                  material="color: red;transparency: true; opacity: 0.5;"></a-sphere>
+                                  material="color: red; transparent: true; opacity: 0.5;"></a-circle>
                       
                       
                       
@@ -256,12 +267,12 @@
                       
                       
                       
-                        <a-sphere type="button" data-toggle="modal" data-target="#pin-4-pin2"
+                        <a-circle type="button" data-toggle="modal" data-target="#pin-4-pin2"
                                   radius="0.2"
                                   position="-1 0 0"
                                   rotation="-90 0 0"
                                   look-at="camera"
-                                  material="color: red;transparency: true; opacity: 0.5;"></a-sphere>
+                                  material="color: red; transparent: true; opacity: 0.5;"></a-circle>
                       
                       
                       
@@ -343,12 +354,12 @@
                       
                       
                       
-                        <a-sphere type="button" data-toggle="modal" data-target="#pin-5-pin3"
+                        <a-circle type="button" data-toggle="modal" data-target="#pin-5-pin3"
                                   radius="0.2"
                                   position="1 0 0"
                                   rotation="-90 0 0"
                                   look-at="camera"
-                                  material="color: red;transparency: true; opacity: 0.5;"></a-sphere>
+                                  material="color: red; transparent: true; opacity: 0.5;"></a-circle>
                       
                       
                       

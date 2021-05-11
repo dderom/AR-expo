@@ -1,11 +1,11 @@
 ---
-title: "Pin 3 - Les Bourgeois - Rodin"
+title: "Pin 9 - Les Bourgeois - Rodin"
 date: 2021-03-19 10:45:38 +01:00
 draft: false
 pin-refs: "de_rue_mosnier_met_vlaggen_pin9"
 pin_type: "text" #choose from text, video, audio
 video-url: #add the URL if relevant
-position: "2 0.3 0.8" #define the position relative to the object, use aframe inspector to set correctly
+position: "2 0.1 0.8" #define the position relative to the object, use aframe inspector to set correctly
 scale: "0.5 0.5 0.5" #define the size if relevant
 description: "Testing the dynamic description using Pin 9" #set description if relevant
 ---

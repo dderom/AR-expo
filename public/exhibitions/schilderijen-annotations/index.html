@@ -93,9 +93,20 @@
       });
     </script>
 
-    
-    
 
+
+    
+    
+    <script>
+    AFRAME.registerComponent('clickhandler', {
+         init: function() {
+           const pin = this.el;
+           pin.addEventListener('click', () => {
+                var pinId = pin.getAttribute('pin-id');
+                 console.log('Dynamic annotation for ID: ', pinId)
+             });
+     }});
+     </script>
 
     
 
@@ -154,7 +165,7 @@
 
   
   <body>
-    <a-scene vcursor='rayOrigin: mouse; fuse: true; fuseTimeout: 0;'
+    <a-scene cursor='rayOrigin: mouse; fuse: true; fuseTimeout: 0;'
           raycaster="objects: [clickhandler];"
           vr-mode-ui="enabled: false"
   		embedded
@@ -224,12 +235,12 @@
                       
                       
                       
-                        <a-sphere type="button" data-toggle="modal" data-target="#pin-3-pin11"
+                        <a-circle type="button" data-toggle="modal" data-target="#pin-3-pin10"
                                   radius="0.2"
-                                  position="1.9 0.3 0.9"
+                                  position="1.2 0.1 -1.2"
                                   rotation="-90 0 0"
                                   look-at="camera"
-                                  material="color: red;transparency: true; opacity: 0.5;"></a-sphere>
+                                  material="color: red; transparent: true; opacity: 0.5;"></a-circle>
                       
                       
                       
@@ -240,12 +251,12 @@
                       
                       
                       
-                        <a-sphere type="button" data-toggle="modal" data-target="#pin-3-pin8"
+                        <a-circle type="button" data-toggle="modal" data-target="#pin-3-pin11"
                                   radius="0.2"
-                                  position="1.5 0.3 0.5"
+                                  position="1.9 0.1 0.9"
                                   rotation="-90 0 0"
                                   look-at="camera"
-                                  material="color: red;transparency: true; opacity: 0.5;"></a-sphere>
+                                  material="color: red; transparent: true; opacity: 0.5;"></a-circle>
                       
                       
                       
@@ -256,12 +267,12 @@
                       
                       
                       
-                        <a-sphere type="button" data-toggle="modal" data-target="#pin-3-pin7"
+                        <a-circle type="button" data-toggle="modal" data-target="#pin-3-pin7"
                                   radius="0.2"
-                                  position="0.5 0.3 0.5"
+                                  position="0.5 0.1 0.5"
                                   rotation="-90 0 0"
                                   look-at="camera"
-                                  material="color: red;transparency: true; opacity: 0.5;"></a-sphere>
+                                  material="color: red; transparent: true; opacity: 0.5;"></a-circle>
                       
                       
                       
@@ -272,12 +283,12 @@
                       
                       
                       
-                        <a-sphere type="button" data-toggle="modal" data-target="#pin-3-pin9"
+                        <a-circle type="button" data-toggle="modal" data-target="#pin-3-pin8"
                                   radius="0.2"
-                                  position="2 0.3 0.8"
+                                  position="1.5 0.1 0.5"
                                   rotation="-90 0 0"
                                   look-at="camera"
-                                  material="color: red;transparency: true; opacity: 0.5;"></a-sphere>
+                                  material="color: red; transparent: true; opacity: 0.5;"></a-circle>
                       
                       
                       
@@ -288,12 +299,12 @@
                       
                       
                       
-                        <a-sphere type="button" data-toggle="modal" data-target="#pin-3-pin10"
+                        <a-circle type="button" data-toggle="modal" data-target="#pin-3-pin9"
                                   radius="0.2"
-                                  position="1.2 0.3 -1.2"
+                                  position="2 0.1 0.8"
                                   rotation="-90 0 0"
                                   look-at="camera"
-                                  material="color: red;transparency: true; opacity: 0.5;"></a-sphere>
+                                  material="color: red; transparent: true; opacity: 0.5;"></a-circle>
                       
                       
                       
@@ -352,12 +363,12 @@
                       
                       
                       
-                        <a-sphere type="button" data-toggle="modal" data-target="#pin-2-pin4"
+                        <a-circle type="button" data-toggle="modal" data-target="#pin-2-pin4"
                                   radius="0.2"
-                                  position="-1 0.3 0"
+                                  position="-1 0.1 0"
                                   rotation="-90 0 0"
                                   look-at="camera"
-                                  material="color: red;transparency: true; opacity: 0.5;"></a-sphere>
+                                  material="color: red; transparent: true; opacity: 0.5;"></a-circle>
                       
                       
                       
@@ -368,12 +379,12 @@
                       
                       
                       
-                        <a-sphere type="button" data-toggle="modal" data-target="#pin-2-pin5"
+                        <a-circle type="button" data-toggle="modal" data-target="#pin-2-pin5"
                                   radius="0.2"
-                                  position="0 0.3 0"
+                                  position="0 0.1 0"
                                   rotation="-90 0 0"
                                   look-at="camera"
-                                  material="color: red;transparency: true; opacity: 0.5;"></a-sphere>
+                                  material="color: red; transparent: true; opacity: 0.5;"></a-circle>
                       
                       
                       
@@ -384,12 +395,12 @@
                       
                       
                       
-                        <a-sphere type="button" data-toggle="modal" data-target="#pin-2-pin6"
+                        <a-circle type="button" data-toggle="modal" data-target="#pin-2-pin6"
                                   radius="0.2"
-                                  position="0.5 0.3 0.5"
+                                  position="0.5 0.1 0.5"
                                   rotation="-90 0 0"
                                   look-at="camera"
-                                  material="color: red;transparency: true; opacity: 0.5;"></a-sphere>
+                                  material="color: red; transparent: true; opacity: 0.5;"></a-circle>
                       
                       
                       
@@ -456,12 +467,12 @@
                       
                       
                       
-                        <a-sphere type="button" data-toggle="modal" data-target="#pin-1-pin1"
+                        <a-circle type="button" data-toggle="modal" data-target="#pin-1-pin1"
                                   radius="0.2"
-                                  position="1 0.3 0"
+                                  position="1 0.1 0"
                                   rotation="-90 0 0"
                                   look-at="camera"
-                                  material="color: red;transparency: true; opacity: 0.5;"></a-sphere>
+                                  material="color: red; transparent: true; opacity: 0.5;"></a-circle>
                       
                       
                       
@@ -472,12 +483,12 @@
                       
                       
                       
-                        <a-sphere type="button" data-toggle="modal" data-target="#pin-1-pin2"
+                        <a-circle type="button" data-toggle="modal" data-target="#pin-1-pin2"
                                   radius="0.2"
-                                  position="-1 0.03 0"
+                                  position="-1 0.1 0"
                                   rotation="-90 0 0"
                                   look-at="camera"
-                                  material="color: red;transparency: true; opacity: 0.5;"></a-sphere>
+                                  material="color: red; transparent: true; opacity: 0.5;"></a-circle>
                       
                       
                       
@@ -488,12 +499,12 @@
                       
                       
                       
-                        <a-sphere type="button" data-toggle="modal" data-target="#pin-1-pin3"
+                        <a-circle type="button" data-toggle="modal" data-target="#pin-1-pin3"
                                   radius="0.2"
-                                  position="1.5 0.3 0"
+                                  position="1.5 0.1 0"
                                   rotation="-90 0 0"
                                   look-at="camera"
-                                  material="color: red;transparency: true; opacity: 0.5;"></a-sphere>
+                                  material="color: red; transparent: true; opacity: 0.5;"></a-circle>
                       
                       
                       
@@ -884,11 +895,39 @@ Om het werk te maken, moest Ensor het gedeelte van het doek dat hij zou beschild
           <!-- Build a text panel if applicable -->
 
 
+                <div class="modal fade" id="pin-3-pin10" tabindex="-1" role="dialog" aria-labelledby="pin-3" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">"Pin 10 - Les Bourgeois - Rodin"</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">x</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        Testing the dynamic description using Pin 10
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+          
+
+    
+          
+          
+
+
+
+          <!-- Build a text panel if applicable -->
+
+
                 <div class="modal fade" id="pin-3-pin11" tabindex="-1" role="dialog" aria-labelledby="pin-3" aria-hidden="true">
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">"Pin 3 - Les Bourgeois - Rodin"</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">"Pin 11 - Les Bourgeois - Rodin"</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">x</span>
                         </button>
@@ -912,39 +951,11 @@ Om het werk te maken, moest Ensor het gedeelte van het doek dat hij zou beschild
           <!-- Build a text panel if applicable -->
 
 
-                <div class="modal fade" id="pin-3-pin9" tabindex="-1" role="dialog" aria-labelledby="pin-3" aria-hidden="true">
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">"Pin 3 - Les Bourgeois - Rodin"</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">x</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        Testing the dynamic description using Pin 9
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-
-          
-
-    
-          
-          
-
-
-
-          <!-- Build a text panel if applicable -->
-
-
                 <div class="modal fade" id="pin-3-pin7" tabindex="-1" role="dialog" aria-labelledby="pin-3" aria-hidden="true">
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">"Pin 3 - Les Bourgeois - Rodin"</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">"Pin 7 - Les Bourgeois - Rodin"</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">x</span>
                         </button>
@@ -972,7 +983,7 @@ Om het werk te maken, moest Ensor het gedeelte van het doek dat hij zou beschild
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">"Pin 3 - Les Bourgeois - Rodin"</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">"Pin 8 - Les Bourgeois - Rodin"</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">x</span>
                         </button>
@@ -996,17 +1007,17 @@ Om het werk te maken, moest Ensor het gedeelte van het doek dat hij zou beschild
           <!-- Build a text panel if applicable -->
 
 
-                <div class="modal fade" id="pin-3-pin10" tabindex="-1" role="dialog" aria-labelledby="pin-3" aria-hidden="true">
+                <div class="modal fade" id="pin-3-pin9" tabindex="-1" role="dialog" aria-labelledby="pin-3" aria-hidden="true">
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">"Pin 3 - Les Bourgeois - Rodin"</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">"Pin 9 - Les Bourgeois - Rodin"</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">x</span>
                         </button>
                       </div>
                       <div class="modal-body">
-                        Testing the dynamic description using Pin 10
+                        Testing the dynamic description using Pin 9
                       </div>
                     </div>
                   </div>
@@ -1043,7 +1054,7 @@ Om het werk te maken, moest Ensor het gedeelte van het doek dat hij zou beschild
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">"Pin 3 - Les Bourgeois - Rodin"</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">"Pin 4 - Les Bourgeois - Rodin"</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">x</span>
                         </button>
@@ -1071,7 +1082,7 @@ Om het werk te maken, moest Ensor het gedeelte van het doek dat hij zou beschild
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">"Pin 3 - Les Bourgeois - Rodin"</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">"Pin 5 - Les Bourgeois - Rodin"</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">x</span>
                         </button>
@@ -1099,7 +1110,7 @@ Om het werk te maken, moest Ensor het gedeelte van het doek dat hij zou beschild
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">"Pin 3 - Les Bourgeois - Rodin"</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">"Pin 6 - Les Bourgeois - Rodin"</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">x</span>
                         </button>
