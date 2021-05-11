@@ -7,24 +7,24 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Schilderijen - met extra content (video, text, links...)</title>
+    
+    <script type="text/javascript" src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+    
+    <script type="text/javascript" src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
 
-    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
-
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-
-
-
-
-
-
-
+    
+      
+      
+      
+      
+      
+      
 
      <!-- Script to hide/show the context divs -->
-    <script>
+    <script type="text/javascript">
     AFRAME.registerComponent('markerhandler', {
         init: function () {
           const marker = this.el;
@@ -41,18 +41,18 @@
             var visibelvar3 = document.getElementById(markerVideoDIV).style.visibility = "visible";
 
                 $(document).ready(function(){
-
+                    
 
                     var url = $("#" + markeriframeId).attr('src');
                     console.log("Video URL: ", url);
-
+                    
 
                     $("#" + markerVideoDIViframe).on('hide.bs.modal', function(){
                         $("#" + markeriframeId).attr('src', '');
                         console.log("Video autoplay: ", markerVideoDIViframe);
                     });
 
-
+                    
 
                     $("#" + markerVideoDIViframe).on('show.bs.modal', function(){
                         $("#" + markeriframeId).attr('src', url);
@@ -62,9 +62,9 @@
 
                 });
             }
+            
 
-
-
+            
             console.log('Marker Found: ', markerId);
             console.log("visibility: ", visibelvar);
             console.log("Description ID: ", markerDescriptionDIV);
@@ -95,9 +95,9 @@
 
 
 
-
-
-    <script>
+    
+    
+    <script type="text/javascript">
     AFRAME.registerComponent('clickhandler', {
          init: function() {
            const pin = this.el;
@@ -108,9 +108,9 @@
      }});
      </script>
 
+    
 
-
-    <style>
+    <style type="text/css" >
 
       .menu {
          left: 0;
@@ -163,146 +163,179 @@
 
     </head>
 
-
+  
   <body>
     <a-scene cursor='rayOrigin: mouse; fuse: true; fuseTimeout: 0;'
           raycaster="objects: [clickhandler];"
           vr-mode-ui="enabled: false"
   		embedded
   	 arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
-
-
-
-
-
-
-
+        
+        
+        
+        
+        
+        
+        
         Printing range of taxonomy term:  exhibition-builds - Painting 1
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                  
+                      
+                      
+                      
+                      
+                      
+                      
+                    
+                  
+                      
+                      
+                      
+                      
+                      
+                      
+                    
+                  
+                      
+                      
+                      
+                      
+                      
+                      
+                    
+                  
+                  
+                  
+                      
+                      
+                      
+                          
                           <a-marker markerhandler type="barcode" value="1" id="1">
-                            <a-image rotation="90 0 180" position="-10 -10 0" scale="3 3 3" src="/AR-expo/public/artworks/jeanne_kefer.jpg">
+                            <a-image rotation="90 0 180" position="0 0 0" scale="3 3 3" src="/AR-expo/public/artworks/jeanne_kefer.jpg">
                             </a-image>
 
-
-
-
-
-
-
-
-
-
-
-
-
+                            
+                      
+                      
+                      
+                      
+                    
+                  
+                      
+                      
+                      
+                      
+                      
                         <a-circle type="button" data-toggle="modal" data-target="#pin-1-pin1"
                                   radius="0.4"
                                   position="1 0.01 0"
                                   rotation="-90 0 0"
                                   look-at="camera"
                                   material="color: blue; transparent: true; opacity: 0.1;"></a-circle>
-                        <a-sphere
+                        <a-circle
                                   radius="0.1"
                                   position="1 0.01 0"
                                   rotation="-90 0 0"
                                   look-at="camera"
-                                  material="color: red; transparent: true; opacity: 0.5;"></a-sphere>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                                  material="color: red; transparent: true; opacity: 0.5;"></a-circle>
+                      
+                      
+                      
+                    
+                  
+                      
+                      
+                      
+                      
+                      
+                        <a-circle type="button" data-toggle="modal" data-target="#pin-1-pin2"
+                                  radius="0.4"
+                                  position="-1 0.01 0"
+                                  rotation="-90 0 0"
+                                  look-at="camera"
+                                  material="color: blue; transparent: true; opacity: 0.1;"></a-circle>
+                        <a-circle
+                                  radius="0.1"
+                                  position="-1 0.01 0"
+                                  rotation="-90 0 0"
+                                  look-at="camera"
+                                  material="color: red; transparent: true; opacity: 0.5;"></a-circle>
+                      
+                      
+                      
+                    
+                  
+                      
+                      
+                      
+                      
+                      
+                        <a-circle type="button" data-toggle="modal" data-target="#pin-1-pin3"
+                                  radius="0.4"
+                                  position="1.5 0.01 0"
+                                  rotation="-90 0 0"
+                                  look-at="camera"
+                                  material="color: blue; transparent: true; opacity: 0.1;"></a-circle>
+                        <a-circle
+                                  radius="0.1"
+                                  position="1.5 0.01 0"
+                                  rotation="-90 0 0"
+                                  look-at="camera"
+                                  material="color: red; transparent: true; opacity: 0.5;"></a-circle>
+                      
+                      
+                      
                         </a-marker>
-
-
-
-
-    <a-entity camera near="0.005"></a-entity>
-
-
+                      
+                    
+            
+    
+    <a-entity camera ></a-entity>
+    
+    
     <a-entity cursor="rayOrigin:mouse"></a-entity>
-
+    
   </a-scene>
 
-
+  
     <!-- BEGINNING of context items -->
 
 
 
+    
+    
+    
+    
+    
 
+          
+          
 
+    
 
+          
+          
 
+    
 
+          
+          
 
+    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+          
+          
+          
           <div id="menu-description-1" class="menu-description menu container context">
               <div class="row">
                   <div class="col">
@@ -314,7 +347,7 @@
           </div>
 
 
-
+          
           <div class="modal fade" id="context-description-1" tabindex="-1" role="dialog" aria-labelledby="context-description-1" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
@@ -330,7 +363,7 @@
               </div>
             </div>
           </div>
-
+          
           <div id="menu-artist-1" class="menu-artist menu container context">
               <div class="row">
                   <div class="col">
@@ -341,7 +374,7 @@
               </div>
           </div>
 
-
+          
           <div class="modal fade" id="context-artist-1" tabindex="-1" role="dialog" aria-labelledby="context-artist-1" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
@@ -358,55 +391,55 @@
             </div>
           </div>
 
+          
+          
+          
 
+    
 
+          
+          
 
+    
 
+          
+          
 
+    
 
+          
+          
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
 
 
 
 <!-- END of context items -->
 
-
-
+  
+  
     <!-- BEGINNING of dynamic annotations -->
 
 
 
+    
+    
+    
+    
+          
 
+    
+          
 
+    
+          
 
+    
+          
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
+          
+          
 
 
 
@@ -430,11 +463,11 @@
                 </div>
 
 
+          
 
-
-
-
-
+    
+          
+          
 
 
 
@@ -458,11 +491,11 @@
                 </div>
 
 
+          
 
-
-
-
-
+    
+          
+          
 
 
 
@@ -486,16 +519,16 @@
                 </div>
 
 
+          
 
-
-
+    
 <!-- END of dynamic annotations -->
 
 
 
 <!-- No dynamic annotations added-->
 
-
+  
 
 
 
