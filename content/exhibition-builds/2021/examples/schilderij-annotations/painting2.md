@@ -1,7 +1,7 @@
 ---
 title: "Painting 2"
 date: 2021-03-19 10:47:38 +01:00
-draft: false
+draft: true
 Organiser: #add the organiser if required
 artwork_refs: "de_intocht_van_christus_te_brussel" #add all the artworks using their unique ID Name
 type: #choose from geolocation, marker, custom_marker, picture

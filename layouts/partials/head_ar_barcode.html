@@ -10,7 +10,7 @@
     {{else}}
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     {{end}}
-    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js">  </script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js">
 
     <!-- Bootstrap CSS -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -18,6 +18,7 @@
     <!-- Adding JS -->
       {{if .Params.dynamic_annotations }}
       {{ $dynamic_annoations := resources.Get "/js/dynamic_annotations.js" }}
+      {{ $dynamic_annoations := resources.Get "/js/aframe-ar.js" }}
       {{ $context_panes := resources.Get "/js/context_panes.js" }}
       {{ $allscript := slice $dynamic_annoations $context_panes | resources.Concat "/js/vendor2.js" | minify | fingerprint }}
       {{end}}
