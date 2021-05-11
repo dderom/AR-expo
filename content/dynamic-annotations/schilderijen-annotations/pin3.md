@@ -1,7 +1,7 @@
 ---
 title: "Pin 3 - Les Bourgeois - Rodin"
 date: 2021-03-19 10:45:38 +01:00
-draft: false
+draft: true
 pin-refs: "jeanne_kefer_pin3"
 pin_type: "text" #choose from text, video, audio
 video-url: #add the URL if relevant
