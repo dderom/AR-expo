@@ -51,8 +51,14 @@
                       {{ if eq .Type "dynamic-annotations"}}
                       {{ $pin_id_name := .File.TranslationBaseName}}
                         <a-circle type="button" data-toggle="modal" data-target="#pin-{{ $marker_id }}-{{$pin_id_name}}"
-                                  radius="0.2"
+                                  radius="0.4"
                                   position="{{.Params.position}}"
+                                  rotation="-90 0 0"
+                                  look-at="camera"
+                                  material="color: red; transparent: true; opacity: 0.01;"></a-circle>
+                        <a-circle
+                                  radius="0.1"
+                                  position="0 0.01 0"
                                   rotation="-90 0 0"
                                   look-at="camera"
                                   material="color: red; transparent: true; opacity: 0.5;"></a-circle>
