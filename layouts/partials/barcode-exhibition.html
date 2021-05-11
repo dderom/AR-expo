@@ -19,7 +19,6 @@
         {{ $artTypeExhibition := .Params.artType }}
         {{ $dynamic_annotations:= .Params.dynamic_annotations }}
         {{ range .RegularPages }}
-        Printing range of taxonomy term:  {{.Type}} - {{ .Title}}
             <!--  Get all the data from the exhibition item ref -->
             {{ $position := .Params.position_artwork }}
             {{ $size := .Params.size_artwork }}
