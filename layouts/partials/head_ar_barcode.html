@@ -19,16 +19,16 @@
 
     <!-- Adding JS -->
     {{ $js := resources.Get "js/aframe_ar.js"}}
-    {{ $file := $js | resources.Minify }}
-    <script defer type="application/javascript" src="{{ $file.Permalink | relURL }}"></script>
+
+    <script defer type="application/javascript" src="{{ $js.Permalink | relURL }}"></script>
 
     {{ $js := resources.Get "js/dynamic_annotations.js"}}
-    {{ $file := $js | resources.Minify }}
-    <script defer type="application/javascript" src="{{ $file.Permalink | relURL }}"></script>
+
+    <script defer type="application/javascript" src="{{ $js.Permalink | relURL }}"></script>
 
     {{ $js := resources.Get "js/context_panes.js"}}
-    {{ $file := $js | resources.Minify }}
-    <script defer type="application/javascript" src="{{ $file.Permalink | relURL }}"></script>
+
+    <script defer type="application/javascript" src="{{ $js.Permalink | relURL }}"></script>
 
 
     <!-- Used to create dynamic annotations -->
