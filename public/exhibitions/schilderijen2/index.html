@@ -7,90 +7,30 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Schilderijen - met extra content (video, text, links...) en achtergrond effect ifv VR</title>
+
+    
     
     <script type="text/javascript" src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     
-    <script type="text/javascript" src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+
 
     
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     
-      
-
-     <!-- Script to hide/show the context divs -->
-    <script type="text/javascript">
-    AFRAME.registerComponent('markerhandler', {
-        init: function () {
-          const marker = this.el;
-          marker.addEventListener("markerFound", ()=> {
-            var markerId = marker.id;
-            var markerArtistDIV = 'menu-artist-' + markerId;
-            var markerDescriptionDIV = 'menu-description-' + markerId;
-            var markerVideoDIV = 'menu-video-' + markerId;
-            var markeriframeId = 'iframe-' + markerId;
-            var markerVideoDIViframe = 'context-video-' + markerId;
-            var visibelvar = document.getElementById(markerArtistDIV).style.visibility = "visible";
-            var visibelvar2 = document.getElementById(markerDescriptionDIV).style.visibility = "visible";
-            if (document.getElementById(markerVideoDIV) !== null) {
-            var visibelvar3 = document.getElementById(markerVideoDIV).style.visibility = "visible";
-
-                $(document).ready(function(){
-                    
-
-                    var url = $("#" + markeriframeId).attr('src');
-                    console.log("Video URL: ", url);
-                    
-
-                    $("#" + markerVideoDIViframe).on('hide.bs.modal', function(){
-                        $("#" + markeriframeId).attr('src', '');
-                        console.log("Video autoplay: ", markerVideoDIViframe);
-                    });
-
-                    
-
-                    $("#" + markerVideoDIViframe).on('show.bs.modal', function(){
-                        $("#" + markeriframeId).attr('src', url);
-                        console.log("Video autoplay: ", markerVideoDIViframe);
-                    });
-
-
-                });
-            }
-            
-
-            
-            console.log('Marker Found: ', markerId);
-            console.log("visibility: ", visibelvar);
-            console.log("Description ID: ", markerDescriptionDIV);
-            console.log("Artist ID: ", markerArtistDIV);
-            console.log("Video ID: ", markerVideoDIV);
-            console.log("Video autoplay: ", markerVideoDIViframe);
-
-          });
-          marker.addEventListener("markerLost",() =>{
-            var markerId = marker.id;
-            var markerArtistDIV = 'menu-artist-' + markerId;
-            var markerDescriptionDIV = 'menu-description-' + markerId;
-            var markerVideoDIV = 'menu-video-' + markerId;
-            var visibelvar = document.getElementById(markerArtistDIV).style.visibility = "hidden";
-            var visibelvar2 = document.getElementById(markerDescriptionDIV).style.visibility = "hidden";
-            if (document.getElementById(markerVideoDIV) !== null) {
-              var visibelvar3 = document.getElementById(markerVideoDIV).style.visibility = "hidden";
-            }
-            console.log('Marker Lost: ', markerId);
-            console.log("visibility: ", visibelvar);
-            console.log("Description ID - hidden: ", markerDescriptionDIV)
-            console.log("Artist ID - hidden: ", markerArtistDIV)
-            console.log("Video ID - hidden: ", markerVideoDIV)
-          });
-        },
-      });
-    </script>
-
-
+    
+    
+    <script defer type="application/javascript" src="/AR-expo/public/js/aframe_ar.min.js"></script>
 
     
+    
+    <script defer type="application/javascript" src="/AR-expo/public/js/dynamic_annotations.min.js"></script>
+
+    
+    
+    <script defer type="application/javascript" src="/AR-expo/public/js/context_panes.min.js"></script>
+
+
     
 
     <style type="text/css" >

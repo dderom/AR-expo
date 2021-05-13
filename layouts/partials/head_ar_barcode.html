@@ -5,110 +5,33 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>{{ .Title }}</title>
+
+    <!-- Add all the JS one needs -->
     {{ if .Params.dynamic_annotations }}
     <script type="text/javascript" src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
     {{else}}
     <script type="text/javascript" src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     {{end}}
-    <script type="text/javascript" src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!-- Adding JS -->
-      {{if .Params.dynamic_annotations }}
-      {{ $dynamic_annoations := resources.Get "/js/dynamic_annotations.js" }}
-      {{ $dynamic_annoations := resources.Get "/js/aframe-ar.js" }}
-      {{ $context_panes := resources.Get "/js/context_panes.js" }}
-      {{ $allscript := slice $dynamic_annoations $context_panes | resources.Concat "/js/vendor2.js" | minify | fingerprint }}
-      {{end}}
+    {{ $js := resources.Get "js/aframe_ar.js"}}
+    {{ $file := $js | resources.Minify }}
+    <script defer type="application/javascript" src="{{ $file.Permalink | relURL }}"></script>
 
-     {{"<!-- Script to hide/show the context divs -->" | safeHTML}}
-    <script type="text/javascript">
-    AFRAME.registerComponent('markerhandler', {
-        init: function () {
-          const marker = this.el;
-          marker.addEventListener("markerFound", ()=> {
-            var markerId = marker.id;
-            var markerArtistDIV = 'menu-artist-' + markerId;
-            var markerDescriptionDIV = 'menu-description-' + markerId;
-            var markerVideoDIV = 'menu-video-' + markerId;
-            var markeriframeId = 'iframe-' + markerId;
-            var markerVideoDIViframe = 'context-video-' + markerId;
-            var visibelvar = document.getElementById(markerArtistDIV).style.visibility = "visible";
-            var visibelvar2 = document.getElementById(markerDescriptionDIV).style.visibility = "visible";
-            if (document.getElementById(markerVideoDIV) !== null) {
-            var visibelvar3 = document.getElementById(markerVideoDIV).style.visibility = "visible";
+    {{ $js := resources.Get "js/dynamic_annotations.js"}}
+    {{ $file := $js | resources.Minify }}
+    <script defer type="application/javascript" src="{{ $file.Permalink | relURL }}"></script>
 
-                $(document).ready(function(){
-                    /* Get iframe src attribute value i.e. YouTube video url
-                    and store it in a variable */
-                    var url = $("#" + markeriframeId).attr('src');
-                    console.log("Video URL: ", url);
-                    /* Assign empty url value to the iframe src attribute when
-                    modal hide, which stop the video playing */
-                    $("#" + markerVideoDIViframe).on('hide.bs.modal', function(){
-                        $("#" + markeriframeId).attr('src', '');
-                        console.log("Video autoplay: ", markerVideoDIViframe);
-                    });
-
-                    /* Assign the initially stored url back to the iframe src
-                    attribute when modal is displayed again */
-                    $("#" + markerVideoDIViframe).on('show.bs.modal', function(){
-                        $("#" + markeriframeId).attr('src', url);
-                        console.log("Video autoplay: ", markerVideoDIViframe);
-                    });
-
-
-                });
-            }
-            // check if there are dynamic annotations and build these if there are
-
-            // Now print some console
-            console.log('Marker Found: ', markerId);
-            console.log("visibility: ", visibelvar);
-            console.log("Description ID: ", markerDescriptionDIV);
-            console.log("Artist ID: ", markerArtistDIV);
-            console.log("Video ID: ", markerVideoDIV);
-            console.log("Video autoplay: ", markerVideoDIViframe);
-
-          });
-          marker.addEventListener("markerLost",() =>{
-            var markerId = marker.id;
-            var markerArtistDIV = 'menu-artist-' + markerId;
-            var markerDescriptionDIV = 'menu-description-' + markerId;
-            var markerVideoDIV = 'menu-video-' + markerId;
-            var visibelvar = document.getElementById(markerArtistDIV).style.visibility = "hidden";
-            var visibelvar2 = document.getElementById(markerDescriptionDIV).style.visibility = "hidden";
-            if (document.getElementById(markerVideoDIV) !== null) {
-              var visibelvar3 = document.getElementById(markerVideoDIV).style.visibility = "hidden";
-            }
-            console.log('Marker Lost: ', markerId);
-            console.log("visibility: ", visibelvar);
-            console.log("Description ID - hidden: ", markerDescriptionDIV)
-            console.log("Artist ID - hidden: ", markerArtistDIV)
-            console.log("Video ID - hidden: ", markerVideoDIV)
-          });
-        },
-      });
-    </script>
-
+    {{ $js := resources.Get "js/context_panes.js"}}
+    {{ $file := $js | resources.Minify }}
+    <script defer type="application/javascript" src="{{ $file.Permalink | relURL }}"></script>
 
 
     <!-- Used to create dynamic annotations -->
-    {{if .Params.dynamic_annotations }}
-    <script type="text/javascript">
-    AFRAME.registerComponent('clickhandler', {
-         init: function() {
-           const pin = this.el;
-           pin.addEventListener('click', () => {
-                var pinId = pin.getAttribute('pin-id');
-                 console.log('Dynamic annotation for ID: ', pinId)
-             });
-     }});
-     </script>
-
-    {{end}}
 
     <style type="text/css" >
 
