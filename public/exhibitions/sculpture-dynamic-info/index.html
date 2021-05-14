@@ -20,15 +20,15 @@
     
     
 
-    <script defer type="application/javascript" src="/AR-expo/public/js/aframe_ar_nft.js"></script>
+    <script type="application/javascript" src="https://dderom.github.io/AR-expo/public/js/aframe_ar.js"></script>
 
     
 
-    <script defer type="application/javascript" src="/AR-expo/public/js/dynamic_annotations.js"></script>
+    <script type="application/javascript" src="https://dderom.github.io/AR-expo/public/js/dynamic_annotations.js"></script>
 
     
 
-    <script defer type="application/javascript" src="/AR-expo/public/js/context_panes.js"></script>
+    <script type="application/javascript" src="https://dderom.github.io/AR-expo/public/js/context_panes.js"></script>
 
 
     
@@ -118,7 +118,7 @@
                       
                       
                           
-                            <a-marker markerhandler type="barcode" value="4" smooth="true" smoothCount="20" id="4">
+                            <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="4" smooth="true" smoothCount="20" id="4">
                               <a-entity position="0 -0.5 0" scale="0.08 0.08 0.08" gltf-model="/AR-expo/public/artworks/les_bourgeois_de_calais_by_rodin/scene.gltf">
                               </a-entity>
                           
@@ -173,18 +173,20 @@
                       
                       
                       
-                        <a-circle type="button" data-toggle="modal" data-target="#pin-4-pin1"
+                        <a-sphere type="button" data-toggle="modal" data-target="#pin-4-pin1"
                                   radius="1"
                                   position="1 0 0"
                                   rotation="-90 0 0"
                                   look-at="camera"
-                                  material="color: blue; transparent: true; opacity: 0;"></a-circle>
-                        <a-circle
-                                  radius="0.1"
-                                  position="1 0 0"
-                                  rotation="-90 0 0"
-                                  look-at="camera"
-                                  material="color: red; transparent: true; opacity: 0.5;"></a-circle>
+                                  material="color: blue; transparent: true; opacity: 0;">
+                                  <a-circle
+                                            radius="0.1"
+                                            position="0 0 0"
+                                            rotation="0 0 0"
+                                            look-at="camera"
+                                            material="color: red; transparent: true; opacity: 0.5;"></a-circle>
+                        </a-sphere>
+
                       
                       
                       
@@ -195,18 +197,20 @@
                       
                       
                       
-                        <a-circle type="button" data-toggle="modal" data-target="#pin-4-pin2"
+                        <a-sphere type="button" data-toggle="modal" data-target="#pin-4-pin2"
                                   radius="1"
                                   position="-1 0 0"
                                   rotation="-90 0 0"
                                   look-at="camera"
-                                  material="color: blue; transparent: true; opacity: 0;"></a-circle>
-                        <a-circle
-                                  radius="0.1"
-                                  position="-1 0 0"
-                                  rotation="-90 0 0"
-                                  look-at="camera"
-                                  material="color: red; transparent: true; opacity: 0.5;"></a-circle>
+                                  material="color: blue; transparent: true; opacity: 0;">
+                                  <a-circle
+                                            radius="0.1"
+                                            position="0 0 0"
+                                            rotation="0 0 0"
+                                            look-at="camera"
+                                            material="color: red; transparent: true; opacity: 0.5;"></a-circle>
+                        </a-sphere>
+
                       
                       
                       
@@ -232,7 +236,7 @@
                       
                       
                           
-                            <a-marker markerhandler type="barcode" value="5" smooth="true" smoothCount="20" id="5">
+                            <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="5" smooth="true" smoothCount="20" id="5">
                               <a-entity position="0 -0.5 0" scale="0.2 0.2 0.2" gltf-model="/AR-expo/public/artworks/les_bourgeois_de_calais_by_rodin/scene.gltf">
                               </a-entity>
                           
@@ -287,18 +291,20 @@
                       
                       
                       
-                        <a-circle type="button" data-toggle="modal" data-target="#pin-5-pin3"
+                        <a-sphere type="button" data-toggle="modal" data-target="#pin-5-pin3"
                                   radius="1"
                                   position="1 0 0"
                                   rotation="-90 0 0"
                                   look-at="camera"
-                                  material="color: blue; transparent: true; opacity: 0;"></a-circle>
-                        <a-circle
-                                  radius="0.1"
-                                  position="1 0 0"
-                                  rotation="-90 0 0"
-                                  look-at="camera"
-                                  material="color: red; transparent: true; opacity: 0.5;"></a-circle>
+                                  material="color: blue; transparent: true; opacity: 0;">
+                                  <a-circle
+                                            radius="0.1"
+                                            position="0 0 0"
+                                            rotation="0 0 0"
+                                            look-at="camera"
+                                            material="color: red; transparent: true; opacity: 0.5;"></a-circle>
+                        </a-sphere>
+
                       
                       
                       
