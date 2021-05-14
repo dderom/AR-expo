@@ -1,5 +1,5 @@
 ---
-title: "3D sculptures - proof of concept using markers"
+title: "3D sculptures - markers for various sizes"
 date: 2021-02-01 16:18:44+01:00
 draft: false
 

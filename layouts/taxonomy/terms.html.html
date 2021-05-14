@@ -7,7 +7,7 @@
 
 <div>
 
-  {{ range .Paginator.Pages }}
+  {{ range (.Paginator.Pages.ByParam "finished") }}
 
 
 
