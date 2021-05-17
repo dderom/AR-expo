@@ -49,20 +49,14 @@
                       {{end}}
                       {{ if eq .Type "dynamic-annotations"}}
                       {{ $pin_id_name := .File.TranslationBaseName}}
-                        <a-circle type="button" data-toggle="modal" data-target="#pin-{{ $marker_id }}-{{$pin_id_name}}"
-                                  radius="1"
-                                  position="{{.Params.position}}"
-                                  rotation="-90 0 0"
-                                  look-at="camera"
-                                  material="color: blue; transparent: true; opacity: 1;">
 
-                        </a-circle>
-                        <a-circle
-                                  radius="0.1"
+                        <a-ring data-toggle="modal" data-target="#pin-{{ $marker_id }}-{{$pin_id_name}}"
+                                  radius-inner = {{.Params.radius_inner}}
+                                  radius-outer = {{.Params.radius_outer}}
                                   position="{{.Params.position}}"
                                   rotation="-90 0 0"
                                   look-at="camera"
-                                  material="color: red; transparent: true; opacity: 0.5;"></a-circle>
+                                  material="color: red; transparent: true; opacity: 0.5;"></a-ring>
 
                       {{end}}
                       <!-- Close the marker when last related is reached-->
