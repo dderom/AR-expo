@@ -1,0 +1,1019 @@
+
+
+  <!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Virtuele tentoonstelling van het RHoK 2021</title>
+
+    
+    
+    <script type="text/javascript" src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    
+
+
+    
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    
+    
+
+    <script type="application/javascript" src="https://dderom.github.io/AR-expo/public/js/aframe_ar.js"></script>
+
+    
+
+    <script type="application/javascript" src="https://dderom.github.io/AR-expo/public/js/dynamic_annotations.js"></script>
+
+    
+
+    <script type="application/javascript" src="https://dderom.github.io/AR-expo/public/js/context_panes.js"></script>
+
+
+    
+
+    <style type="text/css" >
+
+      .menu {
+         left: 0;
+         width: 10%;
+         height: 5em;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         z-index: 1;
+         visibility: hidden;
+         position: absolute;
+         bottom: 0;
+         float: left;
+         margin-left: 2px;
+      }
+      .menu-artist {
+        position: absolute;
+        bottom: 0;
+        left: 2px;
+      }
+
+      .menu-description {
+        position: absolute;
+        bottom: 80px;
+        left: 2px;
+      }
+
+      .menu-video {
+        position: absolute;
+        bottom: 160px;
+        left: 2px;
+      }
+
+
+
+      .btn {
+        margin-bottom: 2px;
+      }
+
+      .modal-content {
+        background-color:rgba(0, 0, 0, 0.5);
+        border: 2px solid white;
+      }
+
+      .modal-header, .modal-body, .modal-content, .close {
+        color: white;
+      }
+    </style>
+
+
+    </head>
+
+  
+  <body>
+    <a-scene cursor='rayOrigin: mouse; fuse: true; fuseTimeout: 0;'
+          raycaster="objects: [clickhandler];"
+          vr-mode-ui="enabled: false"
+  		embedded
+  	 arjs="sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
+        
+        
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                  
+                  
+                  
+                      
+                      
+                      
+                          
+                          <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="1" id="1">
+                            <a-image rotation="90 0 180" position="0 0 0" scale="1 1 1" src="/AR-expo/public/artworks/RHoK21/ann_coenen_01.jpg">
+                            </a-image>
+
+                            
+                      
+                      
+                      
+                      
+                        </a-marker>
+                      
+                    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                  
+                  
+                  
+                      
+                      
+                      
+                          
+                          <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="2" id="2">
+                            <a-image rotation="90 0 180" position="0 0 0" scale="1 1 1" src="/AR-expo/public/artworks/RHoK21/Ann_Coenen_02.jpg">
+                            </a-image>
+
+                            
+                      
+                      
+                      
+                      
+                        </a-marker>
+                      
+                    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                  
+                  
+                  
+                      
+                      
+                      
+                          
+                          <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="3" id="3">
+                            <a-image rotation="90 0 180" position="0 0 0" scale="1 1 1" src="/AR-expo/public/artworks/RHoK21/Ann_Coenen_03.jpg">
+                            </a-image>
+
+                            
+                      
+                      
+                      
+                      
+                        </a-marker>
+                      
+                    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                  
+                  
+                  
+                      
+                      
+                      
+                          
+                          <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="4" id="4">
+                            <a-image rotation="90 0 180" position="0 0 0" scale="1 1 1" src="/AR-expo/public/artworks/RHoK21/Ann_Coenen_04.jpg">
+                            </a-image>
+
+                            
+                      
+                      
+                      
+                      
+                        </a-marker>
+                      
+                    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                  
+                  
+                  
+                      
+                      
+                      
+                          
+                          <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="5" id="5">
+                            <a-image rotation="90 0 180" position="0 0 0" scale="1 1 1" src="/AR-expo/public/artworks/RHoK21/Ann_Coenen_05.jpg">
+                            </a-image>
+
+                            
+                      
+                      
+                      
+                      
+                        </a-marker>
+                      
+                    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                  
+                  
+                  
+                      
+                      
+                      
+                          
+                          <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="6" id="6">
+                            <a-image rotation="90 0 180" position="0 0 0" scale="1 1 1" src="/AR-expo/public/artworks/RHoK21/Ann_Coenen_06.jpg">
+                            </a-image>
+
+                            
+                      
+                      
+                      
+                      
+                        </a-marker>
+                      
+                    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                  
+                  
+                  
+                      
+                      
+                      
+                          
+                          <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="7" id="7">
+                            <a-image rotation="90 0 180" position="0 0 0" scale="1 1 1" src="/AR-expo/public/artworks/RHoK21/Ann_Coenen_07.jpg">
+                            </a-image>
+
+                            
+                      
+                      
+                      
+                      
+                        </a-marker>
+                      
+                    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                  
+                  
+                  
+                      
+                      
+                      
+                          
+                          <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="8" id="8">
+                            <a-image rotation="90 0 180" position="0 0 0" scale="1 1 1" src="/AR-expo/public/artworks/RHoK21/Ann_Coenen_08.jpg">
+                            </a-image>
+
+                            
+                      
+                      
+                      
+                      
+                        </a-marker>
+                      
+                    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                  
+                  
+                  
+                      
+                      
+                      
+                          
+                          <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="9" id="9">
+                            <a-image rotation="90 0 180" position="0 0 0" scale="1 1 1" src="/AR-expo/public/artworks/RHoK21/Ann_Coenen_09.jpg">
+                            </a-image>
+
+                            
+                      
+                      
+                      
+                      
+                        </a-marker>
+                      
+                    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                  
+                  
+                  
+                      
+                      
+                      
+                          
+                          <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="10" id="10">
+                            <a-image rotation="90 0 180" position="0 0 0" scale="1 1 1" src="/AR-expo/public/artworks/RHoK21/celine_d_ursel_01.jpg">
+                            </a-image>
+
+                            
+                      
+                      
+                      
+                      
+                        </a-marker>
+                      
+                    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                  
+                  
+                  
+                      
+                      
+                      
+                          
+                          <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="11" id="11">
+                            <a-image rotation="90 0 180" position="0 0 0" scale="1 1 1" src="/AR-expo/public/artworks/RHoK21/celine_d_ursel_02.jpg">
+                            </a-image>
+
+                            
+                      
+                      
+                      
+                      
+                        </a-marker>
+                      
+                    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                  
+                  
+                  
+                      
+                      
+                      
+                          
+                          <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="12" id="12">
+                            <a-image rotation="90 0 180" position="0 0 0" scale="1 1 1" src="/AR-expo/public/artworks/RHoK21/celine_d_ursel_03.jpg">
+                            </a-image>
+
+                            
+                      
+                      
+                      
+                      
+                        </a-marker>
+                      
+                    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                  
+                  
+                  
+                      
+                      
+                      
+                          
+                          <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="13" id="13">
+                            <a-image rotation="90 0 180" position="0 0 0" scale="1 1 1" src="/AR-expo/public/artworks/RHoK21/celine_d_ursel_04.jpg">
+                            </a-image>
+
+                            
+                      
+                      
+                      
+                      
+                        </a-marker>
+                      
+                    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                  
+                  
+                  
+                      
+                      
+                      
+                          
+                          <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="14" id="14">
+                            <a-image rotation="90 0 180" position="0 0 0" scale="1 1 1" src="/AR-expo/public/artworks/RHoK21/celine_d_ursel__05.jpg">
+                            </a-image>
+
+                            
+                      
+                      
+                      
+                      
+                        </a-marker>
+                      
+                    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                  
+                  
+                  
+                      
+                      
+                      
+                          
+                          <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="15" id="15">
+                            <a-image rotation="90 0 180" position="0 0 0" scale="1 1 1" src="/AR-expo/public/artworks/RHoK21/chantal_bonnevie_01.jpg">
+                            </a-image>
+
+                            
+                      
+                      
+                      
+                      
+                        </a-marker>
+                      
+                    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                  
+                  
+                  
+                      
+                      
+                      
+                          
+                          <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="16" id="16">
+                            <a-image rotation="90 0 180" position="0 0 0" scale="1 1 1" src="/AR-expo/public/artworks/RHoK21/chantal_bonnevie_02.jpg">
+                            </a-image>
+
+                            
+                      
+                      
+                      
+                      
+                        </a-marker>
+                      
+                    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                  
+                  
+                  
+                      
+                      
+                      
+                          
+                          <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="17" id="17">
+                            <a-image rotation="90 0 180" position="0 0 0" scale="1 1 1" src="/AR-expo/public/artworks/RHoK21/chantal_bonnevie_03.jpg">
+                            </a-image>
+
+                            
+                      
+                      
+                      
+                      
+                        </a-marker>
+                      
+                    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                  
+                  
+                  
+                      
+                      
+                      
+                          
+                          <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="18" id="18">
+                            <a-image rotation="90 0 180" position="0 0 0" scale="1 1 1" src="/AR-expo/public/artworks/RHoK21/chantal_bonnevie_04.jpg">
+                            </a-image>
+
+                            
+                      
+                      
+                      
+                      
+                        </a-marker>
+                      
+                    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                  
+                  
+                  
+                      
+                      
+                      
+                          
+                          <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="19" id="19">
+                            <a-image rotation="90 0 180" position="0 0 0" scale="1 1 1" src="/AR-expo/public/artworks/RHoK21/daisy_ledent_van_est_01.jpg">
+                            </a-image>
+
+                            
+                      
+                      
+                      
+                      
+                        </a-marker>
+                      
+                    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                  
+                  
+                  
+                      
+                      
+                      
+                          
+                          <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="20" id="20">
+                            <a-image rotation="90 0 180" position="0 0 0" scale="1 1 1" src="/AR-expo/public/artworks/RHoK21/daisy_ledent_van_est_02.jpg">
+                            </a-image>
+
+                            
+                      
+                      
+                      
+                      
+                        </a-marker>
+                      
+                    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                  
+                  
+                  
+                      
+                      
+                      
+                          
+                          <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="21" id="21">
+                            <a-image rotation="90 0 180" position="0 0 0" scale="1 1 1" src="/AR-expo/public/artworks/RHoK21/daisy_ledent_van_est_03.jpg">
+                            </a-image>
+
+                            
+                      
+                      
+                      
+                      
+                        </a-marker>
+                      
+                    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                  
+                  
+                  
+                      
+                      
+                      
+                          
+                          <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="22" id="22">
+                            <a-image rotation="90 0 180" position="0 0 0" scale="1 1 1" src="/AR-expo/public/artworks/RHoK21/daisy_ledent_van_est_04.jpg">
+                            </a-image>
+
+                            
+                      
+                      
+                      
+                      
+                        </a-marker>
+                      
+                    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                  
+                  
+                  
+                      
+                      
+                      
+                          
+                          <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="43" id="43">
+                            <a-image rotation="90 0 180" position="0 0 0" scale="1 1 1" src="/AR-expo/public/artworks/RHoK21/francoise_kiekens_09.jpg">
+                            </a-image>
+
+                            
+                      
+                      
+                      
+                      
+                        </a-marker>
+                      
+                    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                  
+                  
+                  
+                      
+                      
+                      
+                          
+                          <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="56" id="56">
+                            <a-image rotation="90 0 180" position="0 0 0" scale="1 1 1" src="/AR-expo/public/artworks/RHoK21/juwelen_01.jpg">
+                            </a-image>
+
+                            
+                      
+                      
+                      
+                      
+                        </a-marker>
+                      
+                    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                  
+                  
+                  
+                      
+                      
+                      
+                          
+                          <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="57" id="57">
+                            <a-image rotation="90 0 180" position="0 0 0" scale="1 1 1" src="/AR-expo/public/artworks/RHoK21/juwelen_02.jpg">
+                            </a-image>
+
+                            
+                      
+                      
+                      
+                      
+                        </a-marker>
+                      
+                    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                  
+                  
+                  
+                      
+                      
+                      
+                          
+                          <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="58" id="58">
+                            <a-image rotation="90 0 180" position="0 0 0" scale="1 1 1" src="/AR-expo/public/artworks/RHoK21/juwelen_03.jpg">
+                            </a-image>
+
+                            
+                      
+                      
+                      
+                      
+                        </a-marker>
+                      
+                    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                  
+                  
+                  
+                      
+                      
+                      
+                          
+                          <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="59" id="59">
+                            <a-image rotation="90 0 180" position="0 0 0" scale="1 1 1" src="/AR-expo/public/artworks/RHoK21/juwelen_04.jpg">
+                            </a-image>
+
+                            
+                      
+                      
+                      
+                      
+                        </a-marker>
+                      
+                    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                  
+                  
+                  
+                      
+                      
+                      
+                          
+                          <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="60" id="60">
+                            <a-image rotation="90 0 180" position="0 0 0" scale="1 1 1" src="/AR-expo/public/artworks/RHoK21/juwelen_05.jpg">
+                            </a-image>
+
+                            
+                      
+                      
+                      
+                      
+                        </a-marker>
+                      
+                    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                  
+                  
+                  
+                      
+                      
+                      
+                          
+                          <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="61" id="61">
+                            <a-image rotation="90 0 180" position="0 0 0" scale="1 1 1" src="/AR-expo/public/artworks/RHoK21/juwelen_06.jpg">
+                            </a-image>
+
+                            
+                      
+                      
+                      
+                      
+                        </a-marker>
+                      
+                    
+            
+    
+    <a-entity camera ></a-entity>
+    
+    
+  </a-scene>
+
+  
+  
+
+
+
+
+
+
+
+</body>
+
+</html>

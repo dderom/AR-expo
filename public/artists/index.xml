@@ -8,6 +8,24 @@
     <language>en-us</language>
     <lastBuildDate>Fri, 19 Mar 2021 10:45:38 +0100</lastBuildDate><atom:link href="https://dderom.github.io/AR-expo/public/artists/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Ann Coenen</title>
+      <link>https://dderom.github.io/AR-expo/public/artists/ann-coenen/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>https://dderom.github.io/AR-expo/public/artists/ann-coenen/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Atelier Juwelenontwerp</title>
+      <link>https://dderom.github.io/AR-expo/public/artists/atelier-juwelenontwerp/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>https://dderom.github.io/AR-expo/public/artists/atelier-juwelenontwerp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>beelden</title>
       <link>https://dderom.github.io/AR-expo/public/artists/beelden/</link>
       <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
@@ -26,11 +44,65 @@
     </item>
     
     <item>
+      <title>Chantal Bonnevie</title>
+      <link>https://dderom.github.io/AR-expo/public/artists/chantal-bonnevie/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>https://dderom.github.io/AR-expo/public/artists/chantal-bonnevie/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Céline d Ursel</title>
+      <link>https://dderom.github.io/AR-expo/public/artists/c%C3%A9line-d-ursel/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>https://dderom.github.io/AR-expo/public/artists/c%C3%A9line-d-ursel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Daisy Lendent Van Est</title>
+      <link>https://dderom.github.io/AR-expo/public/artists/daisy-lendent-van-est/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>https://dderom.github.io/AR-expo/public/artists/daisy-lendent-van-est/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Edith De Baere</title>
+      <link>https://dderom.github.io/AR-expo/public/artists/edith-de-baere/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>https://dderom.github.io/AR-expo/public/artists/edith-de-baere/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Fernand Edmond Jean Marie Khnopff</title>
       <link>https://dderom.github.io/AR-expo/public/artists/fernand-edmond-jean-marie-khnopff/</link>
       <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
       
       <guid>https://dderom.github.io/AR-expo/public/artists/fernand-edmond-jean-marie-khnopff/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Francoise Kiekens</title>
+      <link>https://dderom.github.io/AR-expo/public/artists/francoise-kiekens/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>https://dderom.github.io/AR-expo/public/artists/francoise-kiekens/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gayane Hayrapetyan</title>
+      <link>https://dderom.github.io/AR-expo/public/artists/gayane-hayrapetyan/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>https://dderom.github.io/AR-expo/public/artists/gayane-hayrapetyan/</guid>
       <description></description>
     </item>
     
@@ -53,11 +125,38 @@
     </item>
     
     <item>
+      <title>Marie Sacré</title>
+      <link>https://dderom.github.io/AR-expo/public/artists/marie-sacr%C3%A9/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>https://dderom.github.io/AR-expo/public/artists/marie-sacr%C3%A9/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Marie Uytterelst</title>
+      <link>https://dderom.github.io/AR-expo/public/artists/marie-uytterelst/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>https://dderom.github.io/AR-expo/public/artists/marie-uytterelst/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Robert Wlérick</title>
       <link>https://dderom.github.io/AR-expo/public/artists/robert-wl%C3%A9rick/</link>
       <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
       
       <guid>https://dderom.github.io/AR-expo/public/artists/robert-wl%C3%A9rick/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Yanine Karapatakis</title>
+      <link>https://dderom.github.io/AR-expo/public/artists/yanine-karapatakis/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>https://dderom.github.io/AR-expo/public/artists/yanine-karapatakis/</guid>
       <description></description>
     </item>
     

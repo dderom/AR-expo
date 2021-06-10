@@ -61,5 +61,14 @@
       <description>Proof of concept using sky and black box in combination with AR.</description>
     </item>
     
+    <item>
+      <title>Virtuele tentoonstelling van het RHoK 2021</title>
+      <link>https://dderom.github.io/AR-expo/public/exhibitions/rhok21/</link>
+      <pubDate>Fri, 01 Jan 2021 16:18:44 +0100</pubDate>
+      
+      <guid>https://dderom.github.io/AR-expo/public/exhibitions/rhok21/</guid>
+      <description>Een virtuele tentoonstelling van het RHoK</description>
+    </item>
+    
   </channel>
 </rss>
