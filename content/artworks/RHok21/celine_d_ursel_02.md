@@ -1,5 +1,5 @@
 ---
-title: "Céline d Ursel"
+title: "Céline d'Ursel"
 artwork_refs: "celine_d_ursel_02" # Do not touch unless you know what you are doing
 date: 2021-03-19 10:45:38 +01:00
 draft: false

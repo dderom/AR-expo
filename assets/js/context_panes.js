@@ -8,7 +8,10 @@ AFRAME.registerComponent('markerhandler', {
         var markerVideoDIV = 'menu-video-' + markerId;
         var markeriframeId = 'iframe-' + markerId;
         var markerVideoDIViframe = 'context-video-' + markerId;
-        var visibelvar = document.getElementById(markerArtistDIV).style.visibility = "visible";
+        /* Check if there is a artistDiv and get ID if so */
+        if (document.getElementById(markerArtistDIV) !== null) {
+          var visibelvar = document.getElementById(markerArtistDIV).style.visibility = "visible";
+        }
         var visibelvar2 = document.getElementById(markerDescriptionDIV).style.visibility = "visible";
         if (document.getElementById(markerVideoDIV) !== null) {
         var visibelvar3 = document.getElementById(markerVideoDIV).style.visibility = "visible";
@@ -48,7 +51,9 @@ AFRAME.registerComponent('markerhandler', {
       });
       marker.addEventListener("markerLost",() =>{
         var markerId = marker.id;
-        var markerArtistDIV = 'menu-artist-' + markerId;
+        if (document.getElementById(markerArtistDIV) !== null) {
+          var markerArtistDIV = 'menu-artist-' + markerId;
+        }
         var markerDescriptionDIV = 'menu-description-' + markerId;
         var markerVideoDIV = 'menu-video-' + markerId;
         var visibelvar = document.getElementById(markerArtistDIV).style.visibility = "hidden";

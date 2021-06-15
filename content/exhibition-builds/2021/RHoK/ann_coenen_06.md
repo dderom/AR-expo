@@ -1,7 +1,7 @@
 ---
 title: "Ann Coenen 6"
 date: 2021-03-19 10:46:38 +01:00
-draft: false
+draft: true
 Organiser: #add the organiser if required
 artwork_refs: "ann_coenen_6" #add all the artworks using their unique ID Name
 type: #choose from geolocation, marker, custom_marker, picture

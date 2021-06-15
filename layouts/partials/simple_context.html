@@ -1,0 +1,53 @@
+{{"<!-- BEGINNING of context items -->" | safeHTML }}
+
+{{ $exhibition_type := .Params.exhibition_types}}
+{{ $simple_context_title := .Params.simple_context_title}}
+
+{{ range .RegularPages }}
+    <!--  Get all the data from the exhibition item ref -->
+    {{ $marker_id := .Params.marker_id}}
+    {{ $menu_button_id := .Params.marker_id}}
+    <!-- Now start fetching related content -->
+    {{ range .Site.RegularPages.Related . }}
+
+          {{ $artist_work := .Params.artists }}
+          {{ if eq .Type "artworks"}}
+          <!-- Build the button for the Simple Context -->
+
+          <div id="menu-description-{{ $marker_id }}" class="menu-description menu container context">
+              <div class="row">
+                  <div class="col">
+                      <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#context-description-{{$marker_id}}">
+                            {{ .Params.artists }} </br> </br>
+                            Klik hier voor meer info
+                      </button>
+                  </div>
+              </div>
+          </div>
+
+
+          <!-- Now build the description panel -->
+          <div class="modal fade" id="context-description-{{$marker_id}}" tabindex="-1" role="dialog" aria-labelledby="context-description-{{$marker_id}}" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">{{$simple_context_title}}</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">x</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  {{ .Params.simple_description | safeHTML}}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+          {{end}}
+
+    {{ end }}
+{{ end }}
+
+
+{{"<!-- END of context items -->" | safeHTML }}

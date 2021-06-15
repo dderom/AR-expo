@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Miche Bauwin on DKO en AR - demosite en playground for AR en art exhibitions</title>
+    <link>https://dderom.github.io/AR-expo/public/artists/miche-bauwin/</link>
+    <description>Recent content in Miche Bauwin on DKO en AR - demosite en playground for AR en art exhibitions</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 19 Mar 2021 10:45:38 +0100</lastBuildDate><atom:link href="https://dderom.github.io/AR-expo/public/artists/miche-bauwin/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>zonder titel</title>
+      <link>https://dderom.github.io/AR-expo/public/artworks/rhok21/juwelen_03/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>https://dderom.github.io/AR-expo/public/artworks/rhok21/juwelen_03/</guid>
+      <description>Halssieraad - materiaal amber, nylon en plastic</description>
+    </item>
+    
+    <item>
+      <title>zonder titel </title>
+      <link>https://dderom.github.io/AR-expo/public/artworks/rhok21/juwelen_04/</link>
+      <pubDate>Fri, 19 Mar 2021 10:45:38 +0100</pubDate>
+      
+      <guid>https://dderom.github.io/AR-expo/public/artworks/rhok21/juwelen_04/</guid>
+      <description>Halssieraad - materiaal amber, nylon, katoendraad en plastic</description>
+    </item>
+    
+  </channel>
+</rss>

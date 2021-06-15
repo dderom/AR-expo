@@ -8,6 +8,8 @@ exhibition_types: "barcode" #Choose from geolocation, barcode, custom_barcode, p
 marker_type_sets: "3x3" #choose from 3x3
 
 context: false
+simple_context: true
+simple_context_title : "RHoKAcademie Augmented Reality EXPO"
 sky: false
 video_environment: false
 
