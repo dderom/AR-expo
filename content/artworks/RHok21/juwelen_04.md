@@ -6,5 +6,6 @@ draft: false
 model : "RHoK21/juwelen_04.jpg" # provide the url path to the model
 artists: "Miche Bauwin"
 artType: "2d"
+simple_description: "Zonder Titel<br><br>Halssieraad - materiaal amber, nylon, katoendraad en plastic. <br><br>Een werk door Miche Bauwin binnen de afdeling Juweelontwerp/Edelmetaal.<br><br><br><br> Een project gerealiseerd door Dirk Derom in opdracht van het <a href='https://www.sdko.brussels'>SDKO</a> en met steun van de <a href='https://www.vgc.be/wie-zijn-wij/actief-beleid-brussel/onderwijs'>VGC</a>."
 ---
 Halssieraad - materiaal amber, nylon, katoendraad en plastic
