@@ -53,10 +53,10 @@ AFRAME.registerComponent('markerhandler', {
         var markerId = marker.id;
         if (document.getElementById(markerArtistDIV) !== null) {
           var markerArtistDIV = 'menu-artist-' + markerId;
+          var visibelvar = document.getElementById(markerArtistDIV).style.visibility = "hidden";
         }
         var markerDescriptionDIV = 'menu-description-' + markerId;
         var markerVideoDIV = 'menu-video-' + markerId;
-        var visibelvar = document.getElementById(markerArtistDIV).style.visibility = "hidden";
         var visibelvar2 = document.getElementById(markerDescriptionDIV).style.visibility = "hidden";
         if (document.getElementById(markerVideoDIV) !== null) {
           var visibelvar3 = document.getElementById(markerVideoDIV).style.visibility = "hidden";
