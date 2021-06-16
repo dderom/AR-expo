@@ -82,7 +82,7 @@ text-align: left;
   width: max-content;
   font-weight: bold;
   text-decoration: none;
-  list-style-type:none; 
+  list-style-type:none;
   padding: 5px;"
 }
 
@@ -92,4 +92,21 @@ text-align: left;
   text-decoration: none;
   list-style-type:none; padding: 5px;"
   border: 0px;
+}
+
+.menu-simple-description.btn-secondary {
+    color: #fff;
+    background-color: #5a6268;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid white;
+}
+
+.menu-simple-description .btn-secondary:hover {
+    color: #fff;
+    background-color: #5a6268;
+    position: absolute;
+    bottom: 5px;
+    width: auto;
+    background-color:rgba(0, 0, 0, 0.5);
+    border: 2px solid white;
 }

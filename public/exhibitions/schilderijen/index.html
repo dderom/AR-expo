@@ -16,6 +16,7 @@
 
     
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
 
     
     
@@ -34,7 +35,9 @@
     
 
     <style type="text/css" >
-
+      body {
+        overflow:hidden;
+      }
       .menu {
          left: 0;
          width: 10%;
@@ -81,6 +84,30 @@
       .modal-header, .modal-body, .modal-content, .close {
         color: white;
       }
+
+
+      .menu-simple-description .btn-secondary {
+          position: absolute;
+          bottom: -20px;
+          width: 105vw;
+          background-color:rgba(0, 0, 0, 0.5);
+          color: #fff;
+          border-top: 2px solid white;
+      }
+
+    .container {
+    padding-left: 0px;
+    }
+
+    .modal-body a {
+      color: #fff;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+    .menu {
+      left: -5vw;
+      bottom: -20px;
+    }
     </style>
 
 

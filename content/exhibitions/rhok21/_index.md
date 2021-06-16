@@ -14,5 +14,12 @@ sky: false
 video_environment: false
 
 finished: true
+howto: true
+howto_title: "Welkom op de virtuele tentoonstelling van het RHoK!"
+howto_text: "
+<b><u>Hoe werkt het?</u></b><br>
+Je hoeft enkel jouw smartphone te richten naar de zwart-wit iconen die in de RHoK-tuin en in het atelier van Juweelontwerp/ Edelmetaal kan vinden. <br><br>Voor het beste resultaat hou je best een afstand van ongeveer 60 à 100 cm, maar zoom gerust eens wat in om de prenten goed te bekijken!<br><br>
+
+<small>In samenwerking met SDKO gesponsord door Vlaamse Gemeenschapscomissie. Met dank aan Dirk Derom.</small>"
 ---
 Een virtuele tentoonstelling van het RHoK

@@ -2,6 +2,7 @@ AFRAME.registerComponent('markerhandler', {
     init: function () {
       const marker = this.el;
       marker.addEventListener("markerFound", ()=> {
+        $("#Howto").modal('hide');
         var markerId = marker.id;
         var markerArtistDIV = 'menu-artist-' + markerId;
         var markerDescriptionDIV = 'menu-description-' + markerId;

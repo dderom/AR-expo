@@ -12,7 +12,7 @@ exhibitions: "RHoK21" #provide the title as a custom category so it creates a pa
 
 
 position_artwork: "0 0 0" #set how much it will hover above/beside marker/geolocation. Use "0 0 0" for 3 axes
-size_artwork: "6 6 6" # set size either relative to itself of to markers
+size_artwork: "5 5 5" # set size either relative to itself of to markers
 marker_id: 1 # provide a unique markerID
 
 weight: #choose, if required, a weight for the exhibition_item, only integers

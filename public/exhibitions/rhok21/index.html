@@ -16,6 +16,7 @@
 
     
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
 
     
     
@@ -34,7 +35,9 @@
     
 
     <style type="text/css" >
-
+      body {
+        overflow:hidden;
+      }
       .menu {
          left: 0;
          width: 10%;
@@ -81,6 +84,30 @@
       .modal-header, .modal-body, .modal-content, .close {
         color: white;
       }
+
+
+      .menu-simple-description .btn-secondary {
+          position: absolute;
+          bottom: -20px;
+          width: 105vw;
+          background-color:rgba(0, 0, 0, 0.5);
+          color: #fff;
+          border-top: 2px solid white;
+      }
+
+    .container {
+    padding-left: 0px;
+    }
+
+    .modal-body a {
+      color: #fff;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+    .menu {
+      left: -5vw;
+      bottom: -20px;
+    }
     </style>
 
 
@@ -119,7 +146,7 @@
                       
                           
                           <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="1" id="1">
-                            <a-image rotation="90 0 180" position="0 0 0" scale="6 6 6" src="/AR-expo/public/artworks/RHoK21/ann_coenen_05.jpg">
+                            <a-image rotation="90 0 180" position="0 0 0" scale="5 5 5" src="/AR-expo/public/artworks/RHoK21/ann_coenen_05.jpg">
                             </a-image>
 
                             
@@ -150,7 +177,7 @@
                       
                           
                           <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="2" id="2">
-                            <a-image rotation="90 0 180" position="0 0 0" scale="1 1 1" src="/AR-expo/public/artworks/RHoK21/ann_coenen_07.jpg">
+                            <a-image rotation="90 0 180" position="0 0 0" scale="5 5 5" src="/AR-expo/public/artworks/RHoK21/ann_coenen_07.jpg">
                             </a-image>
 
                             
@@ -181,7 +208,7 @@
                       
                           
                           <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="3" id="3">
-                            <a-image rotation="90 0 180" position="0 0 0" scale="1 1 1" src="/AR-expo/public/artworks/RHoK21/celine_d_ursel_02.jpg">
+                            <a-image rotation="90 0 180" position="0 0 0" scale="5 5 5" src="/AR-expo/public/artworks/RHoK21/celine_d_ursel_02.jpg">
                             </a-image>
 
                             
@@ -212,7 +239,7 @@
                       
                           
                           <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="4" id="4">
-                            <a-image rotation="90 0 180" position="0 0 0" scale="1 1 1" src="/AR-expo/public/artworks/RHoK21/celine_d_ursel_03.jpg">
+                            <a-image rotation="90 0 180" position="0 0 0" scale="5 5 5" src="/AR-expo/public/artworks/RHoK21/celine_d_ursel_03.jpg">
                             </a-image>
 
                             
@@ -243,7 +270,7 @@
                       
                           
                           <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="5" id="5">
-                            <a-image rotation="90 0 180" position="0 0 0" scale="1 1 1" src="/AR-expo/public/artworks/RHoK21/chantal_bonnevie_01.jpg">
+                            <a-image rotation="90 0 180" position="0 0 0" scale="5 5 5" src="/AR-expo/public/artworks/RHoK21/chantal_bonnevie_01.jpg">
                             </a-image>
 
                             
@@ -274,7 +301,7 @@
                       
                           
                           <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="6" id="6">
-                            <a-image rotation="90 0 180" position="0 0 0" scale="1 1 1" src="/AR-expo/public/artworks/RHoK21/chantal_bonnevie_03.jpg">
+                            <a-image rotation="90 0 180" position="0 0 0" scale="5 5 5" src="/AR-expo/public/artworks/RHoK21/chantal_bonnevie_03.jpg">
                             </a-image>
 
                             
@@ -305,7 +332,7 @@
                       
                           
                           <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="7" id="7">
-                            <a-image rotation="90 0 180" position="0 0 0" scale="1 1 1" src="/AR-expo/public/artworks/RHoK21/daisy_ledent_van_est_01.jpg">
+                            <a-image rotation="90 0 180" position="0 0 0" scale="5 5 5" src="/AR-expo/public/artworks/RHoK21/daisy_ledent_van_est_01.jpg">
                             </a-image>
 
                             
@@ -336,7 +363,7 @@
                       
                           
                           <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="8" id="8">
-                            <a-image rotation="90 0 180" position="0 0 0" scale="1 1 1" src="/AR-expo/public/artworks/RHoK21/daisy_ledent_van_est_08.jpg">
+                            <a-image rotation="90 0 180" position="0 0 0" scale="5 5 5" src="/AR-expo/public/artworks/RHoK21/daisy_ledent_van_est_08.jpg">
                             </a-image>
 
                             
@@ -367,7 +394,7 @@
                       
                           
                           <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="9" id="9">
-                            <a-image rotation="90 0 180" position="0 0 0" scale="1 1 1" src="/AR-expo/public/artworks/RHoK21/edith_de_baere_04.jpg">
+                            <a-image rotation="90 0 180" position="0 0 0" scale="5 5 5" src="/AR-expo/public/artworks/RHoK21/edith_de_baere_04.jpg">
                             </a-image>
 
                             
@@ -398,38 +425,7 @@
                       
                           
                           <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="10" id="10">
-                            <a-image rotation="90 0 180" position="0 0 0" scale="1 1 1" src="/AR-expo/public/artworks/RHoK21/edith_de_baere_06.jpg">
-                            </a-image>
-
-                            
-                      
-                      
-                      
-                      
-                        </a-marker>
-                      
-                    
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-                  
-                  
-                  
-                      
-                      
-                      
-                          
-                          <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="11" id="11">
-                            <a-image rotation="90 0 180" position="0 0 0" scale="1 1 1" src="/AR-expo/public/artworks/RHoK21/edith_de_baere_animatie.gif">
+                            <a-image rotation="90 0 180" position="0 0 0" scale="5 5 5" src="/AR-expo/public/artworks/RHoK21/edith_de_baere_06.jpg">
                             </a-image>
 
                             
@@ -460,7 +456,7 @@
                       
                           
                           <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="13" id="13">
-                            <a-image rotation="90 0 180" position="0 0 0" scale="1 1 1" src="/AR-expo/public/artworks/RHoK21/francoise_kiekens_10.jpg">
+                            <a-image rotation="90 0 180" position="0 0 0" scale="5 5 5" src="/AR-expo/public/artworks/RHoK21/francoise_kiekens_10.jpg">
                             </a-image>
 
                             
@@ -491,7 +487,7 @@
                       
                           
                           <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="12" id="12">
-                            <a-image rotation="90 0 180" position="0 0 0" scale="1 1 1" src="/AR-expo/public/artworks/RHoK21/francoise_kiekens_06.jpg">
+                            <a-image rotation="90 0 180" position="0 0 0" scale="5 5 5" src="/AR-expo/public/artworks/RHoK21/francoise_kiekens_06.jpg">
                             </a-image>
 
                             
@@ -522,7 +518,7 @@
                       
                           
                           <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="14" id="14">
-                            <a-image rotation="90 0 180" position="0 0 0" scale="1 1 1" src="/AR-expo/public/artworks/RHoK21/gayane_hayrapetyan_01.jpg">
+                            <a-image rotation="90 0 180" position="0 0 0" scale="5 5 5" src="/AR-expo/public/artworks/RHoK21/gayane_hayrapetyan_01.jpg">
                             </a-image>
 
                             
@@ -553,286 +549,7 @@
                       
                           
                           <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="15" id="15">
-                            <a-image rotation="90 0 180" position="0 0 0" scale="1 1 1" src="/AR-expo/public/artworks/RHoK21/gayane_hayrapetyan_07.jpg">
-                            </a-image>
-
-                            
-                      
-                      
-                      
-                      
-                        </a-marker>
-                      
-                    
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-                  
-                  
-                  
-                      
-                      
-                      
-                          
-                          <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="20" id="20">
-                            <a-image rotation="90 0 180" position="0 0 0" scale="1 1 1" src="/AR-expo/public/artworks/RHoK21/juwelen_01.jpg">
-                            </a-image>
-
-                            
-                      
-                      
-                      
-                      
-                        </a-marker>
-                      
-                    
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-                  
-                  
-                  
-                      
-                      
-                      
-                          
-                          <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="21" id="21">
-                            <a-image rotation="90 0 180" position="0 0 0" scale="1 1 1" src="/AR-expo/public/artworks/RHoK21/juwelen_02.jpg">
-                            </a-image>
-
-                            
-                      
-                      
-                      
-                      
-                        </a-marker>
-                      
-                    
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-                  
-                  
-                  
-                      
-                      
-                      
-                          
-                          <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="22" id="22">
-                            <a-image rotation="90 0 180" position="0 0 0" scale="1 1 1" src="/AR-expo/public/artworks/RHoK21/juwelen_03.jpg">
-                            </a-image>
-
-                            
-                      
-                      
-                      
-                      
-                        </a-marker>
-                      
-                    
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-                  
-                  
-                  
-                      
-                      
-                      
-                          
-                          <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="23" id="23">
-                            <a-image rotation="90 0 180" position="0 0 0" scale="1 1 1" src="/AR-expo/public/artworks/RHoK21/juwelen_04.jpg">
-                            </a-image>
-
-                            
-                      
-                      
-                      
-                      
-                        </a-marker>
-                      
-                    
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-                  
-                  
-                  
-                      
-                      
-                      
-                          
-                          <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="24" id="24">
-                            <a-image rotation="90 0 180" position="0 0 0" scale="1 1 1" src="/AR-expo/public/artworks/RHoK21/juwelen_05.jpg">
-                            </a-image>
-
-                            
-                      
-                      
-                      
-                      
-                        </a-marker>
-                      
-                    
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-                  
-                  
-                  
-                      
-                      
-                      
-                          
-                          <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="25" id="25">
-                            <a-image rotation="90 0 180" position="0 0 0" scale="1 1 1" src="/AR-expo/public/artworks/RHoK21/juwelen_06.jpg">
-                            </a-image>
-
-                            
-                      
-                      
-                      
-                      
-                        </a-marker>
-                      
-                    
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-                  
-                  
-                  
-                      
-                      
-                      
-                          
-                          <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="16" id="16">
-                            <a-image rotation="90 0 180" position="0 0 0" scale="1 1 1" src="/AR-expo/public/artworks/RHoK21/marie_uytterelst_02.jpg">
-                            </a-image>
-
-                            
-                      
-                      
-                      
-                      
-                        </a-marker>
-                      
-                    
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-                  
-                  
-                  
-                      
-                      
-                      
-                          
-                          <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="17" id="17">
-                            <a-image rotation="90 0 180" position="0 0 0" scale="1 1 1" src="/AR-expo/public/artworks/RHoK21/marie_uytterelst_04.jpg">
-                            </a-image>
-
-                            
-                      
-                      
-                      
-                      
-                        </a-marker>
-                      
-                    
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-                  
-                  
-                  
-                      
-                      
-                      
-                          
-                          <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="18" id="18">
-                            <a-image rotation="90 0 180" position="0 0 0" scale="1 1 1" src="/AR-expo/public/artworks/RHoK21/yanine_karapatakis_01.jpg">
+                            <a-image rotation="90 0 180" position="0 0 0" scale="5 5 5" src="/AR-expo/public/artworks/RHoK21/gayane_hayrapetyan_07.jpg">
                             </a-image>
 
                             
@@ -863,7 +580,286 @@
                       
                           
                           <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="19" id="19">
-                            <a-image rotation="90 0 180" position="0 0 0" scale="1 1 1" src="/AR-expo/public/artworks/RHoK21/yanine_karapatakis_06.jpg">
+                            <a-image rotation="90 0 180" position="0 0 0" scale="5 5 5" src="/AR-expo/public/artworks/RHoK21/juwelen_01.jpg">
+                            </a-image>
+
+                            
+                      
+                      
+                      
+                      
+                        </a-marker>
+                      
+                    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                  
+                  
+                  
+                      
+                      
+                      
+                          
+                          <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="21" id="21">
+                            <a-image rotation="90 0 180" position="0 0 0" scale="5 5 5" src="/AR-expo/public/artworks/RHoK21/juwelen_02.jpg">
+                            </a-image>
+
+                            
+                      
+                      
+                      
+                      
+                        </a-marker>
+                      
+                    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                  
+                  
+                  
+                      
+                      
+                      
+                          
+                          <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="22" id="22">
+                            <a-image rotation="90 0 180" position="0 0 0" scale="5 5 5" src="/AR-expo/public/artworks/RHoK21/juwelen_03.jpg">
+                            </a-image>
+
+                            
+                      
+                      
+                      
+                      
+                        </a-marker>
+                      
+                    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                  
+                  
+                  
+                      
+                      
+                      
+                          
+                          <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="25" id="25">
+                            <a-image rotation="90 0 180" position="0 0 0" scale="5 5 5" src="/AR-expo/public/artworks/RHoK21/juwelen_04.jpg">
+                            </a-image>
+
+                            
+                      
+                      
+                      
+                      
+                        </a-marker>
+                      
+                    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                  
+                  
+                  
+                      
+                      
+                      
+                          
+                          <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="27" id="27">
+                            <a-image rotation="90 0 180" position="0 0 0" scale="5 5 5" src="/AR-expo/public/artworks/RHoK21/juwelen_05.jpg">
+                            </a-image>
+
+                            
+                      
+                      
+                      
+                      
+                        </a-marker>
+                      
+                    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                  
+                  
+                  
+                      
+                      
+                      
+                          
+                          <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="28" id="28">
+                            <a-image rotation="90 0 180" position="0 0 0" scale="5 5 5" src="/AR-expo/public/artworks/RHoK21/juwelen_06.jpg">
+                            </a-image>
+
+                            
+                      
+                      
+                      
+                      
+                        </a-marker>
+                      
+                    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                  
+                  
+                  
+                      
+                      
+                      
+                          
+                          <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="16" id="16">
+                            <a-image rotation="90 0 180" position="0 0 0" scale="5 5 5" src="/AR-expo/public/artworks/RHoK21/marie_uytterelst_02.jpg">
+                            </a-image>
+
+                            
+                      
+                      
+                      
+                      
+                        </a-marker>
+                      
+                    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                  
+                  
+                  
+                      
+                      
+                      
+                          
+                          <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="17" id="17">
+                            <a-image rotation="90 0 180" position="0 0 0" scale="5 5 5" src="/AR-expo/public/artworks/RHoK21/marie_uytterelst_04.jpg">
+                            </a-image>
+
+                            
+                      
+                      
+                      
+                      
+                        </a-marker>
+                      
+                    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                  
+                  
+                  
+                      
+                      
+                      
+                          
+                          <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="18" id="18">
+                            <a-image rotation="90 0 180" position="0 0 0" scale="5 5 5" src="/AR-expo/public/artworks/RHoK21/yanine_karapatakis_01.jpg">
+                            </a-image>
+
+                            
+                      
+                      
+                      
+                      
+                        </a-marker>
+                      
+                    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                  
+                  
+                  
+                      
+                      
+                      
+                          
+                          <a-marker smooth="true" smoothCount=10 markerhandler type="barcode" value="19" id="19">
+                            <a-image rotation="90 0 180" position="0 0 0" scale="5 5 5" src="/AR-expo/public/artworks/RHoK21/yanine_karapatakis_06.jpg">
                             </a-image>
 
                             
@@ -889,6 +885,36 @@
 
 
 
+
+
+    
+    <script>
+      $(document).ready(function(){
+        $("#Howto").modal('show');
+      });
+    </script>
+
+
+    
+    <div class="modal fade" id="Howto">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Welkom op de virtuele tentoonstelling van het RHoK!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">x</span>
+            </button>
+          </div>
+          <div class="modal-body">
+             <b><u>Hoe werkt het?</u></b><br> Je hoeft enkel jouw smartphone te richten naar de zwart-wit iconen die in de RHoK-tuin en in het atelier van Juweelontwerp/ Edelmetaal kan vinden. <br><br>Voor het beste resultaat hou je best een afstand van ongeveer 60 à 100 cm, maar zoom gerust eens wat in om de prenten goed te bekijken!<br><br> Om te starten, klik je dit kadertje weg.<br><br>
+<small>In samenwerking met SDKO gesponsord door Vlaamse Gemeenschapscomissie. Met dank aan Dirk Derom.</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
     
     
     
@@ -897,14 +923,18 @@
 
           
           
+
+
+
+
           
 
-          <div id="menu-description-1" class="menu-description menu container context">
+          <div id="menu-description-1" class="menu-simple-description menu container context">
               <div class="row">
                   <div class="col">
                       <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#context-description-1">
                             Ann Coenen </br> </br>
-                            Klik hier voor meer info
+                            <i>Klik hier voor meer info</i>
                       </button>
                   </div>
               </div>
@@ -922,7 +952,7 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                  Een werk door Ann Coenen binnen de afdeling Beeldende en audiovisuele kunst.<br><br><br><br> Een project gerealiseerd door Dirk Derom in opdracht van het <a href='https://www.sdko.brussels'>SDKO</a> en met steun van de <a href='https://www.vgc.be/wie-zijn-wij/actief-beleid-brussel/onderwijs'>VGC</a>.
+                  Een werk door Ann Coenen binnen de afdeling Tekenkunst.<br><br><br><br> Een project gerealiseerd door Dirk Derom in opdracht van het <a href='https://www.sdko.brussels'>SDKO</a> en met steun van de <a href='https://www.vgc.be/wie-zijn-wij/actief-beleid-brussel/onderwijs'>VGC</a>.
                 </div>
               </div>
             </div>
@@ -941,14 +971,18 @@
 
           
           
+
+
+
+
           
 
-          <div id="menu-description-2" class="menu-description menu container context">
+          <div id="menu-description-2" class="menu-simple-description menu container context">
               <div class="row">
                   <div class="col">
                       <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#context-description-2">
                             Ann Coenen </br> </br>
-                            Klik hier voor meer info
+                            <i>Klik hier voor meer info</i>
                       </button>
                   </div>
               </div>
@@ -966,7 +1000,7 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                  Een werk door Ann Coenen binnen de afdeling Beeldende en audiovisuele kunst.<br><br><br><br> Een project gerealiseerd door Dirk Derom in opdracht van het <a href='https://www.sdko.brussels'>SDKO</a> en met steun van de <a href='https://www.vgc.be/wie-zijn-wij/actief-beleid-brussel/onderwijs'>VGC</a>.
+                  Een werk door Ann Coenen binnen de afdeling Tekenkunst.<br><br><br><br> Een project gerealiseerd door Dirk Derom in opdracht van het <a href='https://www.sdko.brussels'>SDKO</a> en met steun van de <a href='https://www.vgc.be/wie-zijn-wij/actief-beleid-brussel/onderwijs'>VGC</a>.
                 </div>
               </div>
             </div>
@@ -985,14 +1019,18 @@
 
           
           
+
+
+
+
           
 
-          <div id="menu-description-3" class="menu-description menu container context">
+          <div id="menu-description-3" class="menu-simple-description menu container context">
               <div class="row">
                   <div class="col">
                       <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#context-description-3">
                             Céline d Ursel </br> </br>
-                            Klik hier voor meer info
+                            <i>Klik hier voor meer info</i>
                       </button>
                   </div>
               </div>
@@ -1010,7 +1048,7 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                  Een werk door Céline d'Ursel binnen de afdeling Beeldende en audiovisuele kunst.<br><br><br><br> Een project gerealiseerd door Dirk Derom in opdracht van het <a href='https://www.sdko.brussels'>SDKO</a> en met steun van de <a href='https://www.vgc.be/wie-zijn-wij/actief-beleid-brussel/onderwijs'>VGC</a>.
+                  Een werk door Céline d'Ursel binnen de afdeling Tekenkunst.<br><br><br><br> Een project gerealiseerd door Dirk Derom in opdracht van het <a href='https://www.sdko.brussels'>SDKO</a> en met steun van de <a href='https://www.vgc.be/wie-zijn-wij/actief-beleid-brussel/onderwijs'>VGC</a>.
                 </div>
               </div>
             </div>
@@ -1029,14 +1067,18 @@
 
           
           
+
+
+
+
           
 
-          <div id="menu-description-4" class="menu-description menu container context">
+          <div id="menu-description-4" class="menu-simple-description menu container context">
               <div class="row">
                   <div class="col">
                       <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#context-description-4">
                             Céline d Ursel </br> </br>
-                            Klik hier voor meer info
+                            <i>Klik hier voor meer info</i>
                       </button>
                   </div>
               </div>
@@ -1054,7 +1096,7 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                  Een werk door Céline d'Ursel binnen de afdeling Beeldende en audiovisuele kunst.<br><br><br><br> Een project gerealiseerd door Dirk Derom in opdracht van het <a href='https://www.sdko.brussels'>SDKO</a> en met steun van de <a href='https://www.vgc.be/wie-zijn-wij/actief-beleid-brussel/onderwijs'>VGC</a>.
+                  Een werk door Céline d'Ursel binnen de afdeling Tekenkunst.<br><br><br><br> Een project gerealiseerd door Dirk Derom in opdracht van het <a href='https://www.sdko.brussels'>SDKO</a> en met steun van de <a href='https://www.vgc.be/wie-zijn-wij/actief-beleid-brussel/onderwijs'>VGC</a>.
                 </div>
               </div>
             </div>
@@ -1073,14 +1115,18 @@
 
           
           
+
+
+
+
           
 
-          <div id="menu-description-5" class="menu-description menu container context">
+          <div id="menu-description-5" class="menu-simple-description menu container context">
               <div class="row">
                   <div class="col">
                       <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#context-description-5">
                             Chantal Bonnevie </br> </br>
-                            Klik hier voor meer info
+                            <i>Klik hier voor meer info</i>
                       </button>
                   </div>
               </div>
@@ -1098,7 +1144,7 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                  Een werk door Chantal Bonnevie binnen de afdeling Beeldende en audiovisuele kunst.<br><br><br><br> Een project gerealiseerd door Dirk Derom in opdracht van het <a href='https://www.sdko.brussels'>SDKO</a> en met steun van de <a href='https://www.vgc.be/wie-zijn-wij/actief-beleid-brussel/onderwijs'>VGC</a>.
+                  Een werk door Chantal Bonnevie binnen de afdeling Tekenkunst.<br><br><br><br> Een project gerealiseerd door Dirk Derom in opdracht van het <a href='https://www.sdko.brussels'>SDKO</a> en met steun van de <a href='https://www.vgc.be/wie-zijn-wij/actief-beleid-brussel/onderwijs'>VGC</a>.
                 </div>
               </div>
             </div>
@@ -1117,14 +1163,18 @@
 
           
           
+
+
+
+
           
 
-          <div id="menu-description-6" class="menu-description menu container context">
+          <div id="menu-description-6" class="menu-simple-description menu container context">
               <div class="row">
                   <div class="col">
                       <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#context-description-6">
                             Chantal Bonnevie </br> </br>
-                            Klik hier voor meer info
+                            <i>Klik hier voor meer info</i>
                       </button>
                   </div>
               </div>
@@ -1142,7 +1192,7 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                  Een werk door Chantal Bonnevie binnen de afdeling Beeldende en audiovisuele kunst.<br><br><br><br> Een project gerealiseerd door Dirk Derom in opdracht van het <a href='https://www.sdko.brussels'>SDKO</a> en met steun van de <a href='https://www.vgc.be/wie-zijn-wij/actief-beleid-brussel/onderwijs'>VGC</a>.
+                  Een werk door Chantal Bonnevie binnen de afdeling Tekenkunst.<br><br><br><br> Een project gerealiseerd door Dirk Derom in opdracht van het <a href='https://www.sdko.brussels'>SDKO</a> en met steun van de <a href='https://www.vgc.be/wie-zijn-wij/actief-beleid-brussel/onderwijs'>VGC</a>.
                 </div>
               </div>
             </div>
@@ -1161,14 +1211,18 @@
 
           
           
+
+
+
+
           
 
-          <div id="menu-description-7" class="menu-description menu container context">
+          <div id="menu-description-7" class="menu-simple-description menu container context">
               <div class="row">
                   <div class="col">
                       <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#context-description-7">
                             Daisy Lendent Van Est </br> </br>
-                            Klik hier voor meer info
+                            <i>Klik hier voor meer info</i>
                       </button>
                   </div>
               </div>
@@ -1186,7 +1240,7 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                  Een werk door Daisy Ledent Van Est binnen de afdeling Beeldende en audiovisuele kunst.<br><br><br><br> Een project gerealiseerd door Dirk Derom in opdracht van het <a href='https://www.sdko.brussels'>SDKO</a> en met steun van de <a href='https://www.vgc.be/wie-zijn-wij/actief-beleid-brussel/onderwijs'>VGC</a>.
+                  Een werk door Daisy Ledent Van Est binnen de afdeling Tekenkunst.<br><br><br><br> Een project gerealiseerd door Dirk Derom in opdracht van het <a href='https://www.sdko.brussels'>SDKO</a> en met steun van de <a href='https://www.vgc.be/wie-zijn-wij/actief-beleid-brussel/onderwijs'>VGC</a>.
                 </div>
               </div>
             </div>
@@ -1205,14 +1259,18 @@
 
           
           
+
+
+
+
           
 
-          <div id="menu-description-8" class="menu-description menu container context">
+          <div id="menu-description-8" class="menu-simple-description menu container context">
               <div class="row">
                   <div class="col">
                       <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#context-description-8">
                             Daisy Lendent Van Est </br> </br>
-                            Klik hier voor meer info
+                            <i>Klik hier voor meer info</i>
                       </button>
                   </div>
               </div>
@@ -1230,7 +1288,7 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                  Een werk door Daisy Ledent Van Est binnen de afdeling Beeldende en audiovisuele kunst.<br><br><br><br> Een project gerealiseerd door Dirk Derom in opdracht van het <a href='https://www.sdko.brussels'>SDKO</a> en met steun van de <a href='https://www.vgc.be/wie-zijn-wij/actief-beleid-brussel/onderwijs'>VGC</a>.
+                  Een werk door Daisy Ledent Van Est binnen de afdeling Tekenkunst.<br><br><br><br> Een project gerealiseerd door Dirk Derom in opdracht van het <a href='https://www.sdko.brussels'>SDKO</a> en met steun van de <a href='https://www.vgc.be/wie-zijn-wij/actief-beleid-brussel/onderwijs'>VGC</a>.
                 </div>
               </div>
             </div>
@@ -1249,14 +1307,18 @@
 
           
           
+
+
+
+
           
 
-          <div id="menu-description-9" class="menu-description menu container context">
+          <div id="menu-description-9" class="menu-simple-description menu container context">
               <div class="row">
                   <div class="col">
                       <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#context-description-9">
                             Edith De Baere </br> </br>
-                            Klik hier voor meer info
+                            <i>Klik hier voor meer info</i>
                       </button>
                   </div>
               </div>
@@ -1274,7 +1336,7 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                  Een werk door Edith De Baere binnen de afdeling Beeldende en audiovisuele kunst.<br><br><br><br> Een project gerealiseerd door Dirk Derom in opdracht van het <a href='https://www.sdko.brussels'>SDKO</a> en met steun van de <a href='https://www.vgc.be/wie-zijn-wij/actief-beleid-brussel/onderwijs'>VGC</a>.
+                  Een werk door Edith De Baere binnen de afdeling Tekenkunst.<br><br><br><br> Een project gerealiseerd door Dirk Derom in opdracht van het <a href='https://www.sdko.brussels'>SDKO</a> en met steun van de <a href='https://www.vgc.be/wie-zijn-wij/actief-beleid-brussel/onderwijs'>VGC</a>.
                 </div>
               </div>
             </div>
@@ -1293,14 +1355,18 @@
 
           
           
+
+
+
+
           
 
-          <div id="menu-description-10" class="menu-description menu container context">
+          <div id="menu-description-10" class="menu-simple-description menu container context">
               <div class="row">
                   <div class="col">
                       <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#context-description-10">
                             Edith De Baere </br> </br>
-                            Klik hier voor meer info
+                            <i>Klik hier voor meer info</i>
                       </button>
                   </div>
               </div>
@@ -1318,7 +1384,7 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                  Een werk door Edith De Baere binnen de afdeling Beeldende en audiovisuele kunst.<br><br><br><br> Een project gerealiseerd door Dirk Derom in opdracht van het <a href='https://www.sdko.brussels'>SDKO</a> en met steun van de <a href='https://www.vgc.be/wie-zijn-wij/actief-beleid-brussel/onderwijs'>VGC</a>.
+                  Een werk door Edith De Baere binnen de afdeling Tekenkunst.<br><br><br><br> Een project gerealiseerd door Dirk Derom in opdracht van het <a href='https://www.sdko.brussels'>SDKO</a> en met steun van de <a href='https://www.vgc.be/wie-zijn-wij/actief-beleid-brussel/onderwijs'>VGC</a>.
                 </div>
               </div>
             </div>
@@ -1337,58 +1403,18 @@
 
           
           
-          
-
-          <div id="menu-description-11" class="menu-description menu container context">
-              <div class="row">
-                  <div class="col">
-                      <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#context-description-11">
-                            Edith De Baere </br> </br>
-                            Klik hier voor meer info
-                      </button>
-                  </div>
-              </div>
-          </div>
 
 
-          
-          <div class="modal fade" id="context-description-11" tabindex="-1" role="dialog" aria-labelledby="context-description-11" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">RHoKAcademie Augmented Reality EXPO</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">x</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  Een werk door Edith De Baere binnen de afdeling Beeldende en audiovisuele kunst.<br><br><br><br> Een project gerealiseerd door Dirk Derom in opdracht van het <a href='https://www.sdko.brussels'>SDKO</a> en met steun van de <a href='https://www.vgc.be/wie-zijn-wij/actief-beleid-brussel/onderwijs'>VGC</a>.
-                </div>
-              </div>
-            </div>
-          </div>
 
 
           
 
-    
-
-    
-    
-    
-    
-    
-
-          
-          
-          
-
-          <div id="menu-description-13" class="menu-description menu container context">
+          <div id="menu-description-13" class="menu-simple-description menu container context">
               <div class="row">
                   <div class="col">
                       <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#context-description-13">
                             Francoise Kiekens </br> </br>
-                            Klik hier voor meer info
+                            <i>Klik hier voor meer info</i>
                       </button>
                   </div>
               </div>
@@ -1425,14 +1451,18 @@
 
           
           
+
+
+
+
           
 
-          <div id="menu-description-12" class="menu-description menu container context">
+          <div id="menu-description-12" class="menu-simple-description menu container context">
               <div class="row">
                   <div class="col">
                       <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#context-description-12">
                             Francoise Kiekens </br> </br>
-                            Klik hier voor meer info
+                            <i>Klik hier voor meer info</i>
                       </button>
                   </div>
               </div>
@@ -1450,7 +1480,7 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                  Een werk door Francoise Kiekens binnen de afdeling Beeldende en audiovisuele kunst.<br><br><br><br> Een project gerealiseerd door Dirk Derom in opdracht van het <a href='https://www.sdko.brussels'>SDKO</a> en met steun van de <a href='https://www.vgc.be/wie-zijn-wij/actief-beleid-brussel/onderwijs'>VGC</a>.
+                  Een werk door Francoise Kiekens binnen de afdeling Tekenkunst.<br><br><br><br> Een project gerealiseerd door Dirk Derom in opdracht van het <a href='https://www.sdko.brussels'>SDKO</a> en met steun van de <a href='https://www.vgc.be/wie-zijn-wij/actief-beleid-brussel/onderwijs'>VGC</a>.
                 </div>
               </div>
             </div>
@@ -1469,14 +1499,18 @@
 
           
           
+
+
+
+
           
 
-          <div id="menu-description-14" class="menu-description menu container context">
+          <div id="menu-description-14" class="menu-simple-description menu container context">
               <div class="row">
                   <div class="col">
                       <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#context-description-14">
                             Gayane Hayrapetyan </br> </br>
-                            Klik hier voor meer info
+                            <i>Klik hier voor meer info</i>
                       </button>
                   </div>
               </div>
@@ -1494,7 +1528,7 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                  Een werk door Gayane Hayrapetyan binnen de afdeling Beeldende en audiovisuele kunst.<br><br><br><br> Een project gerealiseerd door Dirk Derom in opdracht van het <a href='https://www.sdko.brussels'>SDKO</a> en met steun van de <a href='https://www.vgc.be/wie-zijn-wij/actief-beleid-brussel/onderwijs'>VGC</a>.
+                  Een werk door Gayane Hayrapetyan binnen de afdeling Tekenkunst.<br><br><br><br> Een project gerealiseerd door Dirk Derom in opdracht van het <a href='https://www.sdko.brussels'>SDKO</a> en met steun van de <a href='https://www.vgc.be/wie-zijn-wij/actief-beleid-brussel/onderwijs'>VGC</a>.
                 </div>
               </div>
             </div>
@@ -1513,14 +1547,18 @@
 
           
           
+
+
+
+
           
 
-          <div id="menu-description-15" class="menu-description menu container context">
+          <div id="menu-description-15" class="menu-simple-description menu container context">
               <div class="row">
                   <div class="col">
                       <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#context-description-15">
                             Gayane Hayrapetyan </br> </br>
-                            Klik hier voor meer info
+                            <i>Klik hier voor meer info</i>
                       </button>
                   </div>
               </div>
@@ -1538,7 +1576,7 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                  Een werk door Gayane Hayrapetyan binnen de afdeling Beeldende en audiovisuele kunst.<br><br><br><br> Een project gerealiseerd door Dirk Derom in opdracht van het <a href='https://www.sdko.brussels'>SDKO</a> en met steun van de <a href='https://www.vgc.be/wie-zijn-wij/actief-beleid-brussel/onderwijs'>VGC</a>.
+                  Een werk door Gayane Hayrapetyan binnen de afdeling Tekenkunst.<br><br><br><br> Een project gerealiseerd door Dirk Derom in opdracht van het <a href='https://www.sdko.brussels'>SDKO</a> en met steun van de <a href='https://www.vgc.be/wie-zijn-wij/actief-beleid-brussel/onderwijs'>VGC</a>.
                 </div>
               </div>
             </div>
@@ -1557,14 +1595,18 @@
 
           
           
+
+
+
+
           
 
-          <div id="menu-description-20" class="menu-description menu container context">
+          <div id="menu-description-19" class="menu-simple-description menu container context">
               <div class="row">
                   <div class="col">
-                      <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#context-description-20">
+                      <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#context-description-19">
                              </br> </br>
-                            Klik hier voor meer info
+                            <i>Klik hier voor meer info</i>
                       </button>
                   </div>
               </div>
@@ -1572,7 +1614,7 @@
 
 
           
-          <div class="modal fade" id="context-description-20" tabindex="-1" role="dialog" aria-labelledby="context-description-20" aria-hidden="true">
+          <div class="modal fade" id="context-description-19" tabindex="-1" role="dialog" aria-labelledby="context-description-19" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
@@ -1601,14 +1643,18 @@
 
           
           
+
+
+
+
           
 
-          <div id="menu-description-21" class="menu-description menu container context">
+          <div id="menu-description-21" class="menu-simple-description menu container context">
               <div class="row">
                   <div class="col">
                       <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#context-description-21">
                             Anne Thérèse de Jamblinne </br> </br>
-                            Klik hier voor meer info
+                            <i>Klik hier voor meer info</i>
                       </button>
                   </div>
               </div>
@@ -1645,14 +1691,18 @@
 
           
           
+
+
+
+
           
 
-          <div id="menu-description-22" class="menu-description menu container context">
+          <div id="menu-description-22" class="menu-simple-description menu container context">
               <div class="row">
                   <div class="col">
                       <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#context-description-22">
                             Miche Bauwin </br> </br>
-                            Klik hier voor meer info
+                            <i>Klik hier voor meer info</i>
                       </button>
                   </div>
               </div>
@@ -1689,14 +1739,18 @@
 
           
           
+
+
+
+
           
 
-          <div id="menu-description-23" class="menu-description menu container context">
+          <div id="menu-description-25" class="menu-simple-description menu container context">
               <div class="row">
                   <div class="col">
-                      <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#context-description-23">
+                      <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#context-description-25">
                             Miche Bauwin </br> </br>
-                            Klik hier voor meer info
+                            <i>Klik hier voor meer info</i>
                       </button>
                   </div>
               </div>
@@ -1704,7 +1758,7 @@
 
 
           
-          <div class="modal fade" id="context-description-23" tabindex="-1" role="dialog" aria-labelledby="context-description-23" aria-hidden="true">
+          <div class="modal fade" id="context-description-25" tabindex="-1" role="dialog" aria-labelledby="context-description-25" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
@@ -1733,14 +1787,18 @@
 
           
           
+
+
+
+
           
 
-          <div id="menu-description-24" class="menu-description menu container context">
+          <div id="menu-description-27" class="menu-simple-description menu container context">
               <div class="row">
                   <div class="col">
-                      <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#context-description-24">
+                      <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#context-description-27">
                             Emmanuelle Leguedey </br> </br>
-                            Klik hier voor meer info
+                            <i>Klik hier voor meer info</i>
                       </button>
                   </div>
               </div>
@@ -1748,7 +1806,7 @@
 
 
           
-          <div class="modal fade" id="context-description-24" tabindex="-1" role="dialog" aria-labelledby="context-description-24" aria-hidden="true">
+          <div class="modal fade" id="context-description-27" tabindex="-1" role="dialog" aria-labelledby="context-description-27" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
@@ -1777,14 +1835,18 @@
 
           
           
+
+
+
+
           
 
-          <div id="menu-description-25" class="menu-description menu container context">
+          <div id="menu-description-28" class="menu-simple-description menu container context">
               <div class="row">
                   <div class="col">
-                      <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#context-description-25">
+                      <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#context-description-28">
                             Emmanuelle Leguedey </br> </br>
-                            Klik hier voor meer info
+                            <i>Klik hier voor meer info</i>
                       </button>
                   </div>
               </div>
@@ -1792,7 +1854,7 @@
 
 
           
-          <div class="modal fade" id="context-description-25" tabindex="-1" role="dialog" aria-labelledby="context-description-25" aria-hidden="true">
+          <div class="modal fade" id="context-description-28" tabindex="-1" role="dialog" aria-labelledby="context-description-28" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
@@ -1821,14 +1883,18 @@
 
           
           
+
+
+
+
           
 
-          <div id="menu-description-16" class="menu-description menu container context">
+          <div id="menu-description-16" class="menu-simple-description menu container context">
               <div class="row">
                   <div class="col">
                       <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#context-description-16">
                             Marie Uytterelst </br> </br>
-                            Klik hier voor meer info
+                            <i>Klik hier voor meer info</i>
                       </button>
                   </div>
               </div>
@@ -1846,7 +1912,7 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                  Een werk door Marie Uytterelst binnen de afdeling Beeldende en audiovisuele kunst.<br><br><br><br> Een project gerealiseerd door Dirk Derom in opdracht van het <a href='https://www.sdko.brussels'>SDKO</a> en met steun van de <a href='https://www.vgc.be/wie-zijn-wij/actief-beleid-brussel/onderwijs'>VGC</a>.
+                  Een werk door Marie Uytterelst binnen de afdeling Tekenkunst.<br><br><br><br> Een project gerealiseerd door Dirk Derom in opdracht van het <a href='https://www.sdko.brussels'>SDKO</a> en met steun van de <a href='https://www.vgc.be/wie-zijn-wij/actief-beleid-brussel/onderwijs'>VGC</a>.
                 </div>
               </div>
             </div>
@@ -1865,14 +1931,18 @@
 
           
           
+
+
+
+
           
 
-          <div id="menu-description-17" class="menu-description menu container context">
+          <div id="menu-description-17" class="menu-simple-description menu container context">
               <div class="row">
                   <div class="col">
                       <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#context-description-17">
                             Marie Uytterelst </br> </br>
-                            Klik hier voor meer info
+                            <i>Klik hier voor meer info</i>
                       </button>
                   </div>
               </div>
@@ -1890,7 +1960,7 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                  Een werk door Marie Uytterelst binnen de afdeling Beeldende en audiovisuele kunst.<br><br><br><br> Een project gerealiseerd door Dirk Derom in opdracht van het <a href='https://www.sdko.brussels'>SDKO</a> en met steun van de <a href='https://www.vgc.be/wie-zijn-wij/actief-beleid-brussel/onderwijs'>VGC</a>.
+                  Een werk door Marie Uytterelst binnen de afdeling Tekenkunst.<br><br><br><br> Een project gerealiseerd door Dirk Derom in opdracht van het <a href='https://www.sdko.brussels'>SDKO</a> en met steun van de <a href='https://www.vgc.be/wie-zijn-wij/actief-beleid-brussel/onderwijs'>VGC</a>.
                 </div>
               </div>
             </div>
@@ -1909,14 +1979,18 @@
 
           
           
+
+
+
+
           
 
-          <div id="menu-description-18" class="menu-description menu container context">
+          <div id="menu-description-18" class="menu-simple-description menu container context">
               <div class="row">
                   <div class="col">
                       <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#context-description-18">
                             Yanine Karapatakis </br> </br>
-                            Klik hier voor meer info
+                            <i>Klik hier voor meer info</i>
                       </button>
                   </div>
               </div>
@@ -1934,7 +2008,7 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                  Een werk door Yanine Karapatakis binnen de afdeling Beeldende en audiovisuele kunst.<br><br><br><br> Een project gerealiseerd door Dirk Derom in opdracht van het <a href='https://www.sdko.brussels'>SDKO</a> en met steun van de <a href='https://www.vgc.be/wie-zijn-wij/actief-beleid-brussel/onderwijs'>VGC</a>.
+                  Een werk door Yanine Karapatakis binnen de afdeling Tekenkunst.<br><br><br><br> Een project gerealiseerd door Dirk Derom in opdracht van het <a href='https://www.sdko.brussels'>SDKO</a> en met steun van de <a href='https://www.vgc.be/wie-zijn-wij/actief-beleid-brussel/onderwijs'>VGC</a>.
                 </div>
               </div>
             </div>
@@ -1953,14 +2027,18 @@
 
           
           
+
+
+
+
           
 
-          <div id="menu-description-19" class="menu-description menu container context">
+          <div id="menu-description-19" class="menu-simple-description menu container context">
               <div class="row">
                   <div class="col">
                       <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#context-description-19">
                             Yanine Karapatakis </br> </br>
-                            Klik hier voor meer info
+                            <i>Klik hier voor meer info</i>
                       </button>
                   </div>
               </div>
@@ -1978,7 +2056,7 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                  Een werk door Yanine Karapatakis binnen de afdeling Beeldende en audiovisuele kunst.<br><br><br><br> Een project gerealiseerd door Dirk Derom in opdracht van het <a href='https://www.sdko.brussels'>SDKO</a> en met steun van de <a href='https://www.vgc.be/wie-zijn-wij/actief-beleid-brussel/onderwijs'>VGC</a>.
+                  Een werk door Yanine Karapatakis binnen de afdeling Tekenkunst.<br><br><br><br> Een project gerealiseerd door Dirk Derom in opdracht van het <a href='https://www.sdko.brussels'>SDKO</a> en met steun van de <a href='https://www.vgc.be/wie-zijn-wij/actief-beleid-brussel/onderwijs'>VGC</a>.
                 </div>
               </div>
             </div>
