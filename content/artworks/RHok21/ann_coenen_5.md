@@ -8,4 +8,5 @@ artists: "Ann Coenen"
 artType: "2d"
 description: "Een werk door Ann Coenen binnen de afdeling Beeldende en audiovisuele kunst.<br><br> Een project gerealiseerd door het SDKO met steun van de VGC."
 simple_description: "Een werk door Ann Coenen binnen de afdeling Tekenkunst.<br><br><br><br> Een project gerealiseerd door Dirk Derom in opdracht van het <a href='https://www.sdko.brussels'>SDKO</a> en met steun van de <a href='https://www.vgc.be/wie-zijn-wij/actief-beleid-brussel/onderwijs'>VGC</a>."
+simple_description_expo_number: "1/18"
 ---

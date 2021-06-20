@@ -2,6 +2,7 @@
 
 {{ $exhibition_type := .Params.exhibition_types}}
 {{ $simple_context_title := .Params.simple_context_title}}
+{{ $simplex_context_subtitle := .Params.simplex_context_subtitle }}
 
 
 <!-- Show howto if set -->
@@ -51,7 +52,8 @@
               <div class="row">
                   <div class="col">
                       <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#context-description-{{$marker_id}}">
-                            {{ .Params.artists }} </br> </br>
+                            {{ .Params.artists }}</br>
+                            <small>- {{$simplex_context_subtitle}}{{.Params.simple_description_expo_number}} -</small></br>
                             <i>Klik hier voor meer info</i>
                       </button>
                   </div>

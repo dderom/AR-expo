@@ -13,7 +13,7 @@ exhibitions: "schilderijen" #provide the title as a custom category so it create
 
 position_artwork: "0 0 0" #set how much it will hover above/beside marker/geolocation. Use "0 0 0" for 3 axes
 size_artwork: "3 3 3" # set size either relative to itself of to markers
-marker_id: 1 # provide a unique markerID
+marker_id: 4 # provide a unique markerID
 
 weight: #choose, if required, a weight for the exhibition_item, only integers
 date_creation: #choose date when work of art was created (can be just the year if needed)

@@ -7,4 +7,5 @@ model : "RHoK21/daisy_ledent_van_est_08.jpg" # provide the url path to the model
 artists: "Daisy Lendent Van Est"
 artType: "2d"
 simple_description: "Een werk door Daisy Ledent Van Est binnen de afdeling Tekenkunst.<br><br><br><br> Een project gerealiseerd door Dirk Derom in opdracht van het <a href='https://www.sdko.brussels'>SDKO</a> en met steun van de <a href='https://www.vgc.be/wie-zijn-wij/actief-beleid-brussel/onderwijs'>VGC</a>."
+simple_description_expo_number: "8/18"
 ---

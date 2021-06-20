@@ -7,4 +7,5 @@ model : "RHoK21/francoise_kiekens_06.jpg" # provide the url path to the model
 artists: "Francoise Kiekens"
 artType: "2d"
 simple_description: "Een werk door Francoise Kiekens binnen de afdeling Tekenkunst.<br><br><br><br> Een project gerealiseerd door Dirk Derom in opdracht van het <a href='https://www.sdko.brussels'>SDKO</a> en met steun van de <a href='https://www.vgc.be/wie-zijn-wij/actief-beleid-brussel/onderwijs'>VGC</a>."
+simple_description_expo_number: "11/18"
 ---
