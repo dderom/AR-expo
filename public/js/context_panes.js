@@ -53,8 +53,8 @@ AFRAME.registerComponent('markerhandler', {
       });
       marker.addEventListener("markerLost",() =>{
         var markerId = marker.id;
+        var markerArtistDIV = 'menu-artist-' + markerId;
         if (document.getElementById(markerArtistDIV) !== null) {
-          var markerArtistDIV = 'menu-artist-' + markerId;
           var visibelvar = document.getElementById(markerArtistDIV).style.visibility = "hidden";
         }
         var markerDescriptionDIV = 'menu-description-' + markerId;
@@ -62,12 +62,12 @@ AFRAME.registerComponent('markerhandler', {
         var visibelvar2 = document.getElementById(markerDescriptionDIV).style.visibility = "hidden";
         if (document.getElementById(markerVideoDIV) !== null) {
           var visibelvar3 = document.getElementById(markerVideoDIV).style.visibility = "hidden";
-        }
+        };
         console.log('Marker Lost: ', markerId);
         console.log("visibility: ", visibelvar);
-        console.log("Description ID - hidden: ", markerDescriptionDIV)
-        console.log("Artist ID - hidden: ", markerArtistDIV)
-        console.log("Video ID - hidden: ", markerVideoDIV)
+        console.log("Description ID - hidden: ", markerDescriptionDIV);
+        console.log("Artist ID - hidden: ", markerArtistDIV);
+        console.log("Video ID - hidden: ", markerVideoDIV);
       });
     },
   });
